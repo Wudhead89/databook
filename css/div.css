@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* 
+    Document   : div.css
+    Created on : 05-May-2011
+    Author     : Richard Williamson
+*/
+
+#container
+{
+    margin: 0 auto;
+    width: 940px;
+    background: #ffffff;
+}
+
+#header
+{
+    float: left;
+    width: 898px;
+    background: #4b6c9e;
+    border-top: 1px solid #496007;
+    border-right: 1px solid #496007;
+    border-left: 1px solid #496007;
+    padding: 10px 20px;
+}
+
+#header h1 { 
+    float: left;
+    margin: 0; 
+    height: 60px;
+    width: 464px;
+    color: #f9f9f9;
+    font-size: 20px;
+}
+
+#login {
+    float: right;
+    color: #bfcbd6;
+    height: 40px;
+    width: 430px;
+    border: 0px;
+    text-align: right;
+}
+
+#login_response {
+    float: right;
+    height: 20px;
+    width: 430px;
+    padding-top: 4px;
+    text-align: right;
+    color: #bfcbd6;
+}
+#navigation
+{
+    float: left;
+    width: 926px;
+    background: #3a4f63;
+    border-right: 1px solid #496007;
+    border-left: 1px solid #496007;    
+    padding: 6px;
+}
+
+#navigation ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+#navigation ul li
+{
+    list-style-type: none;
+    display: inline;
+}
+
+#navigation li a
+{
+    display: block;
+    float: left;
+    padding: 6px 12px;
+    margin: 0px 6px;
+    color: #bfcbd6;
+    text-decoration: none;
+    border: 1px solid #bfcbd6;
+}
+
+#navigation li a:hover { 
+    background: #bfcbd6; 
+    color: #3a4f63;
+}
+
+#search {
+    float: right;
+    color: #bfcbd6;
+}
+
+#content-container
+{
+    float: left;
+    width: 926px;
+    background: #ffffff;
+    padding: 6px;
+    border: 1px solid #496007;
+}
+
+#content
+{	
+    float: right;
+    width: 700px;
+    margin-bottom: 20px;
+}
+
+#content h2 { 
+    margin: 10px;
+    margin-left: 0;
+}
+
+#filter
+{
+    float: left;
+    width: 190px;
+    padding: 4px;
+    background: #bfcbd6;
+    border: 1px solid #496007;
+}
+
+#filter h3 { 
+    margin: 0; 
+}
+
+#footer
+{
+    width: 898px;
+    float: left;
+    background: #4b6c9e;
+    border-bottom: 1px solid #496007;
+    border-right: 1px solid #496007;
+    border-left: 1px solid #496007;
+    text-align: right;
+    padding: 20px;
+    color: #f9f9f9;
+}
