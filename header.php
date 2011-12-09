@@ -17,8 +17,6 @@
 
         if (isset($_SESSION['name'])) {
             echo $_SESSION['name'] . " <a href=\"/databook/logout.php\">[logout]</a>";
-            $currentds = '2011/2012';            
-            
         } else {
             // call the javascript function "login" into ajax_framework.js
             echo "<form action=\"javascript:login()\" method=\"post\">\n";
@@ -50,7 +48,7 @@
         <li><a href="/databook/reports/formprofile.php">Form Profile</a></li>
     </ul>
     
-    <form name="autofillform" action="/databook/ajax/autocomplete.php">
+    <form name="autofillform" action="/databook/ajax/stusearch.php">
         <div id="search">
         <table>
             <tr>

@@ -3,7 +3,7 @@
 include('../config.php');
 
 $studentid = $_GET['id'];
-$sqlstring = "select studentid, surname, forename from students WHERE forename LIKE '$studentid%' ORDER BY forename LIMIT 15";
+$sqlstring = "SELECT studentid, surname, forename from students WHERE forename LIKE '$studentid%' ORDER BY forename LIMIT 15";
 
 $students = mysql_query($sqlstring);
 

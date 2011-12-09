@@ -12,8 +12,8 @@
 
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <script src="ajax/ajax_framework.js" language="javascript"></script>
-        <script src="ajax/javascript.js" language="javascript"></script>
+        <script src="ajax/login.js" language="javascript"></script>
+        <script src="ajax/stusearch.js" language="javascript"></script>
         <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
         <link rel="stylesheet" type="text/css" href="css/div.css" />
         <title>Data Book - Home</title>

@@ -20,7 +20,7 @@ if (!isset($_SESSION['username'])) {
 
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <script src="../ajax/javascript.js" language="javascript"></script>
+        <script src="../ajax/stusearch.js" language="javascript"></script>
         <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
         <link rel="stylesheet" type="text/css" href="../css/div.css" />
         <title>Data Book - Student SEN Report</title>
@@ -47,7 +47,7 @@ if (!isset($_SESSION['username'])) {
                     FROM SENSTUSTAGES 
                     INNER JOIN CurYrStudents ON SENSTUSTAGES.StudentId = CurYrStudents.StudentId
                     INNER JOIN CurYrSENStages ON SENSTUSTAGES.StageId = CurYrSENStages.StageId 
-                    WHERE (SENSTUSTAGES.StudentId = $studentid) AND (SENSTUSTAGES.SetId = '" . $GLOBALS["currentds"] . "')";
+                    WHERE (SENSTUSTAGES.StudentId = $studentid) AND (SENSTUSTAGES.SetId = '" . $_SESSION['setid'] . "')";
                 $stuStages = sqlsrv_query($conn, $sqlstring);
 
                 echo "<table class=\"contenttable\">\n";
@@ -77,7 +77,7 @@ if (!isset($_SESSION['username'])) {
                     FROM CurYrNStuRNeeds 
                     INNER JOIN CurYrStudents ON CurYrNStuRNeeds.StudentId = CurYrStudents.StudentId 
                     INNER JOIN CLASSIFICATIONS ON CurYrNStuRNeeds.Need = CLASSIFICATIONS.ClassId 
-                    WHERE (CurYrNStuRNeeds.StudentId = $studentid) AND (CLASSIFICATIONS.SetId = '" . $GLOBALS["currentds"] . "') AND (CLASSIFICATIONS.Type = 'SCH_PROV_TYPE')";
+                    WHERE (CurYrNStuRNeeds.StudentId = $studentid) AND (CLASSIFICATIONS.SetId = '" . $_SESSION['setid'] . "') AND (CLASSIFICATIONS.Type = 'SCH_PROV_TYPE')";
                 $stuMajorNeeds = sqlsrv_query($conn, $sqlstring);
                 
                 echo "<table class=\"contenttable\">\n";
@@ -104,7 +104,7 @@ if (!isset($_SESSION['username'])) {
                     INNER JOIN SENTYPES ON SENSTUTYPES.SENTypeId = SENTYPES.SENTypeId 
                     INNER JOIN CurYrStudents ON SENSTUTYPES.StudentId = CurYrStudents.StudentId 
                     INNER JOIN CurYrSENStages ON SENSTUTYPES.StageId = CurYrSENStages.StageId 
-                    WHERE (SENSTUTYPES.SetId = '" . $GLOBALS["currentds"] . "') AND (SENTYPES.SetId = '" . $GLOBALS["currentds"] . "') AND (SENSTUTYPES.StudentId = $studentid)";
+                    WHERE (SENSTUTYPES.SetId = '" . $GLOBALS["currentds"] . "') AND (SENTYPES.SetId = '" . $_SESSION['setid'] . "') AND (SENSTUTYPES.StudentId = $studentid)";
                 $stuStrategies = sqlsrv_query($conn, $sqlstring);
                 
                 echo "<table class=\"contenttable\">\n";
@@ -136,7 +136,7 @@ if (!isset($_SESSION['username'])) {
                     INNER JOIN CurYrSENStages ON SENSTUPROVISION.StageId = CurYrSENStages.StageId 
                     INNER JOIN CurYrStudents ON SENSTUPROVISION.StudentId = CurYrStudents.StudentId 
                     LEFT OUTER JOIN CurYrSENAgencies ON SENSTUPROVISION.AgencyId = CurYrSENAgencies.AgencyId 
-                    WHERE (SENSTUPROVISION.SetId = '" . $GLOBALS["currentds"] . "') AND (SENSTUPROVISION.StudentId = $studentid)";
+                    WHERE (SENSTUPROVISION.SetId = '" . $_SESSION['setid'] . "') AND (SENSTUPROVISION.StudentId = $studentid)";
                 $stuProvisions = sqlsrv_query($conn, $sqlstring);
                 
                 echo "<table class=\"contenttable\">\n";

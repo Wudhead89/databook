@@ -85,7 +85,7 @@ function doCompletion() {
     completeTable.style.top = getElementY(completeField) + "px";
     completeTable.style.left = getElementX(completeField) + "px";
     
-    var url = "/databook/ajax/autocomplete.php?id=" + escape(completeField.value);
+    var url = "/databook/ajax/stusearch.php?id=" + escape(completeField.value);
     req = initRequest();
     req.open("GET", url, true);
     req.onreadystatechange = callback;

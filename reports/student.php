@@ -20,7 +20,7 @@ if (!isset($_SESSION['username'])) {
     
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <script src="../ajax/javascript.js" language="javascript"></script>
+        <script src="../ajax/stusearch.js" language="javascript"></script>
         <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
         <link rel="stylesheet" type="text/css" href="../css/div.css" />
         <title>Data Book - Student Report</title>        
