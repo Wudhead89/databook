@@ -70,7 +70,7 @@ function appendStudent(studentname,studentid) {
 
     linkElement = document.createElement("a");
     linkElement.className = "popupItem";
-    linkElement.setAttribute("href", "/NetBeans/DataBook/reports/student.php?studentid=" + studentid);
+    linkElement.setAttribute("href", "/databook/reports/student.php?studentid=" + studentid);
     linkElement.appendChild(document.createTextNode(studentname));
     cell.appendChild(linkElement);
 }
@@ -85,7 +85,7 @@ function doCompletion() {
     completeTable.style.top = getElementY(completeField) + "px";
     completeTable.style.left = getElementX(completeField) + "px";
     
-    var url = "/NetBeans/DataBook/ajax/autocomplete.php?id=" + escape(completeField.value);
+    var url = "/databook/ajax/autocomplete.php?id=" + escape(completeField.value);
     req = initRequest();
     req.open("GET", url, true);
     req.onreadystatechange = callback;

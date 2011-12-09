@@ -16,8 +16,8 @@
         }
 
         if (isset($_SESSION['name'])) {
-            echo $_SESSION['name'] . " <a href=\"/netbeans/databook/logout.php\">[logout]</a>";
-            $currentds = '2011/2012';
+            echo $_SESSION['name'] . " <a href=\"/databook/logout.php\">[logout]</a>";
+            $currentds = '2011/2012';            
             
         } else {
             // call the javascript function "login" into ajax_framework.js
@@ -42,15 +42,15 @@
 
 <div id="navigation">
     <ul>
-        <li><a href="/NetBeans/DataBook/index.php">Home</a></li>
-        <li><a href="/NetBeans/DataBook/reports/headlines.php">Headlines</a></li>
-        <li><a href="/NetBeans/DataBook/reports/subbroadsheet.php">Subjects</a></li>
-        <li><a href="/NetBeans/DataBook/reports/stubroadsheet.php">Broadsheet</a></li>
-        <li><a href="/NetBeans/DataBook/students.php">Students</a></li>
-        <li><a href="/NetBeans/DataBook/reports/formprofile.php">Form Profile</a></li>
+        <li><a href="/databook/index.php">Home</a></li>
+        <li><a href="/databook/reports/headlines.php">Headlines</a></li>
+        <li><a href="/databook/reports/subbroadsheet.php">Subjects</a></li>
+        <li><a href="/databook/reports/stubroadsheet.php">Broadsheet</a></li>
+        <li><a href="/databook/students.php">Students</a></li>
+        <li><a href="/databook/reports/formprofile.php">Form Profile</a></li>
     </ul>
     
-    <form name="autofillform" action="/NetBeans/DataBook/ajax/autocomplete.php">
+    <form name="autofillform" action="/databook/ajax/autocomplete.php">
         <div id="search">
         <table>
             <tr>

@@ -50,7 +50,7 @@ function loginReply() {
             document.getElementById('login_response').innerHTML = 'Login failed! Please try again';
         } else {
             document.getElementById('login_response').innerHTML = response;
-            window.location = "/NetBeans/DataBook/index.php"; 
+            window.location = "/databook/index.php"; 
         }
     }
     
