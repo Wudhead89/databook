@@ -104,7 +104,7 @@ if (!isset($_SESSION['username'])) {
                     INNER JOIN SENTYPES ON SENSTUTYPES.SENTypeId = SENTYPES.SENTypeId 
                     INNER JOIN CurYrStudents ON SENSTUTYPES.StudentId = CurYrStudents.StudentId 
                     INNER JOIN CurYrSENStages ON SENSTUTYPES.StageId = CurYrSENStages.StageId 
-                    WHERE (SENSTUTYPES.SetId = '" . $GLOBALS["currentds"] . "') AND (SENTYPES.SetId = '" . $_SESSION['setid'] . "') AND (SENSTUTYPES.StudentId = $studentid)";
+                    WHERE (SENSTUTYPES.SetId = '" . $_SESSION['setid'] . "') AND (SENTYPES.SetId = '" . $_SESSION['setid'] . "') AND (SENSTUTYPES.StudentId = $studentid)";
                 $stuStrategies = sqlsrv_query($conn, $sqlstring);
                 
                 echo "<table class=\"contenttable\">\n";

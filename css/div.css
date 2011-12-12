@@ -138,3 +138,21 @@
     padding: 20px;
     color: #f9f9f9;
 }
+
+#selector
+{
+    width: 320px;
+    height: 30px;
+}
+
+#selectYear 
+{
+    width: 60px;
+    float: left; 
+}
+
+#selectForm
+{
+    width: 200px;
+    float: left;
+}

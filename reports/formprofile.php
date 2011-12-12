@@ -21,37 +21,13 @@ if (!isset($_SESSION['username'])) {
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script src="../ajax/stusearch.js" language="javascript"></script>
+        <script src="../ajax/getforms.js" language="javascript"></script>
         <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
         <link rel="stylesheet" type="text/css" href="../css/div.css" />
-        <title>Data Book - Form Profile</title>     
-
+        <title>Data Book - Form Profile</title> 
         <script type="text/javascript">
-            function showYear(year)
-            {
-                if (year=="") {
-                    document.getElementById("txtHint").innerHTML="";
-                    return;
-                } 
-                
-                if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
-                    xmlhttp=new XMLHttpRequest();
-                }
-                else {// code for IE6, IE5
-                    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-                }
-                
-                xmlhttp.onreadystatechange=function()
-                {
-                    //if (xmlhttp.readyState==4 && xmlhttp.status==200)
-                    //{
-                        document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
-                    //}
-                }
-                xmlhttp.open("GET","../ajax/getforms.php?year="+year,true);
-                xmlhttp.send();
-            }
-        </script>
 
+        </script>
     </head>
 
     <body onload="init()" onResize="movepopup()" onClick="clearTable()">
@@ -63,22 +39,28 @@ if (!isset($_SESSION['username'])) {
 
                 <h2>Form Profile</h2>
 
-                <form>
-                    <select name="year" onchange="showYear(this.value)">
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                    </select>
-                    <div id="txtHint"><b>Please select a year group</b></div>
+                <form name="selectForm" action="post">
+                    <div id="selector">
+                        <div id ="selectYear">
+                            <select name="year" onchange="showYear(this.value)">
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                            </select>
+                        </div>
+                        <div id="selectForm"></div>
+                        
+                    </div>
                 </form>
-                
-                
+
+                <div id="formProfile">
+                </div>
                 
             </div> <!-- end content-container -->
 
-<?php include('../footer.php'); ?>
+            <?php include('../footer.php'); ?>
 
         </div> <!-- end of container -->
     </body>
