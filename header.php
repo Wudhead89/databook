@@ -44,8 +44,9 @@
         <li><a href="/databook/reports/headlines.php">Headlines</a></li>
         <li><a href="/databook/reports/subbroadsheet.php">Subjects</a></li>
         <li><a href="/databook/reports/stubroadsheet.php">Broadsheet</a></li>
-        <li><a href="/databook/students.php">Students</a></li>
         <li><a href="/databook/reports/formprofile.php">Form Profile</a></li>
+        <li><a href="/databook/reports/tchdatareport.php">Tch Groups</a></li>
+        <li><a href="/databook/reports/tutdatareport.php">Tutor Groups</a></li>
     </ul>
     
     <form name="autofillform" action="/databook/ajax/stusearch.php">

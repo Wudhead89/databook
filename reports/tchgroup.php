@@ -1,6 +1,6 @@
 <?php
 /*
-    Document   : tchGroup.php
+    Document   : tchgroup.php
     Created on : 22-May-2011
     Author     : Richard Williamson
 */

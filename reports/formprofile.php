@@ -25,9 +25,6 @@ if (!isset($_SESSION['username'])) {
         <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
         <link rel="stylesheet" type="text/css" href="../css/div.css" />
         <title>Data Book - Form Profile</title> 
-        <script type="text/javascript">
-
-        </script>
     </head>
 
     <body onload="init()" onResize="movepopup()" onClick="clearTable()">
@@ -39,7 +36,7 @@ if (!isset($_SESSION['username'])) {
 
                 <h2>Form Profile</h2>
 
-                <form name="selectForm" action="post">
+                <form>
                     <div id="selector">
                         <div id ="selectYear">
                             <select name="year" onchange="showYear(this.value)">
