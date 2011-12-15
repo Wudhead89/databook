@@ -76,16 +76,16 @@ if (!isset($_SESSION['username'])) {
 
                     $result = mysql_query("SELECT DISTINCT CONCAT(', GROUP_CONCAT(IF(shortname = \"',shortname,'\", grade,null)) AS `',shortname,'`') AS subjects FROM results_view WHERE datasetid = '$datasetid'");
 
-                    $selectstr = "SELECT studentname";
+                    $selectstr = "SELECT CONCAT(surname, \", \", forename) AS studentname";
                     while ($row = mysql_fetch_assoc($result)) {
                         $selectstr = $selectstr . $row['subjects'];
                     }
                     $selectstr = $selectstr . " FROM results_view GROUP BY studentname";
                     $result = mysql_query($selectstr);
 
-                    $subjects = mysql_query("SELECT DISTINCT shortname FROM results_view WHERE datasetid = '$datasetid' ORDER BY shortname");
+                    $subjects = mysql_query("SELECT DISTINCT shortname FROM results_view where datasetid = '$datasetid' ORDER BY shortname");
 
-                    echo "<table>\n";
+                    echo "<table class=\"contenttable\">\n";
                     echo "<tr>\n";
                     echo "<td>Student Name</td>\n";
 
