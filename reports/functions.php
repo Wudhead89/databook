@@ -107,11 +107,14 @@ function getNumStudents($datasetid) {
 
 // return the results table for a dataset
 function getResults($datasetid) {
-    $sqlstring = "SELECT results.studentid, 
+    $sqlstring = "SELECT results.studentid,
                         COUNT(grade) as grades, 
                         SUM(CASE WHEN points >= 52 THEN 1 ELSE 0 END) AS aa,
                         SUM(CASE WHEN points >= 40 THEN 1 ELSE 0 END) AS ac, 
-                        SUM(CASE WHEN points >= 16 THEN 1 ELSE 0 END) AS ag, 
+                        SUM(CASE WHEN points >= 16 THEN 1 ELSE 0 END) AS ag,
+                        SUM(clevel1) as clevel1,
+                        SUM(clevel2) as clevel2,
+                        SUM(clevel3) as clevel3,
                         SUM(points) as points 
                     FROM results 
                     INNER JOIN grades ON results.gradeid = grades.gradeid
@@ -122,5 +125,6 @@ function getResults($datasetid) {
     $results = mysql_query($sqlstring);
     return $results;
 }
+
 
 ?>

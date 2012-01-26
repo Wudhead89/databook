@@ -46,6 +46,7 @@
         <li><a href="/databook/reports/stubroadsheet.php">Broadsheet</a></li>
         <li><a href="/databook/reports/formprofile.php">Form Profile</a></li>
         <li><a href="/databook/reports/groupdata.php">Group Data</a></li>
+        <li><a href="/databook/docs/docs.php">Documents</a></li>
     </ul>
     
     <form name="autofillform" action="/databook/ajax/stusearch.php">

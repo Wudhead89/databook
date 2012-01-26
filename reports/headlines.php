@@ -1,9 +1,9 @@
 <?php
-/* 
-    Document   : headlines.php
-    Created on : 05-May-2011
-    Author     : Richard Williamson
-*/
+/*
+  Document   : headlines.php
+  Created on : 05-May-2011
+  Author     : Richard Williamson
+ */
 ?>
 
 <?php
@@ -17,7 +17,7 @@ if (!isset($_SESSION['username'])) {
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-    
+
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script src="../ajax/stusearch.js" language="javascript"></script>
@@ -25,7 +25,7 @@ if (!isset($_SESSION['username'])) {
         <link rel="stylesheet" type="text/css" href="../css/div.css" />
         <title>Data Book - Headline Figures</title>        
     </head>
-    
+
     <body onload="init()" onresize="movepopup()">
         <div id="container">
 
@@ -58,7 +58,7 @@ if (!isset($_SESSION['username'])) {
 
                 echo "<div id=\"content\">\n";
                 echo "<h2>Headline Figures</h2>\n";
-                
+
                 if (isset($_POST['dataset'])) {
                     $datasetid = $_POST['dataset'];
                     $datasetname = getDataSetName($datasetid);
@@ -80,20 +80,20 @@ if (!isset($_SESSION['username'])) {
                     $totalpoints = 0;
 
                     $results = getResults($datasetid);
-                    
+
                     while ($result = mysql_fetch_assoc($results)) {
                         if ($result['aa'] >= 5) {
-                            $fiveaa++;
-                        }   
-                        if ($result['ac'] >= 5) {
+                            $fiveaa++;;
+                        }
+                        if ($result['clevel2'] >= 1) {
                             $fiveac++;
                         }
-                        if ($result['ag'] >= 5) {
+                        if ($result['clevel1'] >= 1) {
                             $fiveag++;
                         }
                         if ($result['aa'] >= 1) {
                             $oneaa++;
-                        }                        
+                        }
                         if ($result['ac'] >= 1) {
                             $oneac++;
                         }
@@ -116,14 +116,15 @@ if (!isset($_SESSION['username'])) {
                     echo "<p>";
                     echo "APS = " . sprintf("%01.2f", ($totalpoints / $numstudents)) . "<br />";
                     echo "</p>";
+                    
                 }
                 ?>
             </div> <!-- end content -->
 
         </div> <!-- end content-container -->
 
-        <?php include('../footer.php'); ?>
+                <?php include('../footer.php'); ?>
 
-        </div> <!-- end of container -->
-    </body>
+    </div> <!-- end of container -->
+</body>
 </html>
