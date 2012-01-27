@@ -109,6 +109,10 @@ function getNumStudents($datasetid) {
 function getResults($datasetid) {
     $sqlstring = "SELECT results.studentid,
                         COUNT(grade) as grades, 
+                        SUM(CASE WHEN shortname = 'ENG' AND points >= 40 THEN 1 ELSE 0 END) AS eng,
+                        SUM(CASE WHEN shortname = 'MAT' AND points >= 40 THEN 1 ELSE 0 END) AS mat,
+                        SUM(CASE WHEN shortname = 'GEO' OR 'HIS' AND points >= 40 THEN 1 ELSE 0 END) as hums,
+                        SUM(CASE WHEN shortname = 'FRE' OR 'GER' AND points >= 40 THEN 1 ELSE 0 END) as mfl,
                         SUM(CASE WHEN points >= 52 THEN 1 ELSE 0 END) AS aa,
                         SUM(CASE WHEN points >= 40 THEN 1 ELSE 0 END) AS ac, 
                         SUM(CASE WHEN points >= 16 THEN 1 ELSE 0 END) AS ag,
@@ -118,7 +122,9 @@ function getResults($datasetid) {
                         SUM(points) as points 
                     FROM results 
                     INNER JOIN grades ON results.gradeid = grades.gradeid
-                    INNER JOIN students ON results.studentid = students.studentid";
+                    INNER JOIN subjects ON results.subjectid = subjects.subjectid
+                    INNER JOIN students ON results.studentid = students.studentid
+                    ";
     $sqlstring .= buildSQLStringIncDataSet($datasetid);
     $sqlstring .= " GROUP BY studentid";
 

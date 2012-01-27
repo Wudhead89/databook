@@ -73,10 +73,16 @@ if (!isset($_SESSION['username'])) {
 
                     $fiveaa = 0;
                     $fiveac = 0;
+                    $fiveem = 0;
                     $fiveag = 0;
                     $oneaa = 0;
                     $oneac = 0;
                     $oneag = 0;
+                    $ebacceng = 0;
+                    $ebaccmat = 0;
+                    $ebacchums = 0;
+                    $ebaccmfl = 0;
+                    $ebacc = 0;
                     $totalpoints = 0;
 
                     $results = getResults($datasetid);
@@ -91,6 +97,9 @@ if (!isset($_SESSION['username'])) {
                         if ($result['clevel1'] >= 1) {
                             $fiveag++;
                         }
+                        if ($result['eng'] == 1 && $result['mat'] == 1){
+                            $fiveem++;
+                        }
                         if ($result['aa'] >= 1) {
                             $oneaa++;
                         }
@@ -100,12 +109,30 @@ if (!isset($_SESSION['username'])) {
                         if ($result['ag'] >= 1) {
                             $oneag++;
                         }
+                        
+                        if ($result['eng'] == 1) {
+                            $ebacceng++;
+                        }
+                        if ($result['mat'] == 1) {
+                            $ebaccmat++;
+                        }
+                        if ($result['hums'] == 1) {
+                            $ebacchums++;
+                        }
+                        if ($result['mfl'] == 1) {
+                            $ebaccmfl++;
+                        }
+                        
+                        if (($result['eng'] + $result['mat'] + $result['hums'] + $result['mfl']) == 4) {
+                            $ebacc++;
+                        }
                         $totalpoints += $result['points'];
                     }
 
                     echo "<p>";
                     echo "Percent 5AA = " . sprintf("%01.2f", (($fiveaa / $numstudents) * 100)) . "% (" . $fiveaa . ")<br />";
                     echo "Percent 5AC = " . sprintf("%01.2f", (($fiveac / $numstudents) * 100)) . "% (" . $fiveac . ")<br />";
+                    echo "Percent 5EM = " . sprintf("%01.2f", (($fiveem / $numstudents) * 100)) . "% (" . $fiveem . ")<br />";
                     echo "Percent 5AG = " . sprintf("%01.2f", (($fiveag / $numstudents) * 100)) . "% (" . $fiveag . ")";
                     echo "</p>";
                     echo "<p>";
@@ -113,6 +140,13 @@ if (!isset($_SESSION['username'])) {
                     echo "Percent 1AC = " . sprintf("%01.2f", (($oneac / $numstudents) * 100)) . "% (" . $oneac . ")<br />";
                     echo "Percent 1AG = " . sprintf("%01.2f", (($oneag / $numstudents) * 100)) . "% (" . $oneag . ")";
                     echo "</p>";
+                    echo "<p>";
+                    echo "Percent EBacc English = " . sprintf("%01.2f", (($ebacceng / $numstudents) * 100)) . "% (" . $ebacceng . ")<br />";
+                    echo "Percent EBacc Maths = " . sprintf("%01.2f", (($ebaccmat / $numstudents) * 100)) . "% (" . $ebaccmat . ")<br />";
+                    echo "Percent EBacc Hums = " . sprintf("%01.2f", (($ebacchums / $numstudents) * 100)) . "% (" . $ebacchums . ")<br />";
+                    echo "Percent EBacc MFL = " . sprintf("%01.2f", (($ebaccmfl / $numstudents) * 100)) . "% (" . $ebaccmfl . ")<br />";
+                    echo "Percent EBacc = " . sprintf("%01.2f", (($ebacc / $numstudents) * 100)) . "% (" . $ebacc . ")";
+                    echo "</p>";                    
                     echo "<p>";
                     echo "APS = " . sprintf("%01.2f", ($totalpoints / $numstudents)) . "<br />";
                     echo "</p>";

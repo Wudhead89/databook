@@ -6,10 +6,10 @@
 */
 
 // Specify the server and connection string attributes
-$db_host = "databook";
+$db_host = "localhost";
 $db_name = "my_results";
 $username = "root";
-$password = "root";
+$password = "admin";
 
 // Connect to the SQl server
 $db_con = mysql_connect($db_host, $username, $password);
