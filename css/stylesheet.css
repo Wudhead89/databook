@@ -6,9 +6,9 @@
 */
 
 body {
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 10px;
-    background: #b6b7bc;
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;  
+    font-size: 11px;
+    color: #333333;
 }
 
 
@@ -45,7 +45,6 @@ table td {
 {
     border: 0px;
     padding: 4px;
-    vertical-align: center;
     height: 30px;
 }
 
@@ -78,4 +77,27 @@ table td {
 .popupItem {
     color: black; 
     text-decoration: none;
+}
+
+
+a.button{
+    display: block;
+    color: #555555;
+    font-weight: bold;
+    height: 26px;
+    line-height:26px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    text-decoration:none;
+    width: 120px;
+}
+a:hover.button{
+    color: #0066CC;
+}
+
+.filter{
+    background: url(/databook/images/icons/plus.ico) no-repeat 6px 5px;
+    text-indent:28px;
+    display: block;
+    border: 1px solid #3b5998;
 }

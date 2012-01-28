@@ -8,25 +8,25 @@
 #container
 {
     margin: 0 auto;
-    width: 940px;
+    width: 1040px;
     background: #ffffff;
 }
 
 #header
 {
     float: left;
-    width: 898px;
-    background: #4b6c9e;
-    border-top: 1px solid #496007;
-    border-right: 1px solid #496007;
-    border-left: 1px solid #496007;
+    width: 998px;
+    background: #3b5998;
+    border-top: 1px solid #3b5998;
+    border-right: 1px solid #3b5998;
+    border-left: 1px solid #3b5998;
     padding: 10px 20px;
 }
 
 #header h1 { 
     float: left;
     margin: 0; 
-    height: 60px;
+    height: 40px;
     width: 464px;
     color: #f9f9f9;
     font-size: 20px;
@@ -52,7 +52,7 @@
 #navigation
 {
     float: left;
-    width: 926px;
+    width: 1026px;
     background: #3a4f63;
     border-right: 1px solid #496007;
     border-left: 1px solid #496007;    
@@ -95,22 +95,26 @@
 #content-container
 {
     float: left;
-    width: 926px;
+    width: 1026px;
     background: #ffffff;
     padding: 6px;
-    border: 1px solid #496007;
+    border: 1px solid #3b5998;
 }
 
 #content
 {	
     float: right;
-    width: 700px;
-    margin-bottom: 20px;
+    width: 818px;
+    
 }
 
 #content h2 { 
-    margin: 10px;
-    margin-left: 0;
+    background-color: #f7f7f7;  
+    border: 1px solid #cccccc;  
+    color: #333333;  
+    padding: 10px;  
+    font-size: 13px;  
+    font-weight: bold;  
 }
 
 #filter
@@ -118,8 +122,9 @@
     float: left;
     width: 190px;
     padding: 4px;
-    background: #bfcbd6;
-    border: 1px solid #496007;
+    margin-top: 11px;
+    background: #d4dae8;
+    border: 1px solid #3b5998;
 }
 
 #filter h3 { 
@@ -128,12 +133,12 @@
 
 #footer
 {
-    width: 898px;
+    width: 998px;
     float: left;
-    background: #4b6c9e;
-    border-bottom: 1px solid #496007;
-    border-right: 1px solid #496007;
-    border-left: 1px solid #496007;
+    background: #3b5998;
+    border-bottom: 1px solid #3b5998;
+    border-right: 1px solid #3b5998;
+    border-left: 1px solid #3b5998;
     text-align: right;
     padding: 20px;
     color: #f9f9f9;

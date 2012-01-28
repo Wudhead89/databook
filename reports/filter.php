@@ -60,4 +60,6 @@
     </tr>
 </table>
 
-<input type="submit" value="submit" />
+<a href="#" class="button" onclick="document.forms['filter'].submit(); return false;">
+<span class="filter">Apply Filter</span>
+</a>
