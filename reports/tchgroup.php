@@ -74,7 +74,7 @@ if (!isset($_SESSION['username'])) {
             echo "<div id=\"content\">\n";
             echo "<h2>Teaching Group Report: $tchgroupcode</h2>\n";
 
-            echo "<table class=\"contentable\">\n";
+            echo "<table class=\"contenttable\">\n";
             echo "<tr>\n";
             echo "<td>Student Name</td>\n";
             echo "<td>Grade</td>\n";
@@ -82,7 +82,7 @@ if (!isset($_SESSION['username'])) {
 
             while ($row = mysql_fetch_assoc($results)) {
                 echo "<tr>\n";
-                echo "<td><a href=\"student.php?datasetid=$datasetid&studentid=" . $row['studentid'] . "\">" . $row['surname'] . "</a></td>\n";
+                echo "<td><a href=\"student.php?datasetid=$datasetid&studentid=" . $row['studentid'] . "\">" . $row['surname'] . ', ' . $row['forename'] . "</a></td>\n";
                 echo "<td>" . $row['grade'] . "</td>";
                 echo "</tr>\n";
             }

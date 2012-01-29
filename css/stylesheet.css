@@ -98,10 +98,8 @@ a.button{
     font-weight: bold;
     height: 27px;
     line-height:26px;
-    margin-top: 10px;
-    margin-bottom: 2px;
-    text-decoration:none;
-    width: 128px;
+    margin: 2px;
+    text-decoration: none;
     border: 1px solid #d4dae8;
 }
 a:hover.button{
@@ -119,7 +117,6 @@ a:hover.button{
 select{
     padding: 4px;
     border: 1px solid #d4dae8;
-    width: 136px;
-    background: #eceff6;
+    width: 133px;
     border: 1px solid #d4dae8;
 }

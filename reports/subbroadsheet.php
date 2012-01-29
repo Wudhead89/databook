@@ -118,9 +118,9 @@ if (!isset($_SESSION['username'])) {
                         echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "&gradeid=8\">" . $row['G'] . "</a></td>";
                         echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "&gradeid=9\">" . $row['U'] . "</a></td>";
                         echo "<td>" . $total . "</td>";
-                        echo "<td>" . sprintf("%01.2f", (($aa / $total) * 100)) . "</td>";
-                        echo "<td>" . sprintf("%01.2f", (($ac / $total) * 100)) . "</td>";
-                        echo "<td>" . sprintf("%01.2f", (($ag / $total) * 100)) . "</td>";
+                        echo "<td>" . sprintf("%01.1f", (($aa / $total) * 100)) . "</td>";
+                        echo "<td>" . sprintf("%01.1f", (($ac / $total) * 100)) . "</td>";
+                        echo "<td>" . sprintf("%01.1f", (($ag / $total) * 100)) . "</td>";
                         echo "</tr>\n";
                     }
                     echo "</table>";
