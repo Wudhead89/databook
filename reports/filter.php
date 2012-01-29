@@ -25,6 +25,21 @@
         </td>
     </tr>
     <tr>
+        <td>Compare</td>
+        <td>    
+            <select name="compset">
+                <?php
+                $datasets = mysql_query("SELECT * FROM datasets");
+                while ($ds = mysql_fetch_assoc($datasets)) {
+                    echo "<option value=\"" . $ds['datasetid'] . "\"";
+                    if (isset($compsetid) && $compsetid == $ds['datasetid']) { echo " selected "; }
+                    echo ">" . $ds['datasetname'] . "</option>";
+                }
+                ?>
+            </select>
+        </td>
+    </tr>
+    <tr>
         <td>Gender</td>
         <td>
             M <input type="checkbox" name="male" value="ON" <?php if ((isset($_POST['male']) && $_POST['male'] == 'ON')) { echo 'checked = "checked"'; } ?> />&nbsp;

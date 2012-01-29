@@ -50,6 +50,12 @@ if (!isset($_SESSION['username'])) {
                     $datasetid = $_GET['datasetid'];
                 }
 
+                if (isset($_POST['compset'])) {
+                    $compsetid = $_POST['compset'];
+                } else if (isset($_GET['compsetid'])) {
+                    $compsetid = $_GET['compsetid'];
+                }
+
                 echo "<div id=\"filter\">\n";
                 echo "<form name=\"filter\" action=\"headlines.php\" method=\"post\">\n";
                 include('filter.php');
