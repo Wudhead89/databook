@@ -135,17 +135,20 @@ if (!isset($_SESSION['username'])) {
                         $totalpoints += $result['points'];
                     }
 
+                    echo "<h3>5* GCSE Figures</h3>";
                     echo "<p>";
                     echo "Percent 5AA = " . sprintf("%01.2f", (($fiveaa / $numstudents) * 100)) . "% (" . $fiveaa . ")<br />";
                     echo "Percent 5AC = " . sprintf("%01.2f", (($fiveac / $numstudents) * 100)) . "% (" . $fiveac . ")<br />";
                     echo "Percent 5EM = " . sprintf("%01.2f", (($fiveem / $numstudents) * 100)) . "% (" . $fiveem . ")<br />";
                     echo "Percent 5AG = " . sprintf("%01.2f", (($fiveag / $numstudents) * 100)) . "% (" . $fiveag . ")";
                     echo "</p>";
+                    echo "<h3>1* GCSE Figures</h3>";
                     echo "<p>";
                     echo "Percent 1AA = " . sprintf("%01.2f", (($oneaa / $numstudents) * 100)) . "% (" . $oneaa . ")<br />";
                     echo "Percent 1AC = " . sprintf("%01.2f", (($oneac / $numstudents) * 100)) . "% (" . $oneac . ")<br />";
                     echo "Percent 1AG = " . sprintf("%01.2f", (($oneag / $numstudents) * 100)) . "% (" . $oneag . ")";
                     echo "</p>";
+                    echo "<h3>English Baccalaureate Figures</h3>";
                     echo "<p>";
                     echo "Percent EBacc English = " . sprintf("%01.2f", (($ebacceng / $numstudents) * 100)) . "% (" . $ebacceng . ")<br />";
                     echo "Percent EBacc Maths = " . sprintf("%01.2f", (($ebaccmat / $numstudents) * 100)) . "% (" . $ebaccmat . ")<br />";
