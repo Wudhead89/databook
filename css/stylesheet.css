@@ -25,7 +25,7 @@ table td {
     margin-left: auto;
 }
 .logintable td {
-    border: 0px solid #496007;
+    border: 0px;
     padding: 1px; 
     text-align: left;
 }
@@ -34,7 +34,7 @@ table td {
     border-collapse: collapse;    
 }
 .contenttable td {
-    border: 1px solid #496007;
+    border: 1px solid #666666;
     padding: 4px;     
 }
 
@@ -49,18 +49,18 @@ table td {
 }
 
 .textinput {
-    border: 1px solid #496007;
-    padding: 3px;
+    border: 1px solid #666666;
+    padding: 2px;
     background: #f9f9f9;
 }
 
 .buttoninput {
-    border: 1px solid #496007;
-    padding: 3px 8px;
+    border: 1px solid #666666;
+    padding: 1px 8px;
     background: #f9f9f9;
 }
 .buttoninput:hover {
-    border: 1px solid #496007;
+    border: 1px solid #666666;
     background: #bfcbd6;
 }
 
@@ -79,25 +79,44 @@ table td {
     text-decoration: none;
 }
 
+/* Default Anchor Style */  
+a  
+{  
+    color: #3b5998;  
+    outline-style: none;  
+    text-decoration: none;  
+    font-size: 11px;    
+}  
+a:hover  
+{  
+    text-decoration: underline;  
+}
 
 a.button{
     display: block;
     color: #555555;
     font-weight: bold;
-    height: 26px;
+    height: 27px;
     line-height:26px;
     margin-top: 10px;
     margin-bottom: 2px;
     text-decoration:none;
-    width: 120px;
+    width: 128px;
 }
 a:hover.button{
-    color: #0066CC;
+    color: #333333;
+    background-color: #bfcbd6;
 }
 
 .filter{
     background: url(/databook/images/icons/plus.ico) no-repeat 6px 5px;
+    
     text-indent:28px;
     display: block;
-    border: 1px solid #3b5998;
+    border: 1px solid #d4dae8;
+}
+
+select{
+    padding: 4px;
+    border: 1px solid #d4dae8;
 }
