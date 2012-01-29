@@ -125,7 +125,8 @@ header a:hover
     border: 1px solid #cccccc;  
     color: #333333;
     padding: 10px;
-    margin-right: 2px;
+    margin-right: 0px;
+    margin-top: 0px;
     font-size: 13px;  
     font-weight: bold;  
 }
@@ -140,7 +141,7 @@ header a:hover
 }
 
 #filter h3 { 
-    background: url(/databook/images/icons/control.ico) no-repeat 6px 5px;
+    background: url(/databook/images/icons/layout.png) no-repeat 6px 5px;
     text-indent:24px;
     margin: 2px; 
     padding: 6px;
@@ -152,14 +153,14 @@ header a:hover
 
 #footer
 {
-    width: 998px;
+    width: 1018px;
     float: left;
     background: #3b5998;
     border-bottom: 1px solid #3b5998;
     border-right: 1px solid #3b5998;
     border-left: 1px solid #3b5998;
     text-align: right;
-    padding: 20px;
+    padding: 10px;
     color: #f9f9f9;
 }
 

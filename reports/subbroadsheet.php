@@ -106,7 +106,7 @@ if (!isset($_SESSION['username'])) {
                         $ag = $row['A*'] + $row['A'] + $row['B'] + $row['C'] + $row['D'] + $row['E'] + $row['F'] + $row['G'];
 
                         echo "<tr>\n";
-                        echo "<td><a href=\"subject.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "\"><img src=\"../images/icons/list.png\" width=\"16\" height=\"16\"/></a>&nbsp;";
+                        echo "<td><a href=\"subject.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "\"><img src=\"../images/icons/application_view_list.png\" width=\"16\" height=\"16\"/></a>&nbsp;";
                         echo "<a href=\"tchgroupbroadsheet.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "\">" . $row['subjectname'] . "</a></td>";
                         echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "&gradeid=1\">" . $row['A*'] . "</a></td>";
                         echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "&gradeid=2\">" . $row['A'] . "</a></td>";
