@@ -7,7 +7,7 @@
 ?>
 
 <div id="header">
-    <h1>Swanwick Hall School Data Book</h1>
+    <h1>Swanwick <span class="red">Hall</span> School Data Book</h1>
 
     <div id="login">
         <?php
