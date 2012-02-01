@@ -42,6 +42,7 @@
     <ul>
         <li><a href="/databook/index.php">Home</a></li>
         <li><a href="/databook/reports/headlines.php">Headlines</a></li>
+        <li><a href="/databook/reports/ebacc.php">EBacc</a></li>
         <li><a href="/databook/reports/subbroadsheet.php">Subjects</a></li>
         <li><a href="/databook/reports/stubroadsheet.php">Broadsheet</a></li>
         <li><a href="/databook/reports/formprofile.php">Form Profile</a></li>

@@ -28,6 +28,7 @@
         <td>Compare</td>
         <td>    
             <select name="compset">
+                <option value=""></option>
                 <?php
                 $datasets = mysql_query("SELECT * FROM datasets");
                 while ($ds = mysql_fetch_assoc($datasets)) {

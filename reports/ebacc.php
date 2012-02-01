@@ -1,7 +1,7 @@
 <?php
 /*
-  Document   : headlines.php
-  Created on : 05-May-2011
+  Document   : ebacc.php
+  Created on : 01-Feb-2012
   Author     : Richard Williamson
  */
 ?>
@@ -41,38 +41,31 @@ if (isset($_POST['dataset'])) {
     $numstudents = getNumStudents($datasetid);
 
     $stats = array(
-        "5AA" => 0,
-        "5AC" => 0,
-        "5EM" => 0,
-        "5AG" => 0,
-        "1AC" => 0,
-        "1AG" => 0,
-        "Total Points" => 0
+        "eng" => 0,
+        "mat" => 0,
+        "hums" => 0,
+        "mfl" => 0,
+        "ebacc" => 0
     );
 
     $results = getResults($datasetid);
 
     while ($result = mysql_fetch_assoc($results)) {
-        if ($result['aa'] >= 5) {
-            $stats['5AA']++;
+        if ($result['eng'] == 1) {
+            $stats['eng']++;
         }
-        if ($result['clevel2'] >= 1) {
-            $stats['5AC']++;
+        if ($result['mat'] == 1) {
+            $stats['mat']++;
         }
-        if ($result['eng'] == 1 && $result['mat'] == 1) {
-            $stats['5EM']++;
+        if ($result['hums'] == 1) {
+            $stats['hums']++;
         }
-        if ($result['clevel1'] >= 1) {
-            $stats['5AG']++;
+        if ($result['mfl'] == 1) {
+            $stats['mfl']++;
         }
-        if ($result['ac'] >= 1) {
-            $stats['1AC']++;
+        if (($result['eng'] + $result['mat'] + $result['hums'] + $result['mfl']) == 4) {
+            $stats['ebacc']++;
         }
-        if ($result['ag'] >= 1) {
-            $stats['1AG']++;
-        }
-
-        $stats['Total Points'] += $result['points'];
     }
 
     foreach ($stats as $k => $v) {
@@ -89,38 +82,31 @@ if (isset($_POST['dataset'])) {
         $compnumstudents = getNumStudents($compsetid);
 
         $compStats = array(
-            "5AA" => 0,
-            "5AC" => 0,
-            "5EM" => 0,
-            "5AG" => 0,
-            "1AC" => 0,
-            "1AG" => 0,
-            "Total Points" => 0
-        );
+            "eng" => 0,
+            "mat" => 0,
+            "hums" => 0,
+            "mfl" => 0,
+            "ebacc" => 0
+            );
 
         $results = getResults($compsetid);
 
         while ($result = mysql_fetch_assoc($results)) {
-            if ($result['aa'] >= 5) {
-                $compStats['5AA']++;
+            if ($result['eng'] == 1) {
+                $compStats['eng']++;
             }
-            if ($result['clevel2'] >= 1) {
-                $compStats['5AC']++;
+            if ($result['mat'] == 1) {
+                $compStats['mat']++;
             }
-            if ($result['eng'] == 1 && $result['mat'] == 1) {
-                $compStats['5EM']++;
+            if ($result['hums'] == 1) {
+                $compStats['hums']++;
             }
-            if ($result['clevel1'] >= 1) {
-                $compStats['5AG']++;
+            if ($result['mfl'] == 1) {
+                $compStats['mfl']++;
             }
-            if ($result['ac'] >= 1) {
-                $compStats['1AC']++;
+            if (($result['eng'] + $result['mat'] + $result['hums'] + $result['mfl']) == 4) {
+                $compStats['ebacc']++;
             }
-            if ($result['ag'] >= 1) {
-                $compStats['1AG']++;
-            }
-
-            $compStats['Total Points'] += $result['points'];
         }
 
         foreach ($compStats as $k => $v) {
@@ -160,16 +146,15 @@ if (isset($_POST['dataset'])) {
                             marginRight: 140,
                         },
                         title: {
-                            text: 'GCSE Headline Figures'
+                            text: 'English Baccalaureate Figures'
                         },
                         xAxis: {
                             categories: [
-                                '5AA', 
-                                '5AC', 
-                                '5EM', 
-                                '5AG',
-                                '1AC',
-                                '1AG'
+                                'English', 
+                                'Maths', 
+                                'Hums', 
+                                'MFL',
+                                'EBacc'
                             ]
                         },
                         yAxis: {
@@ -200,11 +185,11 @@ if (isset($_POST['dataset'])) {
                         },
                         series: [{
                                 name: '$datasetname',
-                                data: [" . $stats['5AA'] . "," . $stats['5AC'] . "," . $stats['5EM'] . "," . $stats['5AG'] . "," . $stats['1AC'] . "," . $stats['1AG'] . "]
+                                data: [" . $stats['eng'] . "," . $stats['mat'] . "," . $stats['hums'] . "," . $stats['mfl'] . "," . $stats['ebacc'] . "]
                             }";
             if (isset($_POST['compset']) && $_POST['compset'] != "") {
                 echo ",{ name: '$compsetname',
-                                data: [" . $compStats['5AA'] . "," . $compStats['5AC'] . "," . $compStats['5EM'] . "," . $compStats['5AG'] . "," . $compStats['1AC'] . "," . $compStats['1AG'] . "]}";
+                                data: [" . $compStats['eng'] . "," . $compStats['mat'] . "," . $compStats['hums'] . "," . $compStats['mfl'] . "," . $compStats['ebacc'] . "]}";
             }
             echo "]
                     });
@@ -217,7 +202,7 @@ if (isset($_POST['dataset'])) {
         }
         ?>
 
-        <title>Data Book - Headline Figures</title>        
+        <title>Data Book - English Baccalaureate Figures</title>        
     </head>
 
     <body onload="init()" onresize="movepopup()">
@@ -229,13 +214,13 @@ if (isset($_POST['dataset'])) {
 
                 <?php
                 echo "<div id=\"filter\">\n";
-                echo "<form name=\"filter\" action=\"headlines.php\" method=\"post\">\n";
+                echo "<form name=\"filter\" action=\"ebacc.php\" method=\"post\">\n";
                 include('filter.php');
                 echo "</form>\n";
                 echo "</div>  <!-- end filter -->\n";
 
                 echo "<div id=\"content\">\n";
-                echo "<h2>Headline Figures</h2>\n";
+                echo "<h2>English Baccalaureate Figures</h2>\n";
 
                 if (isset($_POST['dataset'])) {
                     echo "<table class=\"contenttable\">\n";
@@ -257,42 +242,42 @@ if (isset($_POST['dataset'])) {
                     echo "</tr>\n";
                     
                     echo "<tr>\n";
-                    echo "<td>5AA</td>\n";
-                    echo "<td>" . $stats['5AA'] . "</td>\n";
+                    echo "<td>English</td>\n";
+                    echo "<td>" . $stats['eng'] . "</td>\n";
                     if (isset($_POST['compset']) && $_POST['compset'] != "") {
-                        echo "<td>" . $compStats['5AA'] . "</td>";
+                        echo "<td>" . $compStats['eng'] . "</td>";
                     }
                     echo "</tr>\n";
                     
                     echo "<tr>\n";
-                    echo "<td>5AC</td>\n";
-                    echo "<td>" . $stats['5AC'] . "</td>\n";
+                    echo "<td>Maths</td>\n";
+                    echo "<td>" . $stats['mat'] . "</td>\n";
                     if (isset($_POST['compset']) && $_POST['compset'] != "") {
-                        echo "<td>" . $compStats['5AC'] . "</td>";
+                        echo "<td>" . $compStats['mat'] . "</td>";
                     }
                     echo "</tr>\n";
                     
                     echo "<tr>\n";
-                    echo "<td>5EM</td>\n";
-                    echo "<td>" . $stats['5EM'] . "</td>\n";
+                    echo "<td>Humantities</td>\n";
+                    echo "<td>" . $stats['hums'] . "</td>\n";
                     if (isset($_POST['compset']) && $_POST['compset'] != "") {
-                        echo "<td>" . $compStats['5EM'] . "</td>";
+                        echo "<td>" . $compStats['hums'] . "</td>";
                     }
                     echo "</tr>\n";
                     
                     echo "<tr>\n";
-                    echo "<td>1AC</td>\n";
-                    echo "<td>" . $stats['1AC'] . "</td>\n";
+                    echo "<td>Modern Language</td>\n";
+                    echo "<td>" . $stats['mfl'] . "</td>\n";
                     if (isset($_POST['compset']) && $_POST['compset'] != "") {
-                        echo "<td>" . $compStats['1AC'] . "</td>";
+                        echo "<td>" . $compStats['mfl'] . "</td>";
                     }
                     echo "</tr>\n";
 
                     echo "<tr>\n";
-                    echo "<td>1AG</td>\n";
-                    echo "<td>" . $stats['1AG'] . "</td>\n";
+                    echo "<td>English Baccalaureate</td>\n";
+                    echo "<td>" . $stats['ebacc'] . "</td>\n";
                     if (isset($_POST['compset']) && $_POST['compset'] != "") {
-                        echo "<td>" . $compStats['1AG'] . "</td>";
+                        echo "<td>" . $compStats['ebacc'] . "</td>";
                     }
                     echo "</tr>\n";
                     
