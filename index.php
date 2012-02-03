@@ -33,7 +33,7 @@
                    
                     <p>
                         To navigate the site please log in by entering your details above. If you are experiencing any difficulties please 
-                        contact Richard Williamson on rwi@swanwickhall.derbyshire.sch.uk or dial ext 108. Thank You.
+                        contact Richard Williamson on rwi@swanwickhall.derbyshire.sch.uk or dial ext 142. Thank You.
                     </p>
 
                 </div> <!-- end content -->
