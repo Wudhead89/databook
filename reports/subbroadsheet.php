@@ -63,14 +63,23 @@ if (!isset($_SESSION['username'])) {
 
                     $sqlstring = "SELECT subjects.subjectname, results.subjectid, 
                     SUM(IF(grades.grade='A*',1,0)) as 'A*',
+                    MAX(IF(grades.grade='A*',results.gradeid,0)) as sgradeid,
                     SUM(IF(grades.grade='A',1,0)) as A,
+                    MAX(IF(grades.grade='A',results.gradeid,0)) as agradeid,
                     SUM(IF(grades.grade='B',1,0)) as B,
+                    MAX(IF(grades.grade='B',results.gradeid,0)) as bgradeid,
                     SUM(IF(grades.grade='C',1,0)) as C,
+                    MAX(IF(grades.grade='C',results.gradeid,0)) as cgradeid,
                     SUM(IF(grades.grade='D',1,0)) as D,
+                    MAX(IF(grades.grade='D',results.gradeid,0)) as dgradeid,
                     SUM(IF(grades.grade='E',1,0)) as E,
+                    MAX(IF(grades.grade='E',results.gradeid,0)) as egradeid,
                     SUM(IF(grades.grade='F',1,0)) as F,
+                    MAX(IF(grades.grade='F',results.gradeid,0)) as fgradeid,
                     SUM(IF(grades.grade='G',1,0)) as G,
-                    SUM(IF(grades.grade='U',1,0)) as U
+                    MAX(IF(grades.grade='G',results.gradeid,0)) as ggradeid,
+                    SUM(IF(grades.grade='U',1,0)) as U,
+                    MAX(IF(grades.grade='U',results.gradeid,0)) as ugradeid
                     FROM results 
                     INNER JOIN grades ON results.gradeid = grades.gradeid 
                     INNER JOIN subjects ON results.subjectid = subjects.subjectid
@@ -108,15 +117,15 @@ if (!isset($_SESSION['username'])) {
                         echo "<tr>\n";
                         echo "<td><a href=\"subject.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "\"><img src=\"../images/icons/application_view_list.png\" width=\"16\" height=\"16\"/></a>&nbsp;";
                         echo "<a href=\"tchgroupbroadsheet.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "\">" . $row['subjectname'] . "</a></td>";
-                        echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "&gradeid=1\">" . $row['A*'] . "</a></td>";
-                        echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "&gradeid=2\">" . $row['A'] . "</a></td>";
-                        echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "&gradeid=3\">" . $row['B'] . "</a></td>";
-                        echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "&gradeid=4\">" . $row['C'] . "</a></td>";
-                        echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "&gradeid=5\">" . $row['D'] . "</a></td>";
-                        echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "&gradeid=6\">" . $row['E'] . "</a></td>";
-                        echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "&gradeid=7\">" . $row['F'] . "</a></td>";
-                        echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "&gradeid=8\">" . $row['G'] . "</a></td>";
-                        echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "&gradeid=9\">" . $row['U'] . "</a></td>";
+                        echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "&gradeid=" . $row['sgradeid'] . "\">" . $row['A*'] . "</a></td>";
+                        echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "&gradeid=" . $row['agradeid'] . "\">" . $row['A'] . "</a></td>";
+                        echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "&gradeid=" . $row['bgradeid'] . "\">" . $row['B'] . "</a></td>";
+                        echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "&gradeid=" . $row['cgradeid'] . "\">" . $row['C'] . "</a></td>";
+                        echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "&gradeid=" . $row['dgradeid'] . "\">" . $row['D'] . "</a></td>";
+                        echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "&gradeid=" . $row['egradeid'] . "\">" . $row['E'] . "</a></td>";
+                        echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "&gradeid=" . $row['fgradeid'] . "\">" . $row['F'] . "</a></td>";
+                        echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "&gradeid=" . $row['ggradeid'] . "\">" . $row['G'] . "</a></td>";
+                        echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "&gradeid=" . $row['ugradeid'] . "\">" . $row['U'] . "</a></td>";
                         echo "<td>" . $total . "</td>";
                         echo "<td>" . sprintf("%01.1f", (($aa / $total) * 100)) . "</td>";
                         echo "<td>" . sprintf("%01.1f", (($ac / $total) * 100)) . "</td>";

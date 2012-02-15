@@ -72,7 +72,7 @@ if (!isset($_SESSION['username'])) {
             $results = mysql_query($sqlstring);
 
             echo "<div id=\"content\">\n";
-            echo "<h2>Subject Grades Report: $subjectname ($gradeid)</h2>\n";
+            echo "<h2>Subject Grades Report: $subjectname</h2>\n";
 
             echo "<table class=\"contenttable\">\n";
             echo "<tr>\n";
