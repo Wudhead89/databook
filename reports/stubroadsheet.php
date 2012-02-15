@@ -87,7 +87,7 @@ if (!isset($_SESSION['username'])) {
                         while ($row = mysql_fetch_assoc($result)) {
                             $selectstr = $selectstr . $row['subjects'];
                         }
-                        $selectstr = $selectstr . " FROM results_view GROUP BY studentname";
+                        $selectstr = $selectstr . " FROM results_view WHERE datasetid = '$datasetid' GROUP BY studentname";
                         $result = mysql_query($selectstr);
 
                         $subjects = mysql_query("SELECT DISTINCT shortname FROM results_view where datasetid = '$datasetid' ORDER BY shortname");
