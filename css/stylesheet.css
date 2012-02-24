@@ -19,7 +19,6 @@ table td {
     border: 0px;
 }
 
-
 .logintable {
     border-collapse: collapse;
     margin-left: auto;
@@ -37,6 +36,22 @@ table td {
     border: 1px solid #666666;
     padding: 4px;     
 }
+.contenttable .belowtargetcell{
+    background-color: #ffebe8;
+    text-align: center;
+}
+.contenttable .abovetargetcell{
+    background-color: #D0F5A9;
+    text-align: center;
+}
+.contenttable .ontargetcell{
+    text-align: center;
+}
+.contenttable .gradecell{
+    text-align: center;
+    width: 20px;
+}
+
 
 .filtertable {
     border-collapse: collapse;
