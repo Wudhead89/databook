@@ -300,7 +300,7 @@ if (isset($_POST['dataset'])) {
                 }
                 ?>
 
-                <div id="graph" style="width: 100%; height: 350px;"></div>
+                <div id="graph" style="width: 100%; height: 350px; margin-top: 20px;"></div>
             </div> <!-- end content -->
 
         </div> <!-- end content-container -->
