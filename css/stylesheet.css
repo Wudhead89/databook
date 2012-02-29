@@ -129,9 +129,8 @@ a:hover.button{
     display: block;
 }
 
-select{
+select {
     padding: 4px;
     border: 1px solid #d4dae8;
-    width: 133px;
-    border: 1px solid #d4dae8;
+    border: 1px solid #d4dae8;    
 }

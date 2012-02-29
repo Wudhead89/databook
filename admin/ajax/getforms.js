@@ -1,4 +1,4 @@
-function showYear(year)
+function getForms(year)
 {
     if (year == "") {
         document.getElementById("selectForm").innerHTML="";
@@ -10,22 +10,22 @@ function showYear(year)
     {
         document.getElementById("selectForm").innerHTML=xmlhttp.responseText;
     }
-    xmlhttp.open("GET","../ajax/getforms.php?year="+year,true);
+    xmlhttp.open("GET","../admin/ajax/getforms.php?year="+year,true);
     xmlhttp.send();
 }
 
 function formSelected(form)
 {
     if (form == "") {
-        document.getElementById("formProfile").innerHTML="";
+        document.getElementById("selectStudent").innerHTML="";
         return;
     } 
-    
-    xmlhttp = new XMLHttpRequest();
+                
+    xmlhttp=new XMLHttpRequest();
     xmlhttp.onreadystatechange=function()
     {
-        document.getElementById("formProfile").innerHTML = xmlhttp.responseText;
+        document.getElementById("selectStudent").innerHTML=xmlhttp.responseText;
     }
-    xmlhttp.open("GET","../ajax/getformprofile.php?form="+form,true);
+    xmlhttp.open("GET","../admin/ajax/getstudents.php?form="+form,true);
     xmlhttp.send();
 }
