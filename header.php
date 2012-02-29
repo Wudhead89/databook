@@ -48,6 +48,11 @@
         <li><a href="/databook/reports/formprofile.php">Form Profile</a></li>
         <li><a href="/databook/reports/groupdata.php">Group Data</a></li>
         <li><a href="/databook/docs/docs.php">Documents</a></li>
+        <?php
+        if (isset($_SESSION['type']) && $_SESSION['type'] == 'admin'){
+            echo "<li><a href=\"/databook/admin/admin.php\">Admin</a></li>";
+        }
+        ?>
     </ul>
     
     <form name="autofillform" action="/databook/ajax/stusearch.php">
