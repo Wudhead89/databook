@@ -21,12 +21,12 @@ if (!isset($_SESSION['username'])) {
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <script src="../ajax/stusearch.js" language="javascript" type="text/javascript"></script>       
-        <script src="ajax/getforms.js" language="javascript" type="text/javascript"></script>
+        <script src="ajax/editstudents.js" language="javascript" type="text/javascript"></script>
         <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
         <link rel="stylesheet" type="text/css" href="../css/div.css" />
         <title>Data Book - Edit Student</title>
     </head>
-    
+
     <body onload="init()" onResize="movepopup()" onClick="clearTable()">
 
         <div id="container">
@@ -38,28 +38,30 @@ if (!isset($_SESSION['username'])) {
                 <div id="filter">
                     <?php include('adminmenu.php'); ?>
                 </div>
-                
+
                 <div id="content">
 
                     <h2>Find a student to edit</h2>
-                        <form>
-                            <div id="selector">
-                                <div id ="selectYear">
-                                    <select name="year" onchange="getForms(this.value)">
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                        <option value="11">11</option>
-                                    </select>
-                                </div>
-                                <div id="selectForm"></div>
-                                
+                    <form>
+                        <div id="selector">
+                            <div id ="selectYear">
+                                <select name="year" onchange="getForms(this.value)">
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                </select>
                             </div>
-                            
-                            
-                        </form>                   
-                    <div id="selectStudent"></div>
+                            <div id="selectForm"></div>                                
+                        </div>                            
+                    </form>  
+
+                    <div id="studenteditor">
+                        <div id="selectStudent"></div>
+                        <div id="editStudent"></div>
+                    </div>
+                    
                 </div> <!-- end content -->
 
             </div> <!-- end content-container -->

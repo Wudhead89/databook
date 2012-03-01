@@ -1,7 +1,7 @@
 <?php
 /*
   Document   : getstudents.php
-  Created on : 29-02-2012
+  Created on : 29-Feb-2012
   Author     : Richard Williamson
  */
 
@@ -13,11 +13,10 @@ $sqlstring = "SELECT * FROM students WHERE form = '$form' ORDER BY surname, fore
 
 $students = mysql_query($sqlstring);
 
-echo "<h4>Please select a student to edit</h4>";
 echo "<p>";
 while ($row = mysql_fetch_assoc($students)) {
-    echo "<a href=\"editselectedstudent.php?studentid=" . $row['studentid'] . "\">" . $row['forename'] . " " . $row['surname'] .  "</a><br />";
-
+    echo $row['forename'] . " " . $row['surname'];
+    echo "<img src=\"../images/icons/bullet_go.png\" width=\"16\" height=\"16\" onclick=\"getStuDetails(" . $row['studentid'] . "," . $row['year'] . ")\" /><br />\n";
 }
 echo "</p>";
 
