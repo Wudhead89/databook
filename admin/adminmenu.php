@@ -11,7 +11,6 @@
 <h4>Student Functions</h4>
 <ul>
     <li><a href="/databook/admin/editstudent.php">Edit Student</a></li>
-    <li>Delete Student</li>
     <li>Add Student</li>
 </ul>
 
