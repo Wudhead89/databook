@@ -214,6 +214,7 @@ header a:hover
 #studenteditor
 {
     width: 700px;
+    padding-top: 20px;
 }
 
 #selectStudent

@@ -30,11 +30,8 @@ function formSelected(form)
 
 function getStuDetails(studentid,year)
 {
-    if (studentid == "") {
-        document.getElementById("editStudent").innerHTML="";
-        return;
-    } 
-                
+    document.getElementById("editStudent").innerHTML="";
+               
     xmlhttp=new XMLHttpRequest();
     xmlhttp.onreadystatechange=function()
     {
@@ -44,15 +41,31 @@ function getStuDetails(studentid,year)
     xmlhttp.send();
 }
 
+
+function editStuGrades(studentid)
+{
+    document.getElementById("editStudent").innerHTML="";
+    
+    xmlhttp=new XMLHttpRequest();
+    xmlhttp.onreadystatechange=function()
+    {
+        document.getElementById("editStudent").innerHTML=xmlhttp.responseText;
+    }
+    xmlhttp.open("GET","../admin/ajax/editstugrades.php?studentid="+studentid,true);
+    xmlhttp.send();
+}
+
 function updateStudent(studentid)
 {
-    var e = document.getElementById("studentform");
+    var e;
+    
+    e = document.getElementById("studentform");
     var form = e.options[e.selectedIndex].value;
     
-    var e = document.getElementById("studentfsm");
+    e = document.getElementById("studentfsm");
     var fsm = e.options[e.selectedIndex].value;
     
-    var e = document.getElementById("studentsen");
+    e = document.getElementById("studentsen");
     var sen = e.options[e.selectedIndex].value;
     
     document.getElementById("updatestudentresponse").innerHTML="";
