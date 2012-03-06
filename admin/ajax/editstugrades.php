@@ -27,26 +27,22 @@ while ($result = mysql_fetch_assoc($results)) {
     echo "<td>" . $result['datasetname'] . "</td>";
     echo "<td>" . $result['subjectname'] . "</td>";
     
-    echo "<td>";
-    echo "<select>";
-    foreach ($grades as $g){
-        echo "<option ";
-        if ($result['grade'] == $g){
-            echo "selected";
+    echo "<td> (" . $result['grade'] . ") ";
+        echo "<select onchange=\"updateStuGrade(" . $result['resultid'] . ",'" . $result['scale'] . "',this.value)\">";
+        foreach ($grades as $g){
+            echo "<option ";
+            if ($result['grade'] == $g){
+                echo "selected";
+            }
+            echo ">" . $g . "</option>";
         }
-        echo ">" . $g . "</option>";
-    }
-    echo "</select>";
+        echo "</select>";
     echo "</td>";
     
     echo "</tr>";
 }
 
 echo "</table>\n";
-
-echo "<p></p>";
-
-echo "<input type = \"submit\" value = \"submit\" name = \"submit\" onclick = \"updateStudent(" . $studentid . ")\"/>";
 
 echo "<div id=\"updatestudentresponse\" style=\"padding-top: 20px\"></div>";
 

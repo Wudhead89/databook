@@ -80,6 +80,19 @@ function updateStudent(studentid)
                 
 }
 
+function updateStuGrade(resultid, scale, newgrade)
+{
+    document.getElementById("updatestudentresponse").innerHTML="";
+    
+    xmlhttp=new XMLHttpRequest();
+    xmlhttp.onreadystatechange=function()
+    {
+        document.getElementById("updatestudentresponse").innerHTML=xmlhttp.responseText;
+    }
+    xmlhttp.open("GET","../admin/ajax/updatestugrade.php?resultid="+resultid+"&scale="+scale+"&newgrade="+newgrade,true);
+    xmlhttp.send();     
+}
+
 function deleteStudent(studentid)
 {
     document.getElementById("updatestudentresponse").innerHTML="";

@@ -6,12 +6,12 @@
  */
 ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-
+<html lang="en">
+    
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta charset="utf-8">
         <script src="ajax/login.js" language="javascript" type="text/javascript"></script>
         <script src="ajax/stusearch.js" language="javascript" type="text/javascript"></script>
         <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
