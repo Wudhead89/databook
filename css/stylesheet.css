@@ -11,6 +11,34 @@ body {
     color: #333333;
 }
 
+footer {
+    width: 1018px;
+    float: left;
+    background: #3b5998;
+    border-bottom: 1px solid #3b5998;
+    border-right: 1px solid #3b5998;
+    border-left: 1px solid #3b5998;
+    text-align: right;
+    padding: 10px;
+    color: #f9f9f9;
+}
+
+header h1 { 
+    float: left;
+    margin: 0; 
+    height: 36px;
+    width: 464px;
+    color: #f7f7f7;
+    font-size: 18px;
+}
+
+header a  
+{  
+    color: #f7f7f7;  
+    outline-style: none;  
+    text-decoration: none;  
+    font-size: 11px;    
+} 
 
 table {
     border-collapse: collapse;

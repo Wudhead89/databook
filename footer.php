@@ -6,6 +6,6 @@
 */
 ?>
 
-<div id="footer">
-    Copyright © Swanwick Hall School 2012<br />
-</div> <!-- end footer -->
+<footer>
+    Copyright © Swanwick Hall School 2012
+</footer>

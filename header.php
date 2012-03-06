@@ -6,7 +6,7 @@
 */
 ?>
 
-<div id="header">
+<header>
     <h1>Swanwick <span class="red">Hall</span> School Data Book</h1>
 
     <div id="login">
@@ -34,9 +34,8 @@
         }
         ?>
     </div>
-    <div id="login_response">
-    </div>
-</div> <!--end header-->
+    <div id="login_response"></div>
+</header>
 
 <div id="navigation">
     <ul>
