@@ -20,10 +20,10 @@ if (!isset($_SESSION['username'])) {
     
     <head>
         <meta charset="utf-8">
-        <script src="../ajax/stusearch.js" language="javascript" type="text/javascript"></script>
-        <script src="../ajax/gettchgroups.js" language="javascript" type="text/javascript"></script>
-        <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
-        <link rel="stylesheet" type="text/css" href="../css/div.css" />
+        <script src="../ajax/stusearch.js"></script>
+        <script src="../ajax/gettchgroups.js"></script>
+        <link rel="stylesheet" href="../css/stylesheet.css" />
+        <link rel="stylesheet" href="../css/div.css" />
         <title>Data Book - Teaching Group Data Report</title>
     </head>
 

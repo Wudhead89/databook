@@ -10,7 +10,7 @@
     
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="../css/stylesheet.css"/>
+        <link rel="stylesheet" href="../css/stylesheet.css" />
         <title>Import Teaching Groups</title>
     </head>
     <body>
