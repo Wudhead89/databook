@@ -5,15 +5,13 @@
     Author     : Richard Williamson
 */
 
-#container
-{
+#container {
     margin: 0 auto;
     width: 1040px;
     background: #ffffff;
 }
 
-header
-{
+header {
     float: left;
     width: 998px;
     background: #3b5998;
@@ -21,10 +19,6 @@ header
     border-right: 1px solid #3b5998;
     border-left: 1px solid #3b5998;
     padding: 10px 20px;
-}
-
-.red {
-    color: #dd3c10;
 }
 
 #login {
@@ -44,51 +38,13 @@ header
     text-align: right;
     color: #f7f7f7;
 }
-#navigation
-{
-    float: left;
-    width: 1026px;
-    background: #3a4f63;
-    border-right: 1px solid #496007;
-    border-left: 1px solid #496007;    
-    padding: 6px;
-}
-
-#navigation ul
-{
-    margin: 0;
-    padding: 0;
-}
-
-#navigation ul li
-{
-    list-style-type: none;
-    display: inline;
-}
-
-#navigation li a
-{
-    display: block;
-    float: left;
-    padding: 6px 12px;
-    margin: 0px 2px;
-    color: #bfcbd6;
-    text-decoration: none;
-    border: 1px solid #bfcbd6;
-}
-
-#navigation li a:hover { 
-    background: #bfcbd6; 
-    color: #3a4f63;
-}
 
 #search {
     float: right;
     color: #bfcbd6;
 }
 
-#content-container
-{
+#content-container {
     float: left;
     width: 1026px;
     background: #ffffff;
@@ -96,8 +52,7 @@ header
     border: 1px solid #3b5998;
 }
 
-#content
-{	
+#content {	
     float: right;
     width: 818px;
     
@@ -127,8 +82,7 @@ header
     font-weight: bold;  
 }
 
-#filter
-{
+#filter {
     float: left;
     width: 190px;
     padding: 4px;
@@ -147,38 +101,32 @@ header
     border: 1px solid #d4dae8; 
 }
 
-#selector
-{
+#selector {
     width: 320px;
     height: 30px;
 }
 
-#selectYear 
-{
+#selectYear {
     width: 60px;
     float: left; 
 }
 
-#selectForm
-{
+#selectForm {
     width: 200px;
     float: left;
 }
 
-#studenteditor
-{
+#studenteditor {
     width: 700px;
     padding-top: 20px;
 }
 
-#selectStudent
-{
+#selectStudent {
     width: 200px;
     float: left;        
 }
 
-#editStudent
-{
+#editStudent {
     width: 500px;
     float: right;
 }

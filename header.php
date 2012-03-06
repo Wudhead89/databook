@@ -37,7 +37,7 @@
     <div id="login_response"></div>
 </header>
 
-<div id="navigation">
+<nav>
     <ul>
         <li><a href="/databook/index.php">Home</a></li>
         <li><a href="/databook/reports/headlines.php">Headlines</a></li>
@@ -66,4 +66,4 @@
         </div>   
     </form> 
     
-</div> <!--end navigation-->
+</nav>

@@ -40,6 +40,40 @@ header a
     font-size: 11px;    
 } 
 
+nav {
+    float: left;
+    width: 1026px;
+    background: #3a4f63;
+    border-right: 1px solid #496007;
+    border-left: 1px solid #496007;    
+    padding: 6px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+nav li a {
+    display: block;
+    float: left;
+    padding: 6px 12px;
+    margin: 0px 2px;
+    color: #bfcbd6;
+    text-decoration: none;
+    border: 1px solid #bfcbd6;
+}
+
+nav li a:hover { 
+    background: #bfcbd6; 
+    color: #3a4f63;
+}
+
 table {
     border-collapse: collapse;
 }
@@ -47,11 +81,35 @@ table td {
     border: 0px;
 }
 
+a {  
+    color: #3b5998;  
+    outline-style: none;  
+    text-decoration: none;  
+    font-size: 11px;    
+}  
+
+
+a.button {
+    display: block;
+    color: #555555;
+    font-weight: bold;
+    height: 27px;
+    line-height:26px;
+    margin: 2px;
+    text-decoration: none;
+    border: 1px solid #d4dae8;
+}
+a:hover.button {
+    color: #333333;
+    background-color: #bfcbd6;
+    border: 1px solid #3b5998;
+}
+
 select {
     padding: 4px;
-    border: 1px solid #d4dae8;
-    border: 1px solid #d4dae8;    
+    border: 1px solid #d4dae8;   
 }
+
 
 .logintable {
     border-collapse: collapse;
@@ -62,6 +120,7 @@ select {
     padding: 1px; 
     text-align: left;
 }
+
 
 .contenttable {
     border-collapse: collapse;    
@@ -97,6 +156,7 @@ select {
     height: 30px;
 }
 
+
 .textinput {
     border: 1px solid #666666;
     padding: 2px;
@@ -128,33 +188,6 @@ select {
     text-decoration: none;
 }
 
-/* Default Anchor Style */  
-a {  
-    color: #3b5998;  
-    outline-style: none;  
-    text-decoration: none;  
-    font-size: 11px;    
-}  
-a:hover {  
-    text-decoration: underline;  
-}
-
-a.button {
-    display: block;
-    color: #555555;
-    font-weight: bold;
-    height: 27px;
-    line-height:26px;
-    margin: 2px;
-    text-decoration: none;
-    border: 1px solid #d4dae8;
-}
-a:hover.button {
-    color: #333333;
-    background-color: #bfcbd6;
-    border: 1px solid #3b5998;
-}
-
 .filter {
     background: url(/databook/images/icons/tick.png) no-repeat 6px 5px;
     text-indent:28px;
@@ -169,4 +202,8 @@ a:hover.button {
 span img {
     position: relative; 
     top: 3px;
+}
+
+.red {
+    color: #dd3c10;
 }
