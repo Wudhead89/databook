@@ -159,14 +159,16 @@ select {
 
 .textinput {
     border: 1px solid #666666;
-    padding: 2px;
+    padding: 3px;
     background: #f9f9f9;
+    font-size: 11px;
 }
 
 .buttoninput {
     border: 1px solid #666666;
-    padding: 1px 8px;
+    padding: 2px 8px;
     background: #f9f9f9;
+    font-size: 11px;
 }
 .buttoninput:hover {
     border: 1px solid #666666;
