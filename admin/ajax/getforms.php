@@ -12,7 +12,7 @@ include('../../config.php');
 $sqlstring = "SELECT DISTINCT form FROM students WHERE year = $year ORDER BY form";
 
 $forms = mysql_query($sqlstring);
-echo "<select onchange=\"formSelected(this.value)\">\n";
+echo "<select id=\"form\">\n";
 echo "<option></option>";
 while ($row = mysql_fetch_assoc($forms)) {
     echo "<option>" . $row['form'] . "</option>\n";

@@ -20,6 +20,7 @@ if (!isset($_SESSION['username'])) {
     
     <head>
         <meta charset="utf-8">
+        <script src="../js/jquery.min.js"></script>
         <script src="../ajax/stusearch.js"></script>       
         <script src="ajax/editstudents.js"></script>
         <link rel="stylesheet" href="../css/stylesheet.css" />
@@ -44,8 +45,8 @@ if (!isset($_SESSION['username'])) {
                     <h2>Find a student to edit</h2>
                     <form>
                         <div id="selector">
-                            <div id ="selectYear">
-                                <select name="year" onchange="getForms(this.value)">
+                            <div id="selectYear">
+                                <select id="year">
                                     <option value="7">7</option>
                                     <option value="8">8</option>
                                     <option value="9">9</option>

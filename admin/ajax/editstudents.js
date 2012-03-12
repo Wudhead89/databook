@@ -1,32 +1,13 @@
-function getForms(year)
-{
-    if (year == "") {
-        document.getElementById("selectForm").innerHTML="";
-        return;
-    } 
-                
-    xmlhttp=new XMLHttpRequest();
-    xmlhttp.onreadystatechange=function()
-    {
-        document.getElementById("selectForm").innerHTML=xmlhttp.responseText;
-    }
-    xmlhttp.open("GET","../admin/ajax/getforms.php?year="+year,true);
-    xmlhttp.send();
-}
-
-function formSelected(form)
-{
-    document.getElementById("selectStudent").innerHTML="";
-    document.getElementById("editStudent").innerHTML="";
-                
-    xmlhttp=new XMLHttpRequest();
-    xmlhttp.onreadystatechange=function()
-    {
-        document.getElementById("selectStudent").innerHTML=xmlhttp.responseText;
-    }
-    xmlhttp.open("GET","../admin/ajax/getstudents.php?form="+form,true);
-    xmlhttp.send();
-}
+$(document).ready(function() {
+    $('#year').change(function() {
+        var year = $('#year').val();        
+        $('#selectForm').load("../admin/ajax/getforms.php?year="+year);
+    });
+    $('#form').live("change", function() {
+        var form = $('#form').val();        
+        $('#selectStudent').load("../admin/ajax/getstudents.php?form="+form);
+    });        
+});
 
 function getStuDetails(studentid,year)
 {
