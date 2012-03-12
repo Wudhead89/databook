@@ -177,17 +177,17 @@ if (isset($_POST['compset']) && $_POST['compset'] != "") {
                         $ag = $row['A*'] + $row['A'] + $row['B'] + $row['C'] + $row['D'] + $row['E'] + $row['F'] + $row['G'];
 
                         echo "<tr>\n";
-                        echo "<td><a href=\"subject.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "\"><img src=\"../images/icons/application_view_list.png\" width=\"16\" height=\"16\"/></a>&nbsp;";
-                        echo "<a href=\"tchgroupbroadsheet.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "\">" . $row['subjectname'] . "</a></td>";
-                        echo "<td class=\"gradecell\"><a href=\"subjectgrades.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "&gradeid=" . $row['sgradeid'] . "\">" . $row['A*'] . "</a></td>";
-                        echo "<td class=\"gradecell\"><a href=\"subjectgrades.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "&gradeid=" . $row['agradeid'] . "\">" . $row['A'] . "</a></td>";
-                        echo "<td class=\"gradecell\"><a href=\"subjectgrades.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "&gradeid=" . $row['bgradeid'] . "\">" . $row['B'] . "</a></td>";
-                        echo "<td class=\"gradecell\"><a href=\"subjectgrades.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "&gradeid=" . $row['cgradeid'] . "\">" . $row['C'] . "</a></td>";
-                        echo "<td class=\"gradecell\"><a href=\"subjectgrades.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "&gradeid=" . $row['dgradeid'] . "\">" . $row['D'] . "</a></td>";
-                        echo "<td class=\"gradecell\"><a href=\"subjectgrades.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "&gradeid=" . $row['egradeid'] . "\">" . $row['E'] . "</a></td>";
-                        echo "<td class=\"gradecell\"><a href=\"subjectgrades.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "&gradeid=" . $row['fgradeid'] . "\">" . $row['F'] . "</a></td>";
-                        echo "<td class=\"gradecell\"><a href=\"subjectgrades.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "&gradeid=" . $row['ggradeid'] . "\">" . $row['G'] . "</a></td>";
-                        echo "<td class=\"gradecell\"><a href=\"subjectgrades.php?datasetid=$datasetid&subjectid=" . $row['subjectid'] . "&gradeid=" . $row['ugradeid'] . "\">" . $row['U'] . "</a></td>";
+                        echo "<td><a href=\"subject.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "\"><img src=\"../images/icons/application_view_list.png\" width=\"16\" height=\"16\" alt=\"subject\"/></a>&nbsp;";
+                        echo "<a href=\"tchgroupbroadsheet.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "\">" . $row['subjectname'] . "</a></td>";
+                        echo "<td class=\"gradecell\"><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['sgradeid'] . "\">" . $row['A*'] . "</a></td>";
+                        echo "<td class=\"gradecell\"><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['agradeid'] . "\">" . $row['A'] . "</a></td>";
+                        echo "<td class=\"gradecell\"><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['bgradeid'] . "\">" . $row['B'] . "</a></td>";
+                        echo "<td class=\"gradecell\"><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['cgradeid'] . "\">" . $row['C'] . "</a></td>";
+                        echo "<td class=\"gradecell\"><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['dgradeid'] . "\">" . $row['D'] . "</a></td>";
+                        echo "<td class=\"gradecell\"><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['egradeid'] . "\">" . $row['E'] . "</a></td>";
+                        echo "<td class=\"gradecell\"><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['fgradeid'] . "\">" . $row['F'] . "</a></td>";
+                        echo "<td class=\"gradecell\"><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['ggradeid'] . "\">" . $row['G'] . "</a></td>";
+                        echo "<td class=\"gradecell\"><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['ugradeid'] . "\">" . $row['U'] . "</a></td>";
 
                         echo "<td>" . $total . "</td>";
                         

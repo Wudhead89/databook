@@ -82,7 +82,7 @@ if (!isset($_SESSION['username'])) {
 
             while ($row = mysql_fetch_assoc($results)) {
                 echo "<tr>\n";
-                echo "<td><a href=\"student.php?datasetid=$datasetid&studentid=" . $row['studentid'] . "\">" . $row['surname'] . ', ' . $row['forename'] . "</a></td>\n";
+                echo "<td><a href=\"student.php?datasetid=$datasetid&amp;studentid=" . $row['studentid'] . "\">" . $row['surname'] . ', ' . $row['forename'] . "</a></td>\n";
                 echo "<td>" . $row['grade'] . "</td>";
                 echo "</tr>\n";
             }

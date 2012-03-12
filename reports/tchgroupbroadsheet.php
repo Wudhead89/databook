@@ -51,7 +51,7 @@ if (!isset($_SESSION['username'])) {
                 $subjectid = $_GET['subjectid'];
                 
                 echo "<div id=\"filter\">\n";
-                echo "<form name=\"filter\" action=\"tchgroupbroadsheet.php?datasetid=$datasetid&subjectid=$subjectid\" method=\"post\">\n";
+                echo "<form name=\"filter\" action=\"tchgroupbroadsheet.php?datasetid=$datasetid&amp;subjectid=$subjectid\" method=\"post\">\n";
                 include('filter.php');
                 echo "</form>\n";
                 echo "</div>  <!-- end filter -->\n";
@@ -107,16 +107,16 @@ if (!isset($_SESSION['username'])) {
                         $ag = $row['A*'] + $row['A'] + $row['B'] + $row['C'] + $row['D'] + $row['E'] + $row['F'] + $row['G'];
 
                         echo "<tr>\n";
-                        echo "<td><a href=\"tchgroup.php?datasetid=$datasetid&subjectid=$subjectid&tchgroupcode=" . $row['tchgroupcode'] . "\">" . $row['tchgroupcode'] . "</a></td>";
-                        echo "<td><a href=\"tchgroupgrades.php?datasetid=$datasetid&subjectid=$subjectid&gradeid=1&tchgroupcode=" . $row['tchgroupcode'] . "\">" . $row['A*'] . "</a></td>";
-                        echo "<td><a href=\"tchgroupgrades.php?datasetid=$datasetid&subjectid=$subjectid&gradeid=2&tchgroupcode=" . $row['tchgroupcode'] . "\">" . $row['A'] . "</a></td>";
-                        echo "<td><a href=\"tchgroupgrades.php?datasetid=$datasetid&subjectid=$subjectid&gradeid=3&tchgroupcode=" . $row['tchgroupcode'] . "\">" . $row['B'] . "</a></td>";
-                        echo "<td><a href=\"tchgroupgrades.php?datasetid=$datasetid&subjectid=$subjectid&gradeid=4&tchgroupcode=" . $row['tchgroupcode'] . "\">" . $row['C'] . "</a></td>";
-                        echo "<td><a href=\"tchgroupgrades.php?datasetid=$datasetid&subjectid=$subjectid&gradeid=5&tchgroupcode=" . $row['tchgroupcode'] . "\">" . $row['D'] . "</a></td>";
-                        echo "<td><a href=\"tchgroupgrades.php?datasetid=$datasetid&subjectid=$subjectid&gradeid=6&tchgroupcode=" . $row['tchgroupcode'] . "\">" . $row['E'] . "</a></td>";
-                        echo "<td><a href=\"tchgroupgrades.php?datasetid=$datasetid&subjectid=$subjectid&gradeid=7&tchgroupcode=" . $row['tchgroupcode'] . "\">" . $row['F'] . "</a></td>";
-                        echo "<td><a href=\"tchgroupgrades.php?datasetid=$datasetid&subjectid=$subjectid&gradeid=8&tchgroupcode=" . $row['tchgroupcode'] . "\">" . $row['G'] . "</a></td>";
-                        echo "<td><a href=\"tchgroupgrades.php?datasetid=$datasetid&subjectid=$subjectid&gradeid=9&tchgroupcode=" . $row['tchgroupcode'] . "\">" . $row['U'] . "</a></td>";
+                        echo "<td><a href=\"tchgroup.php?datasetid=$datasetid&amp;subjectid=$subjectid&amp;tchgroupcode=" . $row['tchgroupcode'] . "\">" . $row['tchgroupcode'] . "</a></td>";
+                        echo "<td><a href=\"tchgroupgrades.php?datasetid=$datasetid&amp;subjectid=$subjectid&amp;gradeid=1&amp;tchgroupcode=" . $row['tchgroupcode'] . "\">" . $row['A*'] . "</a></td>";
+                        echo "<td><a href=\"tchgroupgrades.php?datasetid=$datasetid&amp;subjectid=$subjectid&amp;gradeid=2&amp;tchgroupcode=" . $row['tchgroupcode'] . "\">" . $row['A'] . "</a></td>";
+                        echo "<td><a href=\"tchgroupgrades.php?datasetid=$datasetid&amp;subjectid=$subjectid&amp;gradeid=3&amp;tchgroupcode=" . $row['tchgroupcode'] . "\">" . $row['B'] . "</a></td>";
+                        echo "<td><a href=\"tchgroupgrades.php?datasetid=$datasetid&amp;subjectid=$subjectid&amp;gradeid=4&amp;tchgroupcode=" . $row['tchgroupcode'] . "\">" . $row['C'] . "</a></td>";
+                        echo "<td><a href=\"tchgroupgrades.php?datasetid=$datasetid&amp;subjectid=$subjectid&amp;gradeid=5&amp;tchgroupcode=" . $row['tchgroupcode'] . "\">" . $row['D'] . "</a></td>";
+                        echo "<td><a href=\"tchgroupgrades.php?datasetid=$datasetid&amp;subjectid=$subjectid&amp;gradeid=6&amp;tchgroupcode=" . $row['tchgroupcode'] . "\">" . $row['E'] . "</a></td>";
+                        echo "<td><a href=\"tchgroupgrades.php?datasetid=$datasetid&amp;subjectid=$subjectid&amp;gradeid=7&amp;tchgroupcode=" . $row['tchgroupcode'] . "\">" . $row['F'] . "</a></td>";
+                        echo "<td><a href=\"tchgroupgrades.php?datasetid=$datasetid&amp;subjectid=$subjectid&amp;gradeid=8&amp;tchgroupcode=" . $row['tchgroupcode'] . "\">" . $row['G'] . "</a></td>";
+                        echo "<td><a href=\"tchgroupgrades.php?datasetid=$datasetid&amp;subjectid=$subjectid&amp;gradeid=9&amp;tchgroupcode=" . $row['tchgroupcode'] . "\">" . $row['U'] . "</a></td>";
                         echo "<td>" . $total . "</td>";
                         echo "<td>" . sprintf("%01.2f", (($aa / $total) * 100)) . "</td>";
                         echo "<td>" . sprintf("%01.2f", (($ac / $total) * 100)) . "</td>";

@@ -58,7 +58,7 @@ if (!isset($_SESSION['username'])) {
             $subjectname = getSubjectName($subjectid);
 
             echo "<div id=\"filter\">\n";
-            echo "<form name=\"filter\" action=\"subjectgrades.php?datasetid=$datasetid&subjectid=$subjectid&gradeid=$gradeid\" method=\"post\">\n";
+            echo "<form name=\"filter\" action=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=$subjectid&amp;gradeid=$gradeid\" method=\"post\">\n";
             include('filter.php');
             echo "</form>\n";
             echo "</div>  <!-- end filter -->\n";
@@ -82,7 +82,7 @@ if (!isset($_SESSION['username'])) {
 
             while ($row = mysql_fetch_assoc($results)) {
                 echo "<tr>\n";
-                echo "<td><a href=\"student.php?datasetid=$datasetid&studentid=" . $row['studentid'] . "\">" . $row['surname'] . ', ' . $row['forename'] . "</a></td>\n";
+                echo "<td><a href=\"student.php?datasetid=$datasetid&amp;studentid=" . $row['studentid'] . "\">" . $row['surname'] . ', ' . $row['forename'] . "</a></td>\n";
                 echo "<td>" . $row['grade'] . "</td>\n";
                 echo "</tr>\n";
             }
