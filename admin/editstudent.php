@@ -4,18 +4,14 @@
   Created on : 29-Feb-2012
   Author     : Richard Williamson
  */
-?>
 
-<?php
 session_start();
 if (!isset($_SESSION['username'])) {
     header("Location: ../../index.php");
     exit;
 }
 ?>
-
 <!DOCTYPE html>
-
 <html lang="en">
     
     <head>
@@ -23,6 +19,13 @@ if (!isset($_SESSION['username'])) {
         <script src="../js/jquery.min.js"></script>
         <script src="../ajax/stusearch.js"></script>       
         <script src="ajax/editstudents.js"></script>
+        <!--[if lt IE 9]>
+        <script>
+        document.createElement("nav");
+        document.createElement("header");
+        document.createElement("footer");
+        </script>
+        <![endif]-->          
         <link rel="stylesheet" href="../css/stylesheet.css" />
         <link rel="stylesheet" href="../css/div.css" />
         <title>Data Book - Edit Student</title>

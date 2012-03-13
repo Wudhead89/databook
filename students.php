@@ -13,14 +13,19 @@ if (!isset($_SESSION['username'])) {
     exit;
 }
 ?>       
-
 <!DOCTYPE html>
-
 <html lang="en">
     
     <head>
         <meta charset="utf-8">
         <script src="ajax/stusearch.js" language="javascript" type="text/javascript"></script>
+        <!--[if lt IE 9]>
+        <script>
+        document.createElement("nav");
+        document.createElement("header");
+        document.createElement("footer");
+        </script>
+        <![endif]-->   
         <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
         <link rel="stylesheet" type="text/css" href="css/div.css" />
         <title>Data Book - Students</title>

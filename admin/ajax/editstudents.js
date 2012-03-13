@@ -1,12 +1,15 @@
 $(document).ready(function() {
+    
     $('#year').change(function() {
         var year = $('#year').val();        
         $('#selectForm').load("../admin/ajax/getforms.php?year="+year);
     });
+    
     $('#form').live("change", function() {
         var form = $('#form').val();        
         $('#selectStudent').load("../admin/ajax/getstudents.php?form="+form);
     });        
+    
 });
 
 function getStuDetails(studentid,year)

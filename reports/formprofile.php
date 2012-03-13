@@ -4,24 +4,27 @@
   Created on : 05-Dec-2011
   Author     : Richard Williamson
  */
-?>
 
-<?php
 session_start();
 if (!isset($_SESSION['username'])) {
     header("Location: ../index.php");
     exit;
 }
 ?>  
-
 <!DOCTYPE html>
-
 <html lang="en">
     
     <head>
         <meta charset="utf-8">
         <script src="../ajax/stusearch.js"></script>
         <script src="../ajax/getforms.js"></script>
+        <!--[if lt IE 9]>
+        <script>
+        document.createElement("nav");
+        document.createElement("header");
+        document.createElement("footer");
+        </script>
+        <![endif]-->   
         <link rel="stylesheet" href="../css/stylesheet.css" />
         <link rel="stylesheet" href="../css/div.css" />
         <title>Data Book - Form Profile</title> 

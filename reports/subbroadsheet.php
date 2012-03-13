@@ -4,9 +4,7 @@
   Created on : 05-May-2011
   Author     : Richard Williamson
  */
-?>
 
-<?php
 session_start();
 if (!isset($_SESSION['username'])) {
     header("Location: ../index.php");
@@ -90,14 +88,19 @@ if (isset($_POST['compset']) && $_POST['compset'] != "") {
     }
 }
 ?>  
-
 <!DOCTYPE html>
-
 <html lang="en">
     
     <head>
         <meta charset="utf-8">
         <script src="../ajax/stusearch.js"></script>
+        <!--[if lt IE 9]>
+        <script>
+        document.createElement("nav");
+        document.createElement("header");
+        document.createElement("footer");
+        </script>
+        <![endif]-->           
         <link rel="stylesheet" href="../css/stylesheet.css" />
         <link rel="stylesheet" href="../css/div.css" />
         <title>Data Book - Subject Broadsheet</title>        
