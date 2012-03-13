@@ -1,91 +1,46 @@
 $(document).ready(function() {
     
     $('#year').change(function() {
-        var year = $('#year').val();        
+        $('#selectStudent').html('');
+        $('#editStudent').html('');
+        var year = $(this).val();        
         $('#selectForm').load("../admin/ajax/getforms.php?year="+year);
     });
     
     $('#form').live("change", function() {
-        var form = $('#form').val();        
+        $('#editStudent').html('');
+        var form = $(this).val();        
         $('#selectStudent').load("../admin/ajax/getstudents.php?form="+form);
-    });        
+    }); 
     
+    $('.editStuGradesImg').live("click", function() {
+        var studentid = $(this).attr("data-studentid");
+        $('#editStudent').load("../admin/ajax/editstugrades.php?studentid="+studentid);
+    }); 
+    
+    $('.editStuDetailsImg').live("click", function() {
+        var studentid = $(this).attr("data-studentid");
+        var year = $(this).attr("data-year");
+        $('#editStudent').load("../admin/ajax/getstudetails.php?studentid="+studentid+"&year="+year);
+    });
+
+    $('#updateStudentImg').live("click", function() {
+        var form = $('#studentform').val();
+        var fsm = $('#studentfsm').val();
+        var sen = $('#studentsen').val();
+        var studentid = $(this).attr("data-studentid");
+        $('#updatestudentresponse').load("../admin/ajax/updatestudetails.php?studentid="+studentid+"&form="+form+"&fsm="+fsm+"&sen="+sen);          
+    });
+
+    $('.updateStuGrade').live("change", function(){
+        var resultid = $(this).attr("data-resultid");
+        var scale = $(this).attr("data-scale");
+        var newgrade = $(this).val();
+        $('#updatestudentresponse').load("../admin/ajax/updatestugrade.php?resultid="+resultid+"&scale="+scale+"&newgrade="+newgrade);
+    })
+    
+    $('#deleteStudentImg').live("click", function() {
+        var studentid = $(this).attr("data-studentid");
+        $('#updatestudentresponse').load("../admin/ajax/deletestudent.php?studentid="+studentid);          
+    });
 });
-
-function getStuDetails(studentid,year)
-{
-    document.getElementById("editStudent").innerHTML="";
-               
-    xmlhttp=new XMLHttpRequest();
-    xmlhttp.onreadystatechange=function()
-    {
-        document.getElementById("editStudent").innerHTML=xmlhttp.responseText;
-    }
-    xmlhttp.open("GET","../admin/ajax/getstudetails.php?studentid="+studentid+"&year="+year,true);
-    xmlhttp.send();
-}
-
-
-function editStuGrades(studentid)
-{
-    document.getElementById("editStudent").innerHTML="";
-    
-    xmlhttp=new XMLHttpRequest();
-    xmlhttp.onreadystatechange=function()
-    {
-        document.getElementById("editStudent").innerHTML=xmlhttp.responseText;
-    }
-    xmlhttp.open("GET","../admin/ajax/editstugrades.php?studentid="+studentid,true);
-    xmlhttp.send();
-}
-
-function updateStudent(studentid)
-{
-    var e;
-    
-    e = document.getElementById("studentform");
-    var form = e.options[e.selectedIndex].value;
-    
-    e = document.getElementById("studentfsm");
-    var fsm = e.options[e.selectedIndex].value;
-    
-    e = document.getElementById("studentsen");
-    var sen = e.options[e.selectedIndex].value;
-    
-    document.getElementById("updatestudentresponse").innerHTML="";
-    
-    xmlhttp=new XMLHttpRequest();
-    xmlhttp.onreadystatechange=function()
-    {
-        document.getElementById("updatestudentresponse").innerHTML=xmlhttp.responseText;
-    }
-    xmlhttp.open("GET","../admin/ajax/updatestudetails.php?studentid="+studentid+"&form="+form+"&fsm="+fsm+"&sen="+sen,true);
-    xmlhttp.send();    
-                
-}
-
-function updateStuGrade(resultid, scale, newgrade)
-{
-    document.getElementById("updatestudentresponse").innerHTML="";
-    
-    xmlhttp=new XMLHttpRequest();
-    xmlhttp.onreadystatechange=function()
-    {
-        document.getElementById("updatestudentresponse").innerHTML=xmlhttp.responseText;
-    }
-    xmlhttp.open("GET","../admin/ajax/updatestugrade.php?resultid="+resultid+"&scale="+scale+"&newgrade="+newgrade,true);
-    xmlhttp.send();     
-}
-
-function deleteStudent(studentid)
-{
-    document.getElementById("updatestudentresponse").innerHTML="";
-    
-    xmlhttp=new XMLHttpRequest();
-    xmlhttp.onreadystatechange=function()
-    {
-        document.getElementById("updatestudentresponse").innerHTML=xmlhttp.responseText;
-    }
-    xmlhttp.open("GET","../admin/ajax/deletestudent.php?studentid="+studentid,true);
-    xmlhttp.send();
-}

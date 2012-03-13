@@ -13,7 +13,7 @@ $form = getStudentTutorGroup($studentid);
 $fsm = getStudentFSM($studentid);
 $sen = getStudentSEN($studentid);
 
-echo "<h4>Student Name: " . getStudentName($studentid) . " <img src = \"../images/icons/delete.png\" width = \"16\" height = \"16\"/ onclick=deleteStudent(" . $studentid . ")></h4>";
+echo "<h4>Student Name: " . getStudentName($studentid) . " <img src=\"../images/icons/delete.png\" width=\"16\" heighh=\"16\"/ id=\"deleteStudentImg\" data-studentid=\"" . $studentid . "\"></h4>";
 echo "<p>Student ID: " . $studentid . "<br /> Student Year: " . $year . "</p>";
 
 $sqlstring = "SELECT DISTINCT form FROM students WHERE year = $year ORDER BY form";
@@ -54,8 +54,8 @@ echo "<option "; if ($sen == "N") { echo "selected"; } echo ">N</option>";
 echo "</select>";
 echo "</p>";
 
-echo "<input type = \"submit\" value = \"submit\" name = \"submit\" onclick = \"updateStudent(" . $studentid . ")\"/>";
+echo "<img src=\"../images/icons/accept.png\" width=\"16\" height=\"16\" id=\"updateStudentImg\" data-studentid=\"" . $studentid . "\" />";
 
-echo "<div id=\"updatestudentresponse\" style=\"padding-top: 20px\"></div>";
+echo "<div id=\"updatestudentresponse\"></div>";
 
 ?>

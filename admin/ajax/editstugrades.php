@@ -28,7 +28,7 @@ while ($result = mysql_fetch_assoc($results)) {
     echo "<td>" . $result['subjectname'] . "</td>";
     
     echo "<td> (" . $result['grade'] . ") ";
-        echo "<select onchange=\"updateStuGrade(" . $result['resultid'] . ",'" . $result['scale'] . "',this.value)\">";
+        echo "<select class=\"updateStuGrade\" data-resultid=\"" . $result['resultid'] . "\" data-scale=\"" . $result['scale'] . "\" \">";
         foreach ($grades as $g){
             echo "<option ";
             if ($result['grade'] == $g){
