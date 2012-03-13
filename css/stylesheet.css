@@ -111,11 +111,11 @@ select {
 }
 
 
-.logintable {
+#logintable {
     border-collapse: collapse;
     margin-left: auto;
 }
-.logintable td {
+#logintable td {
     border: 0px;
     padding: 1px; 
     text-align: left;

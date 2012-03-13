@@ -10,8 +10,9 @@
     
     <head>
         <meta charset="utf-8">
+        <script src="js/jquery.min.js"></script>
         <script src="ajax/login.js"></script>
-        <script src="ajax/stusearch.js"></script>
+        <script src="ajax/stusearch.js"></script>        
         <!--[if lt IE 9]>
         <script>
         document.createElement("nav");

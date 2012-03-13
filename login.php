@@ -38,12 +38,9 @@ if (isset($_GET['username']) && isset($_GET['password'])) {
         $_SESSION['username'] = $getUser_result['username'];
         $_SESSION['name'] = $getUser_result['firstname'] . " " . $getUser_result['lastname'];
         $_SESSION['type'] = $getUser_result['type'];
-        
-        // add setid to the session
         $_SESSION['setid'] = '2011/2012'; 
 
-        // return to ajax_framework.js
-        echo $_SESSION['name'] . "<a href=\"logout.php\">[logout]</a>";
+        echo '1';
     }
 }
 ?>

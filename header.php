@@ -18,19 +18,16 @@
         if (isset($_SESSION['name'])) {
             echo $_SESSION['name'] . " <a href=\"/databook/logout.php\">[logout]</a>";
         } else {
-            // call the javascript function "login" into ajax_framework.js
-            echo "<form action=\"javascript:login()\" method=\"post\">\n";
-            echo "<table class=\"logintable\">\n";
+            echo "<table id=\"logintable\">\n";
             echo "<tr>\n";
             echo "<td>username</td><td>password</td><td></td>";
             echo "</tr>\n";
             echo "<tr>\n";
-            echo "<td><input name=\"username\" type=\"text\" id=\"username\" class=\"textinput\" autocomplete=\"off\" /></td>\n";
-            echo "<td><input name=\"password\" type=\"password\" id=\"password\" class=\"textinput\" autocomplete=\"off\" /></td>\n";
-            echo "<td><input type=\"submit\" name=\"Submit\" value=\"login\" class=\"buttoninput\" /></td>\n";
+            echo "<td><input type=\"text\" id=\"username\" class=\"textinput\" autocomplete=\"off\" /></td>\n";
+            echo "<td><input type=\"password\" id=\"password\" class=\"textinput\" autocomplete=\"off\" /></td>\n";
+            echo "<td><img src=\"images/icons/user_go.png\" width=\"16\" heighh=\"16\"/ id=\"loginImg\" /></td>\n";
             echo "</tr>\n";
             echo "</table>\n";
-            echo "</form>\n";
         }
         ?>
     </div>
