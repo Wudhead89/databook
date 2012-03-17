@@ -5,7 +5,6 @@
   Author     : Richard Williamson
 */
 ?>
-
 <header>
     <h1>Swanwick <span class="red">Hall</span> School Data Book</h1>
 

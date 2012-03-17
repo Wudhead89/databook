@@ -1,4 +1,5 @@
 <?php
+
 /*
   Document   : editstugrades.php
   Created on : 03-Mar-2012
@@ -26,24 +27,28 @@ while ($result = mysql_fetch_assoc($results)) {
     echo "<tr>";
     echo "<td>" . $result['datasetname'] . "</td>";
     echo "<td>" . $result['subjectname'] . "</td>";
-    
+
     echo "<td> (" . $result['grade'] . ") ";
-        echo "<select class=\"updateStuGrade\" data-resultid=\"" . $result['resultid'] . "\" data-scale=\"" . $result['scale'] . "\" \">";
-        foreach ($grades as $g){
-            echo "<option ";
-            if ($result['grade'] == $g){
-                echo "selected";
-            }
-            echo ">" . $g . "</option>";
-        }
-        echo "</select>";
-    echo "</td>";
+    echo "<select class=\"updateStuGrade\" data-resultid=\"" . $result['resultid'] . "\" data-scale=\"" . $result['scale'] . "\" \">";
     
+    $sqlstring = "SELECT grade FROM grades WHERE scale ='" . $result['scale'] . "'";
+    $grades = mysql_query($sqlstring);
+    
+    while ($g = mysql_fetch_assoc($grades)) {
+        echo "<option ";
+        if ($result['grade'] == $g['grade']) {
+            echo "selected";
+        }
+        echo ">" . $g['grade'] . "</option>";
+    }
+    
+    echo "</select>";
+    echo "</td>";
+
     echo "</tr>";
 }
 
 echo "</table>\n";
 
 echo "<div id=\"updatestudentresponse\" style=\"padding-top: 20px\"></div>";
-
 ?>

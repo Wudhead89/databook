@@ -25,13 +25,13 @@ echo "gradeid = " . $gradeid . "<br />";
 
 $insertsql = "UPDATE results SET gradeid = '$gradeid' WHERE resultid = $resultid";
 
-//$response = mysql_query($insertsql);
-//if ($response){
-//    echo "<p>Update Successful!</p>";
-//}
-//else {
-//    echo "<p>Update Failed!</p>";
-//}
+$response = mysql_query($insertsql);
+if ($response){
+    echo "<p>Update Successful!</p>";
+}
+else {
+    echo "<p>Update Failed!</p>";
+}
 echo $insertsql;
 
 ?>
