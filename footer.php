@@ -5,7 +5,6 @@
     Author     : Richard Williamson
 */
 ?>
-
 <footer>
     Copyright © Swanwick Hall School 2012
 </footer>

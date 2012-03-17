@@ -156,22 +156,25 @@ if (isset($_POST['compset']) && $_POST['compset'] != "") {
                     $result = mysql_query($sqlstring);
 
                     echo "<table class=\"contenttable\">
+                          <thead>
                             <tr>
-                            <td>Subject Name</td>
-                            <td class=\"gradecell\">A*</td>
-                            <td class=\"gradecell\">A</td>
-                            <td class=\"gradecell\">B</td>
-                            <td class=\"gradecell\">C</td>
-                            <td class=\"gradecell\">D</td>	
-                            <td class=\"gradecell\">E</td>
-                            <td class=\"gradecell\">F</td>
-                            <td class=\"gradecell\">G</td>
-                            <td class=\"gradecell\">U</td>
-                            <td>Total</td>
-                            <td>%AA</td>
-                            <td>%AC</td>
-                            <td>%AG</td>
-                            </tr>";
+                            <th>Subject Name</th>
+                            <th>A*</th>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>C</th>
+                            <th>D</th>	
+                            <th>E</th>
+                            <th>F</th>
+                            <th>G</th>
+                            <th>U</th>
+                            <th>Total</th>
+                            <th>%AA</th>
+                            <th>%AC</th>
+                            <th>%AG</th>
+                            </tr>
+                          </thead>";
+                          
 
                     while ($row = mysql_fetch_assoc($result)) {
                         $total = $row['A*'] + $row['A'] + $row['B'] + $row['C'] + $row['D'] + $row['E'] + $row['F'] + $row['G'] + $row['U'];

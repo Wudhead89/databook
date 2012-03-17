@@ -129,6 +129,15 @@ select {
     border: 1px solid #666666;
     padding: 4px;     
 }
+.contenttable thead {
+    border: 1px solid #666666;
+    background-color: #cccccc;    
+}
+.contenttable thead tr th {
+    border: 1px solid #666666;
+    padding: 4px;     
+}
+
 .contenttable .belowtargetcell{
     background-color: #ffebe8;
     text-align: center;
