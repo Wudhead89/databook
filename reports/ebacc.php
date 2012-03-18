@@ -149,7 +149,7 @@ if (isset($_POST['dataset'])) {
                             marginRight: 140,
                         },
                         title: {
-                            text: 'English Baccalaureate Figures'
+                            text: 'English Baccalaureate'
                         },
                         xAxis: {
                             categories: [
@@ -205,7 +205,7 @@ if (isset($_POST['dataset'])) {
         }
         ?>
 
-        <title>Data Book - English Baccalaureate Figures</title>        
+        <title>Data Book - English Baccalaureate</title>        
     </head>
 
     <body onload="init()" onresize="movepopup()">
@@ -223,7 +223,7 @@ if (isset($_POST['dataset'])) {
                 echo "</div>  <!-- end filter -->\n";
 
                 echo "<div id=\"content\">\n";
-                echo "<h2>English Baccalaureate Figures</h2>\n";
+                echo "<h2>English Baccalaureate</h2>\n";
 
                 if (isset($_POST['dataset'])) {
                     echo "<table class=\"contenttable\">\n";

@@ -1,9 +1,9 @@
 <?php
 /*
-    Document   : student.php
-    Created on : 05-May-2011
-    Author     : Richard Williamson
-*/
+  Document   : student.php
+  Created on : 05-May-2011
+  Author     : Richard Williamson
+ */
 
 session_start();
 if (!isset($_SESSION['username'])) {
@@ -13,7 +13,7 @@ if (!isset($_SESSION['username'])) {
 ?>  
 <!DOCTYPE html>
 <html lang="en">
-    
+
     <head>
         <meta charset="utf-8">
         <script src="../ajax/stusearch.js"></script>
@@ -28,7 +28,7 @@ if (!isset($_SESSION['username'])) {
         <link rel="stylesheet" href="../css/div.css" />
         <title>Data Book - Student Report</title>        
     </head>
-    
+
     <body onload="init()" onResize="movepopup()" onClick="clearTable()">
         <div id="container">
 
@@ -48,70 +48,65 @@ if (!isset($_SESSION['username'])) {
 
                 $studentid = $_GET['studentid'];
 
-                if (isset($datasetid) && isset($studentid)) {
+                echo "<div id=\"filter\">";
+                echo "Dataset:";
+                echo "<form name=\"filter\" action=\"student.php?studentid=$studentid\" method=\"post\">";
+                echo "<select name=\"dataset\">";
 
-                    echo "<div id=\"filter\">\n";
-                    echo "Dataset: &nbsp;\n";
-                    echo "<form name=\"filter\" action=\"student.php?datasetid=$datasetid&studentid=$studentid\" method=\"post\">\n";
-                    echo "<select name=\"dataset\">\n";
+                $datasets = mysql_query("SELECT * FROM datasets");
+                while ($ds = mysql_fetch_assoc($datasets)) {
+                    echo "<option value=\"" . $ds['datasetid'] . "\"";
 
-                    $datasets = mysql_query("SELECT * FROM datasets");
-                    while ($ds = mysql_fetch_assoc($datasets)) {
-                        echo "<option value=\"" . $ds['datasetid'] . "\"";
-
-                        if (isset($datasetid) && $datasetid == $ds['datasetid']) {
-                            echo " selected ";
-                        }
-
-                        echo ">" . $ds['datasetname'] . "</option>\n";
+                    if (isset($datasetid) && $datasetid == $ds['datasetid']) {
+                        echo " selected ";
                     }
 
-                    echo "</select>\n";
-                    echo "<input type=\"submit\" value=\"submit\" /><br />\n";
-                    echo "</form>\n";
-                    echo "</div>  <!-- end filter -->\n";
-
+                    echo ">" . $ds['datasetname'] . "</option>";
                 }
-                
-                if (isset($studentid)) {
-                    $studentname = getStudentName($studentid);
-                    echo "<div id=\"content\">\n";
-                    echo "<h2>Student Report: $studentname</h2>\n";
 
-                    echo "<p>";
-                    echo "Form: " . getStudentTutorGroup($studentid) . "</p>\n";
-                    echo "<p>FSM: " . getStudentFSM($studentid) . "<br />\n";
-                    echo "LAC: " . getStudentLAC($studentid) . "<br />\n";
-                    echo "SEN: " . getStudentSEN($studentid);
-                    if (getStudentSEN($studentid) != "N"){
-                        echo " <a href=\"stusenreport.php?studentid=" . $studentid . "\">[SEN Report]</a>";
-                    }
-                    echo "</p>\n";
-                    echo "<p> CATS: ";
-                    foreach (getStudentCAT($studentid) as $value) {
-                        echo $value . " ";
-                    }
-                    echo "</p>\n";
+                echo "</select>";
+                echo "<input type=\"submit\" value=\"submit\" /><br>";
+                echo "</form>";
+                echo "</div>  <!-- end filter -->";
+
+                $studentname = getStudentName($studentid);
+                echo "<div id=\"content\">";
+                echo "<h2>Student Report: $studentname</h2>";
+
+                echo "<p>";
+                echo "Form: " . getStudentTutorGroup($studentid) . "</p>";
+                echo "<p>FSM: " . getStudentFSM($studentid) . "<br>";
+                echo "LAC: " . getStudentLAC($studentid) . "<br>";
+                echo "SEN: " . getStudentSEN($studentid);
+                if (getStudentSEN($studentid) != "N") {
+                    echo " <a href=\"stusenreport.php?studentid=" . $studentid . "\">[SEN Report]</a>";
                 }
-                
-                if (isset($datasetid) && isset($studentid)) {
+                echo "</p>";
+                echo "<p> CATS: ";
+                foreach (getStudentCAT($studentid) as $value) {
+                    echo $value . " ";
+                }
+                echo "</p>";
+
+
+                if (isset($datasetid)) {
                     $sqlstring = "SELECT * FROM results_view WHERE datasetid = '$datasetid' AND studentid = '$studentid' ORDER BY subjectname";
                     $results = mysql_query($sqlstring);
 
-                    echo "<table class=\"contenttable\">\n";
-                    echo "<tr>\n";
+                    echo "<table class=\"contenttable\">";
+                    echo "<tr>";
                     echo "<td>Subject Name</td>";
-                    echo "<td>Grade</td>\n";
-                    echo "</tr>\n";
+                    echo "<td>Grade</td>";
+                    echo "</tr>";
 
                     while ($row = mysql_fetch_assoc($results)) {
-                        echo "<tr>\n";
-                        echo "<td>" . $row['subjectname'] . "</td>\n";
-                        echo "<td>" . $row['grade'] . "</td>\n";
-                        echo "</tr>\n";
+                        echo "<tr>";
+                        echo "<td>" . $row['subjectname'] . "</td>";
+                        echo "<td>" . $row['grade'] . "</td>";
+                        echo "</tr>";
                     }
 
-                    echo "</table>\n";
+                    echo "</table>";
                 }
                 ?>
 
@@ -119,8 +114,8 @@ if (!isset($_SESSION['username'])) {
 
         </div> <!-- end content-container -->
 
-<?php include('../footer.php'); ?>
+        <?php include('../footer.php'); ?>
 
-        </div> <!-- end of container -->
-    </body>
+    </div> <!-- end of container -->
+</body>
 </html>
