@@ -59,11 +59,11 @@ if (!isset($_SESSION['username'])) {
 
                     $subjectname = getSubjectName($subjectid);
 
-                    echo "<div id=\"filter\">\n";
-                    echo "<form name=\"filter\" action=\"subject.php?datasetid=$datasetid&amp;subjectid=$subjectid\" method=\"post\">\n";
+                    echo "<div id=\"filter\">";
+                    echo "<form name=\"filter\" action=\"subject.php?datasetid=$datasetid&amp;subjectid=$subjectid\" method=\"post\">";
                     include('filter.php');
-                    echo "</form>\n";
-                    echo "</div>  <!-- end filter -->\n";
+                    echo "</form>";
+                    echo "</div>  <!-- end filter -->";
 
 
                     $sqlstring = "SELECT * FROM results_view  
@@ -73,23 +73,23 @@ if (!isset($_SESSION['username'])) {
 
                     $results = mysql_query($sqlstring);
 
-                    echo "<div id=\"content\">\n";
-                    echo "<h2>Subject Report: $subjectname</h2>\n";
+                    echo "<div id=\"content\">";
+                    echo "<h2>Subject Report: $subjectname</h2>";
 
-                    echo "<table class=\"contentable\">\n";
-                    echo "<tr>\n";
-                    echo "<td>Student Name</td>\n";
-                    echo "<td>Grade</td>\n";
-                    echo "</tr>\n";
+                    echo "<table class=\"contentable\">";
+                    echo "<tr>";
+                    echo "<td>Student Name</td>";
+                    echo "<td>Grade</td>";
+                    echo "</tr>";
 
                     while ($row = mysql_fetch_assoc($results)) {
-                        echo "<tr>\n";
-                        echo "<td><a href=\"student.php?datasetid=$datasetid&amp;studentid=" . $row['studentid'] . "\">" . $row['studentname'] . "</a></td>\n";
+                        echo "<tr>";
+                        echo "<td><a href=\"student.php?datasetid=$datasetid&amp;studentid=" . $row['studentid'] . "\">" . $row['studentname'] . "</a></td>";
                         echo "<td>" . $row['grade'] . "</td>";
-                        echo "</tr>\n";
+                        echo "</tr>";
                     }
 
-                    echo "</table>\n";
+                    echo "</table>";
                 }
                 ?>
             </div> <!-- end content -->

@@ -95,23 +95,23 @@ if (!isset($_SESSION['username'])) {
 
                         $subjects = mysql_query("SELECT DISTINCT shortname FROM results_view where datasetid = '$datasetid' ORDER BY shortname");
 
-                        echo "<table class=\"contenttable\">\n";
-                        echo "<tr>\n";
-                        echo "<td>Student Name</td>\n";
+                        echo "<table class=\"contenttable\">";
+                        echo "<tr>";
+                        echo "<td>Student Name</td>";
 
                         while ($subject = mysql_fetch_assoc($subjects)) {
-                            echo "<td>" . $subject['shortname'] . "</td>\n";
+                            echo "<td>" . $subject['shortname'] . "</td>";
                         }
-                        echo "</tr>\n";
+                        echo "</tr>";
 
                         while ($row = mysql_fetch_assoc($result)) {
-                            echo "<tr>\n";
-                            echo "<td>" . $row['studentname'] . "</td>\n";
+                            echo "<tr>";
+                            echo "<td>" . $row['studentname'] . "</td>";
                             mysql_data_seek($subjects, 0);
                             while ($subject = mysql_fetch_assoc($subjects)) {
-                                echo "<td>" . $row[$subject['shortname']] . "</td>\n";
+                                echo "<td>" . $row[$subject['shortname']] . "</td>";
                             }
-                            echo "</tr>\n";
+                            echo "</tr>";
                         }
 
                         echo "</table>";

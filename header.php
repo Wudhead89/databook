@@ -17,16 +17,16 @@
         if (isset($_SESSION['name'])) {
             echo $_SESSION['name'] . " <a href=\"/databook/logout.php\">[logout]</a>";
         } else {
-            echo "<table id=\"logintable\">\n";
-            echo "<tr>\n";
+            echo "<table id=\"logintable\">";
+            echo "<tr>";
             echo "<td>username</td><td>password</td><td></td>";
-            echo "</tr>\n";
-            echo "<tr>\n";
-            echo "<td><input type=\"text\" id=\"username\" class=\"textinput\" autocomplete=\"off\" /></td>\n";
-            echo "<td><input type=\"password\" id=\"password\" class=\"textinput\" autocomplete=\"off\" /></td>\n";
-            echo "<td><img src=\"images/icons/user_go.png\" width=\"16\" heighh=\"16\"/ id=\"loginImg\" /></td>\n";
-            echo "</tr>\n";
-            echo "</table>\n";
+            echo "</tr>";
+            echo "<tr>";
+            echo "<td><input type=\"text\" id=\"username\" class=\"textinput\" autocomplete=\"off\" /></td>";
+            echo "<td><input type=\"password\" id=\"password\" class=\"textinput\" autocomplete=\"off\" /></td>";
+            echo "<td><img src=\"images/icons/user_go.png\" width=\"16\" heighh=\"16\"/ id=\"loginImg\" /></td>";
+            echo "</tr>";
+            echo "</table>";
         }
         ?>
     </div>

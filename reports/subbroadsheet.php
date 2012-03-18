@@ -114,14 +114,14 @@ if (isset($_POST['compset']) && $_POST['compset'] != "") {
             <div id="content-container">       
 
                 <?php
-                echo "<div id=\"filter\">\n";
-                echo "<form name=\"filter\" action=\"subbroadsheet.php\" method=\"post\">\n";
+                echo "<div id=\"filter\">";
+                echo "<form name=\"filter\" action=\"subbroadsheet.php\" method=\"post\">";
                 include('filter.php');
-                echo "</form>\n";
-                echo "</div>  <!-- end filter -->\n";
+                echo "</form>";
+                echo "</div>  <!-- end filter -->";
 
-                echo "<div id=\"content\">\n";
-                echo "<h2>Subject Broadsheet</h2>\n";
+                echo "<div id=\"content\">";
+                echo "<h2>Subject Broadsheet</h2>";
 
                 if (isset($_POST['dataset'])) {
                     $datasetid = $_POST['dataset'];
@@ -182,7 +182,7 @@ if (isset($_POST['compset']) && $_POST['compset'] != "") {
                         $ac = $row['A*'] + $row['A'] + $row['B'] + $row['C'];
                         $ag = $row['A*'] + $row['A'] + $row['B'] + $row['C'] + $row['D'] + $row['E'] + $row['F'] + $row['G'];
 
-                        echo "<tr>\n";
+                        echo "<tr>";
                         echo "<td><a href=\"subject.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "\"><img src=\"../images/icons/application_view_list.png\" width=\"16\" height=\"16\" alt=\"subject\"/></a>&nbsp;";
                         echo "<a href=\"tchgroupbroadsheet.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "\">" . $row['subjectname'] . "</a></td>";
                         echo "<td class=\"gradecell\"><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['sgradeid'] . "\">" . $row['A*'] . "</a></td>";
@@ -245,7 +245,7 @@ if (isset($_POST['compset']) && $_POST['compset'] != "") {
                             echo "<td>" . sprintf("%01.1f", (($ag / $total) * 100)) . "</td>";
                         }
                         
-                        echo "</tr>\n";
+                        echo "</tr>";
                         
                     }
                     echo "</table>";

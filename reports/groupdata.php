@@ -46,11 +46,11 @@ if (!isset($_SESSION['username'])) {
                 $sqlstring = "SELECT LecturerId, Surname, Forename FROM lectdets WHERE setid = '" . $_SESSION['setid'] . "' AND NonTeaching = 'N' AND active = 'Y' ORDER BY Surname";
                 $tchDetails = sqlsrv_query($conn, $sqlstring);
 
-                echo "<select name=\"tch\" onchange=getTchGroups(this.value)>\n";
+                echo "<select name=\"tch\" onchange=getTchGroups(this.value)>";
                 while ($row = sqlsrv_fetch_array($tchDetails, SQLSRV_FETCH_ASSOC)) {
-                    echo "<option value=\"" . $row['LecturerId'] . "\">" . $row['Surname'] . ", " . $row['Forename'] . "</option>\n";
+                    echo "<option value=\"" . $row['LecturerId'] . "\">" . $row['Surname'] . ", " . $row['Forename'] . "</option>";
                 }                
-                echo "</select>\n";
+                echo "</select>";
                 
                 sqlsrv_free_stmt($tchDetails);
 

@@ -231,75 +231,75 @@ if (isset($_POST['dataset'])) {
             <div id="content-container">        
 
                 <?php
-                echo "<div id=\"filter\">\n";
-                echo "<form name=\"filter\" action=\"headlines.php\" method=\"post\">\n";
+                echo "<div id=\"filter\">";
+                echo "<form name=\"filter\" action=\"headlines.php\" method=\"post\">";
                 include('filter.php');
-                echo "</form>\n";
-                echo "</div>  <!-- end filter -->\n";
+                echo "</form>";
+                echo "</div>  <!-- end filter -->";
 
-                echo "<div id=\"content\">\n";
-                echo "<h2>Headline Figures</h2>\n";
+                echo "<div id=\"content\">";
+                echo "<h2>Headline Figures</h2>";
 
                 if (isset($_POST['dataset'])) {
-                    echo "<table class=\"contenttable\">\n";
+                    echo "<table class=\"contenttable\">";
 
-                    echo "<tr>\n";
-                    echo "<td>Indicator</td>\n";
-                    echo "<td>$datasetname</td>\n";
+                    echo "<tr>";
+                    echo "<td>Indicator</td>";
+                    echo "<td>$datasetname</td>";
                     if (isset($_POST['compset']) && $_POST['compset'] != "") {
                         echo "<td>" . $compsetname . "</td>";
                     }
-                    echo "</tr>\n";
+                    echo "</tr>";
 
-                    echo "<tr>\n";
-                    echo "<td>Number of Students</td>\n";
-                    echo "<td>$numstudents</td>\n";
+                    echo "<tr>";
+                    echo "<td>Number of Students</td>";
+                    echo "<td>$numstudents</td>";
                     if (isset($_POST['compset']) && $_POST['compset'] != "") {
                         echo "<td>" . $compnumstudents . "</td>";
                     }
-                    echo "</tr>\n";
+                    echo "</tr>";
                     
-                    echo "<tr>\n";
-                    echo "<td>5AA</td>\n";
-                    echo "<td>" . $stats['5AA'] . "</td>\n";
+                    echo "<tr>";
+                    echo "<td>5AA</td>";
+                    echo "<td>" . $stats['5AA'] . "</td>";
                     if (isset($_POST['compset']) && $_POST['compset'] != "") {
                         echo "<td>" . $compStats['5AA'] . "</td>";
                     }
-                    echo "</tr>\n";
+                    echo "</tr>";
                     
-                    echo "<tr>\n";
-                    echo "<td>5AC</td>\n";
-                    echo "<td>" . $stats['5AC'] . "</td>\n";
+                    echo "<tr>";
+                    echo "<td>5AC</td>";
+                    echo "<td>" . $stats['5AC'] . "</td>";
                     if (isset($_POST['compset']) && $_POST['compset'] != "") {
                         echo "<td>" . $compStats['5AC'] . "</td>";
                     }
-                    echo "</tr>\n";
+                    echo "</tr>";
                     
-                    echo "<tr>\n";
-                    echo "<td>5EM</td>\n";
+                    echo "<tr>";
+                    echo "<td>5EM</td>";
                     echo "<td>" . $stats['5EM'] . "</td>\n";
                     if (isset($_POST['compset']) && $_POST['compset'] != "") {
                         echo "<td>" . $compStats['5EM'] . "</td>";
                     }
-                    echo "</tr>\n";
+                    echo "</tr>";
                     
-                    echo "<tr>\n";
-                    echo "<td>1AC</td>\n";
+                    echo "<tr>";
+                    echo "<td>1AC</td>";
                     echo "<td>" . $stats['1AC'] . "</td>\n";
                     if (isset($_POST['compset']) && $_POST['compset'] != "") {
                         echo "<td>" . $compStats['1AC'] . "</td>";
                     }
-                    echo "</tr>\n";
+                    echo "</tr>";
 
-                    echo "<tr>\n";
-                    echo "<td>1AG</td>\n";
+                    echo "<tr>";
+                    echo "<td>1AG</td>";
                     echo "<td>" . $stats['1AG'] . "</td>\n";
                     if (isset($_POST['compset']) && $_POST['compset'] != "") {
                         echo "<td>" . $compStats['1AG'] . "</td>";
                     }
-                    echo "</tr>\n";
+                    echo "</tr>";
                     
-                    echo "</table>\n";
+                    echo "</table>";
                 }
                 ?>
 

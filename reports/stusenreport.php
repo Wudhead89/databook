@@ -42,7 +42,7 @@ if (!isset($_SESSION['username'])) {
                 
                 $studentid = $_GET['studentid'];
 
-                echo "<h2>Student SEN Report: " . getStudentName($studentid) . "</h2>\n";
+                echo "<h2>Student SEN Report: " . getStudentName($studentid) . "</h2>";
                 
                 // retrieve student Stages
                 echo "<h3>Stages</h3>";
@@ -53,23 +53,23 @@ if (!isset($_SESSION['username'])) {
                     WHERE (SENSTUSTAGES.StudentId = $studentid) AND (SENSTUSTAGES.SetId = '" . $_SESSION['setid'] . "')";
                 $stuStages = sqlsrv_query($conn, $sqlstring);
 
-                echo "<table class=\"contenttable\">\n";
-                echo "<tr>\n";
+                echo "<table class=\"contenttable\">";
+                echo "<tr>";
                 echo "<td>Stage</td>";
                 echo "<td>Description</td>";
                 echo "<td>Start</td>";
-                echo "<td>End</td>\n";
-                echo "</tr>\n";
+                echo "<td>End</td>";
+                echo "</tr>";
                 
                 while ($row = sqlsrv_fetch_array($stuStages, SQLSRV_FETCH_ASSOC)) {
-                    echo "<tr>\n";
+                    echo "<tr>";
                     echo "<td>" . $row['StageCode'] . "</td>";
                     echo "<td>" . $row['StageDesc'] . "</td>";
                     echo "<td>" . $row['StartDate'] . "</td>";
                     echo "<td>" . $row['EndDate'] . "</td>\n";
-                    echo "</tr>\n";
+                    echo "</tr>";
                 }                
-                echo "</table>\n";
+                echo "</table>";
                 
                 sqlsrv_free_stmt($stuStages);
                 
@@ -83,19 +83,19 @@ if (!isset($_SESSION['username'])) {
                     WHERE (CurYrNStuRNeeds.StudentId = $studentid) AND (CLASSIFICATIONS.SetId = '" . $_SESSION['setid'] . "') AND (CLASSIFICATIONS.Type = 'SCH_PROV_TYPE')";
                 $stuMajorNeeds = sqlsrv_query($conn, $sqlstring);
                 
-                echo "<table class=\"contenttable\">\n";
-                echo "<tr>\n";
+                echo "<table class=\"contenttable\">";
+                echo "<tr>";
                 echo "<td>Need</td>";
-                echo "<td>Description</td>\n";
-                echo "</tr>\n";
+                echo "<td>Description</td>";
+                echo "</tr>";
                 
                 while ($row = sqlsrv_fetch_array($stuMajorNeeds, SQLSRV_FETCH_ASSOC)) {
-                    echo "<tr>\n";
+                    echo "<tr>";
                     echo "<td>" . $row['Need'] . "</td>";
-                    echo "<td>" . $row['Description'] . "</td>\n";
-                    echo "</tr>\n";
+                    echo "<td>" . $row['Description'] . "</td>";
+                    echo "</tr>";
                 }
-                echo "</table>\n";
+                echo "</table>";
                 
                 sqlsrv_free_stmt($stuMajorNeeds);
                 
@@ -110,23 +110,23 @@ if (!isset($_SESSION['username'])) {
                     WHERE (SENSTUTYPES.SetId = '" . $_SESSION['setid'] . "') AND (SENTYPES.SetId = '" . $_SESSION['setid'] . "') AND (SENSTUTYPES.StudentId = $studentid)";
                 $stuStrategies = sqlsrv_query($conn, $sqlstring);
                 
-                echo "<table class=\"contenttable\">\n";
-                echo "<tr>\n";
+                echo "<table class=\"contenttable\">";
+                echo "<tr>";
                 echo "<td>Stage</td>";
                 echo "<td>Type</td>";
                 echo "<td>Description</td>";
-                echo "<td>Notes</td>\n";
-                echo "</tr>\n";
+                echo "<td>Notes</td>";
+                echo "</tr>";
                 
                 while ($row = sqlsrv_fetch_array($stuStrategies, SQLSRV_FETCH_ASSOC)) {
-                    echo "<tr>\n";
+                    echo "<tr>";
                     echo "<td>" . $row['StageCode'] . "</td>";
                     echo "<td>" . $row['TypeCode'] . "</td>";
                     echo "<td>" . $row['TypeName'] . "</td>";
-                    echo "<td>" . $row['TNotes'] . "</td>\n";
-                    echo "</tr>\n";
+                    echo "<td>" . $row['TNotes'] . "</td>";
+                    echo "</tr>";
                 }
-                echo "</table>\n";
+                echo "</table>";
                 
                 sqlsrv_free_stmt($stuStrategies);
                 
@@ -142,8 +142,8 @@ if (!isset($_SESSION['username'])) {
                     WHERE (SENSTUPROVISION.SetId = '" . $_SESSION['setid'] . "') AND (SENSTUPROVISION.StudentId = $studentid)";
                 $stuProvisions = sqlsrv_query($conn, $sqlstring);
                 
-                echo "<table class=\"contenttable\">\n";
-                echo "<tr>\n";
+                echo "<table class=\"contenttable\">";
+                echo "<tr>";
                 echo "<td>Stage</td>";
                 echo "<td>Provision</td>";
                 echo "<td>Description</td>";
@@ -151,11 +151,11 @@ if (!isset($_SESSION['username'])) {
                 echo "<td>End</td>";
                 echo "<td>Hours</td>";
                 echo "<td>Agency</td>";                
-                echo "<td>Notes</td>\n";
-                echo "</tr>\n";
+                echo "<td>Notes</td>";
+                echo "</tr>";
                 
                 while ($row = sqlsrv_fetch_array($stuProvisions, SQLSRV_FETCH_ASSOC)) {
-                    echo "<tr>\n";
+                    echo "<tr>";
                     echo "<td>" . $row['StageCode'] . "</td>";
                     echo "<td>" . $row['ProvCode'] . "</td>";
                     echo "<td>" . $row['ProvName'] . "</td>";
@@ -163,10 +163,10 @@ if (!isset($_SESSION['username'])) {
                     echo "<td>" . $row['EndDate'] . "</td>";
                     echo "<td>" . $row['PHours'] . "</td>";
                     echo "<td>" . $row['AgencyName'] . "</td>";
-                    echo "<td>" . $row['PNotes'] . "</td>\n";
-                    echo "</tr>\n";
+                    echo "<td>" . $row['PNotes'] . "</td>";
+                    echo "</tr>";
                 }
-                echo "</table>\n";
+                echo "</table>";
                 
                 sqlsrv_free_stmt($stuProvisions);
                 

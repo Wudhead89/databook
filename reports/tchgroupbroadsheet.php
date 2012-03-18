@@ -53,14 +53,14 @@ if (!isset($_SESSION['username'])) {
                 }
                 $subjectid = $_GET['subjectid'];
                 
-                echo "<div id=\"filter\">\n";
-                echo "<form name=\"filter\" action=\"tchgroupbroadsheet.php?datasetid=$datasetid&amp;subjectid=$subjectid\" method=\"post\">\n";
+                echo "<div id=\"filter\">";
+                echo "<form name=\"filter\" action=\"tchgroupbroadsheet.php?datasetid=$datasetid&amp;subjectid=$subjectid\" method=\"post\">";
                 include('filter.php');
-                echo "</form>\n";
-                echo "</div>  <!-- end filter -->\n";
+                echo "</form>";
+                echo "</div>  <!-- end filter -->";
 
-                echo "<div id=\"content\">\n";
-                echo "<h2>Teaching Group Broadsheet</h2>\n";
+                echo "<div id=\"content\">";
+                echo "<h2>Teaching Group Broadsheet</h2>";
                 
                 if (isset($datasetid)) {
                     //$datasetid = $_POST['dataset'];
@@ -124,7 +124,7 @@ if (!isset($_SESSION['username'])) {
                         echo "<td>" . sprintf("%01.2f", (($aa / $total) * 100)) . "</td>";
                         echo "<td>" . sprintf("%01.2f", (($ac / $total) * 100)) . "</td>";
                         echo "<td>" . sprintf("%01.2f", (($ag / $total) * 100)) . "</td>";
-                        echo "</tr>\n";
+                        echo "</tr>";
                     }
                     echo "</table>";
                 }

@@ -48,19 +48,19 @@ if (!isset($_SESSION['username'])) {
                     $sen = array();
                 }
 
-                echo "<div id=\"filter\">\n";
-                echo "<form name=\"filter\" action=\"students.php\" method=\"post\">\n";
+                echo "<div id=\"filter\">";
+                echo "<form name=\"filter\" action=\"students.php\" method=\"post\">";
                 include('reports/filter.php');
-                echo "</form>\n";
-                echo "</div>\n";
+                echo "</form>";
+                echo "</div>";
 
                 $sqlstring = "SELECT * FROM students";
                 $sqlstring .= buildSQLStringNoDataSet();
 
                 $students = mysql_query($sqlstring);
 
-                echo "<div id=\"content\">\n";
-                echo "<h2>Student Browser</h2>\n";
+                echo "<div id=\"content\">";
+                echo "<h2>Student Browser</h2>";
                 echo "<table class=\"contenttable\">
         	<tr>
         	<td>studentid</td>
@@ -74,19 +74,19 @@ if (!isset($_SESSION['username'])) {
         	</tr>";
 
                 while ($row = mysql_fetch_assoc($students)) {
-                    echo "<tr>\n";
-                    echo "<td>" . $row['studentid'] . "</td>\n";
-                    echo "<td>" . $row['forename'] . " " . $row['surname'] . "</td>\n";
-                    echo "<td>" . $row['form'] . "</td>\n";
-                    echo "<td>" . $row['year'] . "</td>\n";
-                    echo "<td>" . $row['gender'] . "</td>\n";
-                    echo "<td>" . $row['sen'] . "</td>\n";
-                    echo "<td>" . $row['fsm'] . "</td>\n";
-                    echo "<td>" . $row['lac'] . "</td>\n";
-                    echo "</tr>\n";
+                    echo "<tr>";
+                    echo "<td>" . $row['studentid'] . "</td>";
+                    echo "<td>" . $row['forename'] . " " . $row['surname'] . "</td>";
+                    echo "<td>" . $row['form'] . "</td>";
+                    echo "<td>" . $row['year'] . "</td>";
+                    echo "<td>" . $row['gender'] . "</td>";
+                    echo "<td>" . $row['sen'] . "</td>";
+                    echo "<td>" . $row['fsm'] . "</td>";
+                    echo "<td>" . $row['lac'] . "</td>";
+                    echo "</tr>";
                 }
 
-                echo "</table>\n";
+                echo "</table>";
                 ?>
             </div> <!-- end content -->
 
