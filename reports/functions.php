@@ -53,14 +53,14 @@ function getStudentLAC($studentid){
 
 // return a students CAT scores
 function getStudentCAT($studentid){
-    $results = mysql_query("SELECT catv,catn, catq, catm FROM students WHERE studentid='$studentid'");
+    $results = mysql_query("SELECT catv, catn, catq, catm FROM students WHERE studentid='$studentid'");
     while ($row = mysql_fetch_assoc($results)){
         $studentcatv = $row['catv'];
         $studentcatn = $row['catn'];
         $studentcatq = $row['catq'];
         $studentcatm = $row['catm'];
     }
-    return array($studentcatv ,$studentcatn ,$studentcatq ,$studentcatm);
+    return array("V" => $studentcatv , "N" => $studentcatn , "Q" => $studentcatq ,"M" => $studentcatm);
 }
 
 // return a students SEN status

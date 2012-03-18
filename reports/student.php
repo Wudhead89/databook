@@ -10,6 +10,16 @@ if (!isset($_SESSION['username'])) {
     header("Location: ../index.php");
     exit;
 }
+include('../config.php');
+include('functions.php');
+
+if (isset($_POST['dataset'])) {
+    $datasetid = $_POST['dataset'];
+} else if (isset($_GET['datasetid'])) {
+    $datasetid = $_GET['datasetid'];
+}
+
+$studentid = $_GET['studentid'];
 ?>  
 <!DOCTYPE html>
 <html lang="en">
@@ -37,17 +47,6 @@ if (!isset($_SESSION['username'])) {
             <div id="content-container">  
 
                 <?php
-                include('../config.php');
-                include('functions.php');
-
-                if (isset($_POST['dataset'])) {
-                    $datasetid = $_POST['dataset'];
-                } else if (isset($_GET['datasetid'])) {
-                    $datasetid = $_GET['datasetid'];
-                }
-
-                $studentid = $_GET['studentid'];
-
                 echo "<div id=\"filter\">";
                 echo "Dataset:";
                 echo "<form name=\"filter\" action=\"student.php?studentid=$studentid\" method=\"post\">";
@@ -69,30 +68,30 @@ if (!isset($_SESSION['username'])) {
                 echo "</form>";
                 echo "</div>  <!-- end filter -->";
 
-                $studentname = getStudentName($studentid);
                 echo "<div id=\"content\">";
-                echo "<h2>Student Report: $studentname</h2>";
+                echo "<h2>Student Report: " . getStudentName($studentid) . "</h2>";
 
-                echo "<p>";
-                echo "Form: " . getStudentTutorGroup($studentid) . "</p>";
-                echo "<p>FSM: " . getStudentFSM($studentid) . "<br>";
+                echo "Form: " . getStudentTutorGroup($studentid) . "<br>";
+                echo "FSM: " . getStudentFSM($studentid) . "<br>";
                 echo "LAC: " . getStudentLAC($studentid) . "<br>";
                 echo "SEN: " . getStudentSEN($studentid);
                 if (getStudentSEN($studentid) != "N") {
                     echo " <a href=\"stusenreport.php?studentid=" . $studentid . "\">[SEN Report]</a>";
                 }
-                echo "</p>";
-                echo "<p> CATS: ";
-                foreach (getStudentCAT($studentid) as $value) {
-                    echo $value . " ";
-                }
-                echo "</p>";
+
+                echo "<h4>CATs</h4> ";
+                $stucats = getStudentCAT($studentid);
+                echo "V = " . $stucats['V'] . "<br>";
+                echo "N = " . $stucats['N'] . "<br>";
+                echo "Q = " . $stucats['Q'] . "<br>";
+                echo "M = " . $stucats['M'] . "<br>";
 
 
                 if (isset($datasetid)) {
                     $sqlstring = "SELECT * FROM results_view WHERE datasetid = '$datasetid' AND studentid = '$studentid' ORDER BY subjectname";
                     $results = mysql_query($sqlstring);
 
+                    echo "<h4>Student Grades</h4>";
                     echo "<table class=\"contenttable\">";
                     echo "<tr>";
                     echo "<td>Subject Name</td>";
