@@ -15,6 +15,16 @@ function getDataSetName($datasetid) {
     return $datasetname;
 }
 
+// return the name of a dataset
+function getDataSetYear($datasetid) {
+    $results = mysql_query("SELECT year FROM datasets WHERE datasetid='$datasetid'");
+    while ($row = mysql_fetch_assoc($results)) {
+        $datasetyear = $row['year'];
+    }
+    return $datasetyear;
+}
+
+
 // return the name of a student
 function getStudentName($studentid) {
     $results = mysql_query("SELECT surname, forename FROM students WHERE studentid='$studentid'");
@@ -22,6 +32,15 @@ function getStudentName($studentid) {
         $studentname = $row['forename'] . " " .$row['surname'];
     }
     return $studentname;
+}
+
+// return a students year
+function getStudentYear($studentid){
+    $results = mysql_query("SELECT year FROM students WHERE studentid='$studentid'");
+    while ($row = mysql_fetch_assoc($results)){
+        $studentyear = $row['year'];
+    }
+    return $studentyear;
 }
 
 // return the name of a students tutor group 
@@ -98,6 +117,23 @@ function getNumStudents($datasetid) {
     $sqlstring = "SELECT COUNT(DISTINCT results.studentid) AS students FROM results INNER JOIN students ON results.studentid = students.studentid";
     $sqlstring .= buildSQLStringIncDataSet($datasetid);
 
+    $results = mysql_query($sqlstring);
+    while ($row = mysql_fetch_assoc($results)) {
+        $students = $row['students'];
+    }
+    return $students;
+}
+
+// return the number of individual students in a dataset
+function getNumStudentsPerYear($year) {
+    $sqlstring = "SELECT COUNT(DISTINCT studentid) AS students FROM students";
+    $sqlstring .= buildSQLStringNoDataSet();
+    if (strpos($sqlstring, "WHERE") === false) {
+            $sqlstring .= " WHERE year = '$year'";
+        } else {
+            $sqlstring .= " AND year = '$year'";
+        }
+    
     $results = mysql_query($sqlstring);
     while ($row = mysql_fetch_assoc($results)) {
         $students = $row['students'];

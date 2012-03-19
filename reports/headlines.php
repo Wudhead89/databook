@@ -37,6 +37,7 @@ if (isset($_POST['dataset'])) {
     $datasetid = $_POST['dataset'];
     $datasetname = getDataSetName($datasetid);
     $numstudents = getNumStudents($datasetid);
+    $numstudentsyear = getNumStudentsPerYear(getDataSetYear($datasetid));
 
     $stats = array(
         "5AA" => 0,
@@ -75,9 +76,9 @@ if (isset($_POST['dataset'])) {
 
     foreach ($stats as $k => $v) {
         if ($k == 'Total Points') {
-            $stats[$k] = sprintf("%01.2f", ($v / $numstudents));
+            $stats[$k] = sprintf("%01.2f", ($v / $numstudentsyear));
         } else {
-            $stats[$k] = sprintf("%01.2f", (($v / $numstudents) * 100));
+            $stats[$k] = sprintf("%01.2f", (($v / $numstudentsyear) * 100));
         }
     }
 
@@ -123,9 +124,9 @@ if (isset($_POST['dataset'])) {
 
         foreach ($compStats as $k => $v) {
             if ($k == 'Total Points') {
-                $compStats[$k] = sprintf("%01.2f", ($v / $numstudents));
+                $compStats[$k] = sprintf("%01.2f", ($v / $numstudentsyear));
             } else {
-                $compStats[$k] = sprintf("%01.2f", (($v / $numstudents) * 100));
+                $compStats[$k] = sprintf("%01.2f", (($v / $numstudentsyear) * 100));
             }
         }
     }
@@ -252,7 +253,15 @@ if (isset($_POST['dataset'])) {
                     echo "</tr>";
 
                     echo "<tr>";
-                    echo "<td>Number of Students</td>";
+                    echo "<td>Number of Students (year)</td>";
+                    echo "<td>$numstudentsyear</td>";
+                    if (isset($_POST['compset']) && $_POST['compset'] != "") {
+                        echo "<td>" . $numstudentsyear . "</td>";
+                    }
+                    echo "</tr>";
+                    
+                    echo "<tr>";
+                    echo "<td>Number of Students (dataset)</td>";
                     echo "<td>$numstudents</td>";
                     if (isset($_POST['compset']) && $_POST['compset'] != "") {
                         echo "<td>" . $compnumstudents . "</td>";
