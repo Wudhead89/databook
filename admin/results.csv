@@ -1,15 +1,2034 @@
-1,2,2008008,FMA Performing Engineering Operations,AVAF,A
-1,2,2008009,FMA Performing Engineering Operations,AVAF,A
-1,2,2008014,FMA Performing Engineering Operations,AVAF,A
-1,2,2008023,FMA Performing Engineering Operations,AVAF,A
-1,2,2008026,FMA Performing Engineering Operations,AVAF,A
-1,2,2008027,FMA Performing Engineering Operations,AVAF,A
-1,2,2008035,FMA Performing Engineering Operations,AVAF,A
-1,2,2008037,FMA Performing Engineering Operations,AVAF,A
-1,2,2008061,FMA Performing Engineering Operations,AVAF,A
-1,2,2008079,FMA Performing Engineering Operations,AVAF,A
-1,2,2008102,FMA Performing Engineering Operations,AVAF,A
-1,2,2008121,FMA Performing Engineering Operations,AVAF,A
-1,2,2008131,FMA Performing Engineering Operations,AVAF,A
-1,2,2008161,FMA Performing Engineering Operations,AVAF,A
-1,2,2008218,FMA Performing Engineering Operations,AVAF,A
+year,data,Id,subject,scale,grade
+1,3,2008140,Art,GCSE,A
+1,3,2008157,Art,GCSE,A
+1,3,2008178,Art,GCSE,A
+1,3,2008184,Art,GCSE,A
+1,3,3709,Art,GCSE,A
+1,3,2008010,Art,GCSE,B
+1,3,2008020,Art,GCSE,B
+1,3,2008029,Art,GCSE,B
+1,3,2008034,Art,GCSE,B
+1,3,2008047,Art,GCSE,B
+1,3,2008049,Art,GCSE,B
+1,3,2008055,Art,GCSE,B
+1,3,2008080,Art,GCSE,B
+1,3,2008108,Art,GCSE,B
+1,3,2008119,Art,GCSE,B
+1,3,2008146,Art,GCSE,B
+1,3,2008151,Art,GCSE,B
+1,3,2008154,Art,GCSE,B
+1,3,2008166,Art,GCSE,B
+1,3,2008019,Art,GCSE,C
+1,3,2008056,Art,GCSE,C
+1,3,2008068,Art,GCSE,C
+1,3,2008088,Art,GCSE,C
+1,3,2008090,Art,GCSE,C
+1,3,2008091,Art,GCSE,C
+1,3,2008099,Art,GCSE,C
+1,3,2008111,Art,GCSE,C
+1,3,2008115,Art,GCSE,C
+1,3,2008128,Art,GCSE,C
+1,3,2008159,Art,GCSE,C
+1,3,2008165,Art,GCSE,C
+1,3,2008186,Art,GCSE,C
+1,3,2008189,Art,GCSE,C
+1,3,2008220,Art,GCSE,C
+1,3,2008221,Art,GCSE,C
+1,3,2008223,Art,GCSE,C
+1,3,2008003,Art,GCSE,D
+1,3,2008037,Art,GCSE,D
+1,3,2008082,Art,GCSE,D
+1,3,2008126,Art,GCSE,D
+1,3,2008138,Art,GCSE,D
+1,3,2008143,Art,GCSE,D
+1,3,2008150,Art,GCSE,D
+1,3,2008152,Art,GCSE,D
+1,3,2008199,Art,GCSE,D
+1,3,2008218,Art,GCSE,D
+1,3,2008229,Art,GCSE,D
+1,3,2008081,Art,GCSE,E
+1,3,2008156,Art,GCSE,E
+1,3,2008175,Art,GCSE,E
+1,3,2008216,Art,GCSE,E
+1,3,2008224,Art,GCSE,E
+1,3,2008231,Art,GCSE,E
+1,3,3707,Art,GCSE,E
+1,3,3710,Art,GCSE,E
+1,3,2008062,Art,GCSE,F
+1,3,2008121,Art,GCSE,F
+1,3,2008016,Basic Construction Skills,AVAC,B
+1,3,2008033,Basic Construction Skills,AVAC,B
+1,3,2008041,Basic Construction Skills,AVAC,B
+1,3,2008052,Basic Construction Skills,AVAC,B
+1,3,2008069,Basic Construction Skills,AVAC,B
+1,3,2008098,Basic Construction Skills,AVAC,B
+1,3,2008120,Basic Construction Skills,AVAC,B
+1,3,2008130,Basic Construction Skills,AVAC,B
+1,3,2008169,Basic Construction Skills,AVAC,B
+1,3,2008179,Basic Construction Skills,AVAC,B
+1,3,2008182,Basic Construction Skills,AVAC,B
+1,3,2008222,Basic Construction Skills,AVAC,B
+1,3,2008024,Basic Construction Skills,AVAC,C
+1,3,2008057,Basic Construction Skills,AVAC,C
+1,3,2008077,Basic Construction Skills,AVAC,C
+1,3,2008008,Biology,GCSE,A
+1,3,2008026,Biology,GCSE,A
+1,3,2008048,Biology,GCSE,A
+1,3,2008110,Biology,GCSE,A
+1,3,2008119,Biology,GCSE,A
+1,3,2008124,Biology,GCSE,A
+1,3,2008136,Biology,GCSE,A
+1,3,2008200,Biology,GCSE,A
+1,3,2008215,Biology,GCSE,A
+1,3,2008220,Biology,GCSE,A
+1,3,2008227,Biology,GCSE,A
+1,3,2008014,Biology,GCSE,B
+1,3,2008015,Biology,GCSE,B
+1,3,2008017,Biology,GCSE,B
+1,3,2008027,Biology,GCSE,B
+1,3,2008029,Biology,GCSE,B
+1,3,2008034,Biology,GCSE,B
+1,3,2008035,Biology,GCSE,B
+1,3,2008046,Biology,GCSE,B
+1,3,2008047,Biology,GCSE,B
+1,3,2008049,Biology,GCSE,B
+1,3,2008050,Biology,GCSE,B
+1,3,2008054,Biology,GCSE,B
+1,3,2008055,Biology,GCSE,B
+1,3,2008058,Biology,GCSE,B
+1,3,2008064,Biology,GCSE,B
+1,3,2008072,Biology,GCSE,B
+1,3,2008078,Biology,GCSE,B
+1,3,2008083,Biology,GCSE,B
+1,3,2008088,Biology,GCSE,B
+1,3,2008091,Biology,GCSE,B
+1,3,2008097,Biology,GCSE,B
+1,3,2008105,Biology,GCSE,B
+1,3,2008114,Biology,GCSE,B
+1,3,2008127,Biology,GCSE,B
+1,3,2008137,Biology,GCSE,B
+1,3,2008139,Biology,GCSE,B
+1,3,2008140,Biology,GCSE,B
+1,3,2008142,Biology,GCSE,B
+1,3,2008144,Biology,GCSE,B
+1,3,2008145,Biology,GCSE,B
+1,3,2008146,Biology,GCSE,B
+1,3,2008147,Biology,GCSE,B
+1,3,2008151,Biology,GCSE,B
+1,3,2008155,Biology,GCSE,B
+1,3,2008161,Biology,GCSE,B
+1,3,2008162,Biology,GCSE,B
+1,3,2008163,Biology,GCSE,B
+1,3,2008171,Biology,GCSE,B
+1,3,2008177,Biology,GCSE,B
+1,3,2008178,Biology,GCSE,B
+1,3,2008180,Biology,GCSE,B
+1,3,2008189,Biology,GCSE,B
+1,3,2008194,Biology,GCSE,B
+1,3,2008195,Biology,GCSE,B
+1,3,2008205,Biology,GCSE,B
+1,3,2008214,Biology,GCSE,B
+1,3,2008226,Biology,GCSE,B
+1,3,2008004,Biology,GCSE,C
+1,3,2008006,Biology,GCSE,C
+1,3,2008007,Biology,GCSE,C
+1,3,2008010,Biology,GCSE,C
+1,3,2008012,Biology,GCSE,C
+1,3,2008019,Biology,GCSE,C
+1,3,2008020,Biology,GCSE,C
+1,3,2008023,Biology,GCSE,C
+1,3,2008028,Biology,GCSE,C
+1,3,2008037,Biology,GCSE,C
+1,3,2008051,Biology,GCSE,C
+1,3,2008053,Biology,GCSE,C
+1,3,2008059,Biology,GCSE,C
+1,3,2008061,Biology,GCSE,C
+1,3,2008065,Biology,GCSE,C
+1,3,2008067,Biology,GCSE,C
+1,3,2008068,Biology,GCSE,C
+1,3,2008074,Biology,GCSE,C
+1,3,2008076,Biology,GCSE,C
+1,3,2008079,Biology,GCSE,C
+1,3,2008094,Biology,GCSE,C
+1,3,2008099,Biology,GCSE,C
+1,3,2008101,Biology,GCSE,C
+1,3,2008106,Biology,GCSE,C
+1,3,2008108,Biology,GCSE,C
+1,3,2008115,Biology,GCSE,C
+1,3,2008116,Biology,GCSE,C
+1,3,2008121,Biology,GCSE,C
+1,3,2008125,Biology,GCSE,C
+1,3,2008156,Biology,GCSE,C
+1,3,2008157,Biology,GCSE,C
+1,3,2008158,Biology,GCSE,C
+1,3,2008168,Biology,GCSE,C
+1,3,2008184,Biology,GCSE,C
+1,3,2008185,Biology,GCSE,C
+1,3,2008187,Biology,GCSE,C
+1,3,2008196,Biology,GCSE,C
+1,3,2008201,Biology,GCSE,C
+1,3,2008203,Biology,GCSE,C
+1,3,2008212,Biology,GCSE,C
+1,3,2008218,Biology,GCSE,C
+1,3,2008221,Biology,GCSE,C
+1,3,2008228,Biology,GCSE,C
+1,3,3701,Biology,GCSE,C
+1,3,3709,Biology,GCSE,C
+1,3,2008043,Biology,GCSE,D
+1,3,2008090,Biology,GCSE,D
+1,3,2008129,Biology,GCSE,D
+1,3,2008133,Biology,GCSE,D
+1,3,2008166,Biology,GCSE,D
+1,3,2008168,BTEC Music,BTEC,B
+1,3,2008205,BTEC Music,BTEC,B
+1,3,2008006,BTEC Music,BTEC,C
+1,3,2008017,BTEC Music,BTEC,C
+1,3,2008019,BTEC Music,BTEC,C
+1,3,2008054,BTEC Music,BTEC,C
+1,3,2008064,BTEC Music,BTEC,C
+1,3,2008095,BTEC Music,BTEC,C
+1,3,2008099,BTEC Music,BTEC,C
+1,3,2008133,BTEC Music,BTEC,C
+1,3,2008185,BTEC Music,BTEC,C
+1,3,2008030,BTEC Music,BTEC,D
+1,3,2008102,BTEC Music,BTEC,D
+1,3,2008131,BTEC Music,BTEC,E
+1,3,2008024,BTEC Science,BTEC,B
+1,3,2008032,BTEC Science,BTEC,B
+1,3,2008060,BTEC Science,BTEC,B
+1,3,2008113,BTEC Science,BTEC,B
+1,3,2008120,BTEC Science,BTEC,B
+1,3,2008149,BTEC Science,BTEC,B
+1,3,2008173,BTEC Science,BTEC,B
+1,3,2008033,BTEC Science,BTEC,C
+1,3,2008041,BTEC Science,BTEC,C
+1,3,2008044,BTEC Science,BTEC,C
+1,3,2008069,BTEC Science,BTEC,C
+1,3,2008077,BTEC Science,BTEC,C
+1,3,2008098,BTEC Science,BTEC,C
+1,3,2008104,BTEC Science,BTEC,C
+1,3,2008107,BTEC Science,BTEC,C
+1,3,2008126,BTEC Science,BTEC,C
+1,3,2008128,BTEC Science,BTEC,C
+1,3,2008130,BTEC Science,BTEC,C
+1,3,2008169,BTEC Science,BTEC,C
+1,3,2008179,BTEC Science,BTEC,C
+1,3,2008182,BTEC Science,BTEC,C
+1,3,2008199,BTEC Science,BTEC,C
+1,3,2008224,BTEC Science,BTEC,C
+1,3,3710,BTEC Science,BTEC,C
+1,3,3714,BTEC Science,BTEC,C
+1,3,2008016,BTEC Science,BTEC,D
+1,3,2008052,BTEC Science,BTEC,D
+1,3,2008057,BTEC Science,BTEC,D
+1,3,2008222,BTEC Science,BTEC,D
+1,3,2008227,Business Studies,GCSE,A
+1,3,3709,Business Studies,GCSE,A
+1,3,2008028,Business Studies,GCSE,B
+1,3,2008051,Business Studies,GCSE,B
+1,3,2008061,Business Studies,GCSE,B
+1,3,2008078,Business Studies,GCSE,B
+1,3,2008127,Business Studies,GCSE,B
+1,3,2008222,Business Studies,GCSE,B
+1,3,3701,Business Studies,GCSE,B
+1,3,2008001,Business Studies,GCSE,C
+1,3,2008027,Business Studies,GCSE,C
+1,3,2008031,Business Studies,GCSE,C
+1,3,2008033,Business Studies,GCSE,C
+1,3,2008069,Business Studies,GCSE,C
+1,3,2008074,Business Studies,GCSE,C
+1,3,2008076,Business Studies,GCSE,C
+1,3,2008079,Business Studies,GCSE,C
+1,3,2008091,Business Studies,GCSE,C
+1,3,2008120,Business Studies,GCSE,C
+1,3,2008121,Business Studies,GCSE,C
+1,3,2008159,Business Studies,GCSE,C
+1,3,2008169,Business Studies,GCSE,C
+1,3,3707,Business Studies,GCSE,C
+1,3,2008016,Business Studies,GCSE,D
+1,3,2008086,Business Studies,GCSE,D
+1,3,2008186,Business Studies,GCSE,D
+1,3,2008015,Chemistry,GCSE,A
+1,3,2008028,Chemistry,GCSE,A
+1,3,2008048,Chemistry,GCSE,A
+1,3,2008050,Chemistry,GCSE,A
+1,3,2008058,Chemistry,GCSE,A
+1,3,2008139,Chemistry,GCSE,A
+1,3,2008200,Chemistry,GCSE,A
+1,3,2008008,Chemistry,GCSE,B
+1,3,2008010,Chemistry,GCSE,B
+1,3,2008014,Chemistry,GCSE,B
+1,3,2008023,Chemistry,GCSE,B
+1,3,2008034,Chemistry,GCSE,B
+1,3,2008049,Chemistry,GCSE,B
+1,3,2008054,Chemistry,GCSE,B
+1,3,2008055,Chemistry,GCSE,B
+1,3,2008061,Chemistry,GCSE,B
+1,3,2008064,Chemistry,GCSE,B
+1,3,2008067,Chemistry,GCSE,B
+1,3,2008072,Chemistry,GCSE,B
+1,3,2008078,Chemistry,GCSE,B
+1,3,2008083,Chemistry,GCSE,B
+1,3,2008088,Chemistry,GCSE,B
+1,3,2008097,Chemistry,GCSE,B
+1,3,2008105,Chemistry,GCSE,B
+1,3,2008106,Chemistry,GCSE,B
+1,3,2008108,Chemistry,GCSE,B
+1,3,2008114,Chemistry,GCSE,B
+1,3,2008119,Chemistry,GCSE,B
+1,3,2008124,Chemistry,GCSE,B
+1,3,2008127,Chemistry,GCSE,B
+1,3,2008136,Chemistry,GCSE,B
+1,3,2008137,Chemistry,GCSE,B
+1,3,2008140,Chemistry,GCSE,B
+1,3,2008142,Chemistry,GCSE,B
+1,3,2008145,Chemistry,GCSE,B
+1,3,2008146,Chemistry,GCSE,B
+1,3,2008147,Chemistry,GCSE,B
+1,3,2008161,Chemistry,GCSE,B
+1,3,2008163,Chemistry,GCSE,B
+1,3,2008171,Chemistry,GCSE,B
+1,3,2008184,Chemistry,GCSE,B
+1,3,2008195,Chemistry,GCSE,B
+1,3,2008196,Chemistry,GCSE,B
+1,3,2008201,Chemistry,GCSE,B
+1,3,2008205,Chemistry,GCSE,B
+1,3,2008212,Chemistry,GCSE,B
+1,3,2008215,Chemistry,GCSE,B
+1,3,2008220,Chemistry,GCSE,B
+1,3,2008226,Chemistry,GCSE,B
+1,3,2008227,Chemistry,GCSE,B
+1,3,3709,Chemistry,GCSE,B
+1,3,2008004,Chemistry,GCSE,C
+1,3,2008006,Chemistry,GCSE,C
+1,3,2008007,Chemistry,GCSE,C
+1,3,2008012,Chemistry,GCSE,C
+1,3,2008017,Chemistry,GCSE,C
+1,3,2008019,Chemistry,GCSE,C
+1,3,2008020,Chemistry,GCSE,C
+1,3,2008026,Chemistry,GCSE,C
+1,3,2008027,Chemistry,GCSE,C
+1,3,2008029,Chemistry,GCSE,C
+1,3,2008035,Chemistry,GCSE,C
+1,3,2008037,Chemistry,GCSE,C
+1,3,2008046,Chemistry,GCSE,C
+1,3,2008047,Chemistry,GCSE,C
+1,3,2008051,Chemistry,GCSE,C
+1,3,2008053,Chemistry,GCSE,C
+1,3,2008059,Chemistry,GCSE,C
+1,3,2008065,Chemistry,GCSE,C
+1,3,2008068,Chemistry,GCSE,C
+1,3,2008074,Chemistry,GCSE,C
+1,3,2008076,Chemistry,GCSE,C
+1,3,2008079,Chemistry,GCSE,C
+1,3,2008091,Chemistry,GCSE,C
+1,3,2008094,Chemistry,GCSE,C
+1,3,2008101,Chemistry,GCSE,C
+1,3,2008110,Chemistry,GCSE,C
+1,3,2008115,Chemistry,GCSE,C
+1,3,2008116,Chemistry,GCSE,C
+1,3,2008125,Chemistry,GCSE,C
+1,3,2008133,Chemistry,GCSE,C
+1,3,2008144,Chemistry,GCSE,C
+1,3,2008151,Chemistry,GCSE,C
+1,3,2008155,Chemistry,GCSE,C
+1,3,2008156,Chemistry,GCSE,C
+1,3,2008157,Chemistry,GCSE,C
+1,3,2008158,Chemistry,GCSE,C
+1,3,2008162,Chemistry,GCSE,C
+1,3,2008166,Chemistry,GCSE,C
+1,3,2008168,Chemistry,GCSE,C
+1,3,2008177,Chemistry,GCSE,C
+1,3,2008178,Chemistry,GCSE,C
+1,3,2008180,Chemistry,GCSE,C
+1,3,2008185,Chemistry,GCSE,C
+1,3,2008187,Chemistry,GCSE,C
+1,3,2008189,Chemistry,GCSE,C
+1,3,2008194,Chemistry,GCSE,C
+1,3,2008203,Chemistry,GCSE,C
+1,3,2008214,Chemistry,GCSE,C
+1,3,2008221,Chemistry,GCSE,C
+1,3,2008228,Chemistry,GCSE,C
+1,3,3701,Chemistry,GCSE,C
+1,3,2008043,Chemistry,GCSE,D
+1,3,2008090,Chemistry,GCSE,D
+1,3,2008099,Chemistry,GCSE,D
+1,3,2008121,Chemistry,GCSE,D
+1,3,2008129,Chemistry,GCSE,D
+1,3,2008218,Chemistry,GCSE,D
+1,3,2008110,Child Care,BTEC,B
+1,3,2008194,Child Care,BTEC,B
+1,3,2008215,Child Care,BTEC,B
+1,3,2008044,Child Care,BTEC,C
+1,3,2008056,Child Care,BTEC,C
+1,3,2008082,Child Care,BTEC,C
+1,3,2008090,Child Care,BTEC,C
+1,3,2008107,Child Care,BTEC,C
+1,3,2008152,Child Care,BTEC,C
+1,3,2008167,Child Care,BTEC,C
+1,3,2008176,Child Care,BTEC,C
+1,3,2008213,Child Care,BTEC,C
+1,3,2008214,Child Care,BTEC,C
+1,3,2008221,Child Care,BTEC,C
+1,3,2008231,Child Care,BTEC,C
+1,3,2008001,Core Science,GCSE,C
+1,3,2008013,Core Science,GCSE,C
+1,3,2008040,Core Science,GCSE,C
+1,3,2008131,Core Science,GCSE,C
+1,3,2008183,Core Science,GCSE,C
+1,3,2008188,Core Science,GCSE,C
+1,3,2008193,Core Science,GCSE,C
+1,3,2008207,Core Science,GCSE,C
+1,3,2008209,Core Science,GCSE,C
+1,3,2008231,Core Science,GCSE,C
+1,3,3700,Core Science,GCSE,C
+1,3,2008022,Core Science,GCSE,D
+1,3,2008030,Core Science,GCSE,D
+1,3,2008031,Core Science,GCSE,D
+1,3,2008039,Core Science,GCSE,D
+1,3,2008080,Core Science,GCSE,D
+1,3,2008082,Core Science,GCSE,D
+1,3,2008092,Core Science,GCSE,D
+1,3,2008095,Core Science,GCSE,D
+1,3,2008109,Core Science,GCSE,D
+1,3,2008111,Core Science,GCSE,D
+1,3,2008123,Core Science,GCSE,D
+1,3,2008148,Core Science,GCSE,D
+1,3,2008152,Core Science,GCSE,D
+1,3,2008154,Core Science,GCSE,D
+1,3,2008159,Core Science,GCSE,D
+1,3,2008160,Core Science,GCSE,D
+1,3,2008165,Core Science,GCSE,D
+1,3,2008167,Core Science,GCSE,D
+1,3,2008170,Core Science,GCSE,D
+1,3,2008176,Core Science,GCSE,D
+1,3,2008186,Core Science,GCSE,D
+1,3,2008223,Core Science,GCSE,D
+1,3,2008225,Core Science,GCSE,D
+1,3,3642,Core Science,GCSE,D
+1,3,2008002,Core Science,GCSE,E
+1,3,2008009,Core Science,GCSE,E
+1,3,2008011,Core Science,GCSE,E
+1,3,2008062,Core Science,GCSE,E
+1,3,2008081,Core Science,GCSE,E
+1,3,2008084,Core Science,GCSE,E
+1,3,2008086,Core Science,GCSE,E
+1,3,2008102,Core Science,GCSE,E
+1,3,2008134,Core Science,GCSE,E
+1,3,2008143,Core Science,GCSE,E
+1,3,2008150,Core Science,GCSE,E
+1,3,2008153,Core Science,GCSE,E
+1,3,2008174,Core Science,GCSE,E
+1,3,2008191,Core Science,GCSE,E
+1,3,2008192,Core Science,GCSE,E
+1,3,2008197,Core Science,GCSE,E
+1,3,2008204,Core Science,GCSE,E
+1,3,2008208,Core Science,GCSE,E
+1,3,2008211,Core Science,GCSE,E
+1,3,2008229,Core Science,GCSE,E
+1,3,3707,Core Science,GCSE,E
+1,3,2008003,Core Science,GCSE,F
+1,3,2008070,Core Science,GCSE,F
+1,3,2008103,Core Science,GCSE,F
+1,3,2008117,Core Science,GCSE,F
+1,3,2008138,Core Science,GCSE,F
+1,3,2008175,Core Science,GCSE,F
+1,3,2008198,Core Science,GCSE,F
+1,3,2008206,Core Science,GCSE,F
+1,3,2008216,Core Science,GCSE,F
+1,3,2008217,Core Science,GCSE,F
+1,3,2008219,Core Science,GCSE,F
+1,3,3691,Core Science,GCSE,F
+1,3,2008164,Core Science,GCSE,G
+1,3,2008137,Drama,GCSE,A
+1,3,2008200,Drama,GCSE,A
+1,3,2008015,Drama,GCSE,B
+1,3,2008017,Drama,GCSE,B
+1,3,2008067,Drama,GCSE,B
+1,3,2008136,Drama,GCSE,B
+1,3,2008151,Drama,GCSE,B
+1,3,2008157,Drama,GCSE,B
+1,3,2008171,Drama,GCSE,B
+1,3,2008185,Drama,GCSE,B
+1,3,2008205,Drama,GCSE,B
+1,3,2008209,Drama,GCSE,B
+1,3,3714,Drama,GCSE,B
+1,3,2008065,Drama,GCSE,C
+1,3,2008068,Drama,GCSE,C
+1,3,2008101,Drama,GCSE,C
+1,3,2008104,Drama,GCSE,C
+1,3,2008116,Drama,GCSE,C
+1,3,2008123,Drama,GCSE,C
+1,3,2008189,Drama,GCSE,C
+1,3,3701,Drama,GCSE,C
+1,3,2008026,Drama,GCSE,D
+1,3,2008081,Drama,GCSE,D
+1,3,2008092,Drama,GCSE,D
+1,3,2008138,Drama,GCSE,D
+1,3,2008160,Drama,GCSE,D
+1,3,2008217,Drama,GCSE,D
+1,3,2008221,Drama,GCSE,D
+1,3,2008015,English,GCSE,A
+1,3,2008020,English,GCSE,A
+1,3,2008028,English,GCSE,A
+1,3,2008029,English,GCSE,A
+1,3,2008034,English,GCSE,A
+1,3,2008048,English,GCSE,A
+1,3,2008049,English,GCSE,A
+1,3,2008050,English,GCSE,A
+1,3,2008072,English,GCSE,A
+1,3,2008094,English,GCSE,A
+1,3,2008101,English,GCSE,A
+1,3,2008105,English,GCSE,A
+1,3,2008110,English,GCSE,A
+1,3,2008114,English,GCSE,A
+1,3,2008115,English,GCSE,A
+1,3,2008119,English,GCSE,A
+1,3,2008124,English,GCSE,A
+1,3,2008136,English,GCSE,A
+1,3,2008139,English,GCSE,A
+1,3,2008140,English,GCSE,A
+1,3,2008144,English,GCSE,A
+1,3,2008145,English,GCSE,A
+1,3,2008146,English,GCSE,A
+1,3,2008151,English,GCSE,A
+1,3,2008157,English,GCSE,A
+1,3,2008163,English,GCSE,A
+1,3,2008168,English,GCSE,A
+1,3,2008177,English,GCSE,A
+1,3,2008178,English,GCSE,A
+1,3,2008180,English,GCSE,A
+1,3,2008185,English,GCSE,A
+1,3,2008189,English,GCSE,A
+1,3,2008195,English,GCSE,A
+1,3,2008200,English,GCSE,A
+1,3,2008201,English,GCSE,A
+1,3,2008220,English,GCSE,A
+1,3,2008227,English,GCSE,A
+1,3,3709,English,GCSE,A
+1,3,2008055,English,GCSE,A*
+1,3,2008058,English,GCSE,A*
+1,3,2008001,English,GCSE,B
+1,3,2008004,English,GCSE,B
+1,3,2008008,English,GCSE,B
+1,3,2008010,English,GCSE,B
+1,3,2008012,English,GCSE,B
+1,3,2008014,English,GCSE,B
+1,3,2008017,English,GCSE,B
+1,3,2008022,English,GCSE,B
+1,3,2008026,English,GCSE,B
+1,3,2008027,English,GCSE,B
+1,3,2008032,English,GCSE,B
+1,3,2008035,English,GCSE,B
+1,3,2008037,English,GCSE,B
+1,3,2008046,English,GCSE,B
+1,3,2008047,English,GCSE,B
+1,3,2008051,English,GCSE,B
+1,3,2008053,English,GCSE,B
+1,3,2008054,English,GCSE,B
+1,3,2008060,English,GCSE,B
+1,3,2008064,English,GCSE,B
+1,3,2008065,English,GCSE,B
+1,3,2008067,English,GCSE,B
+1,3,2008068,English,GCSE,B
+1,3,2008069,English,GCSE,B
+1,3,2008078,English,GCSE,B
+1,3,2008088,English,GCSE,B
+1,3,2008097,English,GCSE,B
+1,3,2008099,English,GCSE,B
+1,3,2008104,English,GCSE,B
+1,3,2008107,English,GCSE,B
+1,3,2008108,English,GCSE,B
+1,3,2008111,English,GCSE,B
+1,3,2008113,English,GCSE,B
+1,3,2008116,English,GCSE,B
+1,3,2008121,English,GCSE,B
+1,3,2008127,English,GCSE,B
+1,3,2008129,English,GCSE,B
+1,3,2008133,English,GCSE,B
+1,3,2008137,English,GCSE,B
+1,3,2008142,English,GCSE,B
+1,3,2008148,English,GCSE,B
+1,3,2008152,English,GCSE,B
+1,3,2008155,English,GCSE,B
+1,3,2008158,English,GCSE,B
+1,3,2008159,English,GCSE,B
+1,3,2008161,English,GCSE,B
+1,3,2008166,English,GCSE,B
+1,3,2008171,English,GCSE,B
+1,3,2008183,English,GCSE,B
+1,3,2008184,English,GCSE,B
+1,3,2008194,English,GCSE,B
+1,3,2008196,English,GCSE,B
+1,3,2008205,English,GCSE,B
+1,3,2008209,English,GCSE,B
+1,3,2008214,English,GCSE,B
+1,3,2008223,English,GCSE,B
+1,3,2008226,English,GCSE,B
+1,3,2008231,English,GCSE,B
+1,3,3701,English,GCSE,B
+1,3,2008006,English,GCSE,C
+1,3,2008007,English,GCSE,C
+1,3,2008013,English,GCSE,C
+1,3,2008016,English,GCSE,C
+1,3,2008019,English,GCSE,C
+1,3,2008023,English,GCSE,C
+1,3,2008024,English,GCSE,C
+1,3,2008030,English,GCSE,C
+1,3,2008033,English,GCSE,C
+1,3,2008039,English,GCSE,C
+1,3,2008041,English,GCSE,C
+1,3,2008043,English,GCSE,C
+1,3,2008044,English,GCSE,C
+1,3,2008059,English,GCSE,C
+1,3,2008061,English,GCSE,C
+1,3,2008062,English,GCSE,C
+1,3,2008074,English,GCSE,C
+1,3,2008076,English,GCSE,C
+1,3,2008079,English,GCSE,C
+1,3,2008080,English,GCSE,C
+1,3,2008082,English,GCSE,C
+1,3,2008086,English,GCSE,C
+1,3,2008090,English,GCSE,C
+1,3,2008091,English,GCSE,C
+1,3,2008098,English,GCSE,C
+1,3,2008102,English,GCSE,C
+1,3,2008103,English,GCSE,C
+1,3,2008120,English,GCSE,C
+1,3,2008123,English,GCSE,C
+1,3,2008125,English,GCSE,C
+1,3,2008126,English,GCSE,C
+1,3,2008128,English,GCSE,C
+1,3,2008147,English,GCSE,C
+1,3,2008149,English,GCSE,C
+1,3,2008150,English,GCSE,C
+1,3,2008154,English,GCSE,C
+1,3,2008156,English,GCSE,C
+1,3,2008160,English,GCSE,C
+1,3,2008162,English,GCSE,C
+1,3,2008164,English,GCSE,C
+1,3,2008167,English,GCSE,C
+1,3,2008169,English,GCSE,C
+1,3,2008173,English,GCSE,C
+1,3,2008175,English,GCSE,C
+1,3,2008176,English,GCSE,C
+1,3,2008179,English,GCSE,C
+1,3,2008182,English,GCSE,C
+1,3,2008186,English,GCSE,C
+1,3,2008187,English,GCSE,C
+1,3,2008188,English,GCSE,C
+1,3,2008193,English,GCSE,C
+1,3,2008199,English,GCSE,C
+1,3,2008203,English,GCSE,C
+1,3,2008204,English,GCSE,C
+1,3,2008208,English,GCSE,C
+1,3,2008211,English,GCSE,C
+1,3,2008212,English,GCSE,C
+1,3,2008215,English,GCSE,C
+1,3,2008216,English,GCSE,C
+1,3,2008217,English,GCSE,C
+1,3,2008218,English,GCSE,C
+1,3,2008221,English,GCSE,C
+1,3,2008222,English,GCSE,C
+1,3,2008229,English,GCSE,C
+1,3,3642,English,GCSE,C
+1,3,3700,English,GCSE,C
+1,3,3707,English,GCSE,C
+1,3,3710,English,GCSE,C
+1,3,3714,English,GCSE,C
+1,3,2008003,English,GCSE,D
+1,3,2008009,English,GCSE,D
+1,3,2008011,English,GCSE,D
+1,3,2008031,English,GCSE,D
+1,3,2008040,English,GCSE,D
+1,3,2008070,English,GCSE,D
+1,3,2008081,English,GCSE,D
+1,3,2008083,English,GCSE,D
+1,3,2008084,English,GCSE,D
+1,3,2008092,English,GCSE,D
+1,3,2008095,English,GCSE,D
+1,3,2008106,English,GCSE,D
+1,3,2008109,English,GCSE,D
+1,3,2008117,English,GCSE,D
+1,3,2008130,English,GCSE,D
+1,3,2008131,English,GCSE,D
+1,3,2008138,English,GCSE,D
+1,3,2008143,English,GCSE,D
+1,3,2008153,English,GCSE,D
+1,3,2008165,English,GCSE,D
+1,3,2008170,English,GCSE,D
+1,3,2008174,English,GCSE,D
+1,3,2008191,English,GCSE,D
+1,3,2008192,English,GCSE,D
+1,3,2008197,English,GCSE,D
+1,3,2008206,English,GCSE,D
+1,3,2008207,English,GCSE,D
+1,3,2008219,English,GCSE,D
+1,3,2008224,English,GCSE,D
+1,3,2008225,English,GCSE,D
+1,3,2008228,English,GCSE,D
+1,3,2008002,English,GCSE,E
+1,3,2008052,English,GCSE,E
+1,3,2008057,English,GCSE,E
+1,3,2008077,English,GCSE,E
+1,3,2008134,English,GCSE,E
+1,3,2008198,English,GCSE,E
+1,3,3691,English,GCSE,F
+1,3,2008015,English Literature,GCSE,A
+1,3,2008020,English Literature,GCSE,A
+1,3,2008028,English Literature,GCSE,A
+1,3,2008029,English Literature,GCSE,A
+1,3,2008034,English Literature,GCSE,A
+1,3,2008048,English Literature,GCSE,A
+1,3,2008049,English Literature,GCSE,A
+1,3,2008050,English Literature,GCSE,A
+1,3,2008072,English Literature,GCSE,A
+1,3,2008094,English Literature,GCSE,A
+1,3,2008101,English Literature,GCSE,A
+1,3,2008105,English Literature,GCSE,A
+1,3,2008110,English Literature,GCSE,A
+1,3,2008114,English Literature,GCSE,A
+1,3,2008115,English Literature,GCSE,A
+1,3,2008119,English Literature,GCSE,A
+1,3,2008124,English Literature,GCSE,A
+1,3,2008136,English Literature,GCSE,A
+1,3,2008139,English Literature,GCSE,A
+1,3,2008140,English Literature,GCSE,A
+1,3,2008144,English Literature,GCSE,A
+1,3,2008145,English Literature,GCSE,A
+1,3,2008146,English Literature,GCSE,A
+1,3,2008151,English Literature,GCSE,A
+1,3,2008157,English Literature,GCSE,A
+1,3,2008163,English Literature,GCSE,A
+1,3,2008168,English Literature,GCSE,A
+1,3,2008177,English Literature,GCSE,A
+1,3,2008178,English Literature,GCSE,A
+1,3,2008180,English Literature,GCSE,A
+1,3,2008185,English Literature,GCSE,A
+1,3,2008189,English Literature,GCSE,A
+1,3,2008195,English Literature,GCSE,A
+1,3,2008200,English Literature,GCSE,A
+1,3,2008201,English Literature,GCSE,A
+1,3,2008220,English Literature,GCSE,A
+1,3,2008227,English Literature,GCSE,A
+1,3,3709,English Literature,GCSE,A
+1,3,2008055,English Literature,GCSE,A*
+1,3,2008058,English Literature,GCSE,A*
+1,3,2008001,English Literature,GCSE,B
+1,3,2008004,English Literature,GCSE,B
+1,3,2008008,English Literature,GCSE,B
+1,3,2008010,English Literature,GCSE,B
+1,3,2008012,English Literature,GCSE,B
+1,3,2008014,English Literature,GCSE,B
+1,3,2008017,English Literature,GCSE,B
+1,3,2008022,English Literature,GCSE,B
+1,3,2008026,English Literature,GCSE,B
+1,3,2008027,English Literature,GCSE,B
+1,3,2008032,English Literature,GCSE,B
+1,3,2008035,English Literature,GCSE,B
+1,3,2008037,English Literature,GCSE,B
+1,3,2008046,English Literature,GCSE,B
+1,3,2008047,English Literature,GCSE,B
+1,3,2008051,English Literature,GCSE,B
+1,3,2008053,English Literature,GCSE,B
+1,3,2008054,English Literature,GCSE,B
+1,3,2008060,English Literature,GCSE,B
+1,3,2008064,English Literature,GCSE,B
+1,3,2008065,English Literature,GCSE,B
+1,3,2008067,English Literature,GCSE,B
+1,3,2008068,English Literature,GCSE,B
+1,3,2008069,English Literature,GCSE,B
+1,3,2008078,English Literature,GCSE,B
+1,3,2008088,English Literature,GCSE,B
+1,3,2008097,English Literature,GCSE,B
+1,3,2008099,English Literature,GCSE,B
+1,3,2008104,English Literature,GCSE,B
+1,3,2008107,English Literature,GCSE,B
+1,3,2008108,English Literature,GCSE,B
+1,3,2008111,English Literature,GCSE,B
+1,3,2008113,English Literature,GCSE,B
+1,3,2008116,English Literature,GCSE,B
+1,3,2008121,English Literature,GCSE,B
+1,3,2008127,English Literature,GCSE,B
+1,3,2008129,English Literature,GCSE,B
+1,3,2008133,English Literature,GCSE,B
+1,3,2008137,English Literature,GCSE,B
+1,3,2008142,English Literature,GCSE,B
+1,3,2008148,English Literature,GCSE,B
+1,3,2008152,English Literature,GCSE,B
+1,3,2008155,English Literature,GCSE,B
+1,3,2008158,English Literature,GCSE,B
+1,3,2008159,English Literature,GCSE,B
+1,3,2008161,English Literature,GCSE,B
+1,3,2008166,English Literature,GCSE,B
+1,3,2008171,English Literature,GCSE,B
+1,3,2008183,English Literature,GCSE,B
+1,3,2008184,English Literature,GCSE,B
+1,3,2008194,English Literature,GCSE,B
+1,3,2008196,English Literature,GCSE,B
+1,3,2008205,English Literature,GCSE,B
+1,3,2008209,English Literature,GCSE,B
+1,3,2008214,English Literature,GCSE,B
+1,3,2008223,English Literature,GCSE,B
+1,3,2008226,English Literature,GCSE,B
+1,3,2008231,English Literature,GCSE,B
+1,3,3701,English Literature,GCSE,B
+1,3,2008006,English Literature,GCSE,C
+1,3,2008007,English Literature,GCSE,C
+1,3,2008013,English Literature,GCSE,C
+1,3,2008016,English Literature,GCSE,C
+1,3,2008019,English Literature,GCSE,C
+1,3,2008023,English Literature,GCSE,C
+1,3,2008024,English Literature,GCSE,C
+1,3,2008030,English Literature,GCSE,C
+1,3,2008033,English Literature,GCSE,C
+1,3,2008039,English Literature,GCSE,C
+1,3,2008041,English Literature,GCSE,C
+1,3,2008043,English Literature,GCSE,C
+1,3,2008044,English Literature,GCSE,C
+1,3,2008059,English Literature,GCSE,C
+1,3,2008061,English Literature,GCSE,C
+1,3,2008062,English Literature,GCSE,C
+1,3,2008074,English Literature,GCSE,C
+1,3,2008076,English Literature,GCSE,C
+1,3,2008079,English Literature,GCSE,C
+1,3,2008080,English Literature,GCSE,C
+1,3,2008082,English Literature,GCSE,C
+1,3,2008086,English Literature,GCSE,C
+1,3,2008090,English Literature,GCSE,C
+1,3,2008091,English Literature,GCSE,C
+1,3,2008098,English Literature,GCSE,C
+1,3,2008102,English Literature,GCSE,C
+1,3,2008103,English Literature,GCSE,C
+1,3,2008120,English Literature,GCSE,C
+1,3,2008123,English Literature,GCSE,C
+1,3,2008125,English Literature,GCSE,C
+1,3,2008126,English Literature,GCSE,C
+1,3,2008128,English Literature,GCSE,C
+1,3,2008147,English Literature,GCSE,C
+1,3,2008149,English Literature,GCSE,C
+1,3,2008150,English Literature,GCSE,C
+1,3,2008154,English Literature,GCSE,C
+1,3,2008156,English Literature,GCSE,C
+1,3,2008160,English Literature,GCSE,C
+1,3,2008162,English Literature,GCSE,C
+1,3,2008164,English Literature,GCSE,C
+1,3,2008167,English Literature,GCSE,C
+1,3,2008169,English Literature,GCSE,C
+1,3,2008173,English Literature,GCSE,C
+1,3,2008175,English Literature,GCSE,C
+1,3,2008176,English Literature,GCSE,C
+1,3,2008179,English Literature,GCSE,C
+1,3,2008182,English Literature,GCSE,C
+1,3,2008186,English Literature,GCSE,C
+1,3,2008187,English Literature,GCSE,C
+1,3,2008188,English Literature,GCSE,C
+1,3,2008193,English Literature,GCSE,C
+1,3,2008199,English Literature,GCSE,C
+1,3,2008203,English Literature,GCSE,C
+1,3,2008204,English Literature,GCSE,C
+1,3,2008208,English Literature,GCSE,C
+1,3,2008211,English Literature,GCSE,C
+1,3,2008212,English Literature,GCSE,C
+1,3,2008215,English Literature,GCSE,C
+1,3,2008216,English Literature,GCSE,C
+1,3,2008217,English Literature,GCSE,C
+1,3,2008218,English Literature,GCSE,C
+1,3,2008221,English Literature,GCSE,C
+1,3,2008222,English Literature,GCSE,C
+1,3,2008229,English Literature,GCSE,C
+1,3,3642,English Literature,GCSE,C
+1,3,3700,English Literature,GCSE,C
+1,3,3707,English Literature,GCSE,C
+1,3,3710,English Literature,GCSE,C
+1,3,3714,English Literature,GCSE,C
+1,3,2008003,English Literature,GCSE,D
+1,3,2008009,English Literature,GCSE,D
+1,3,2008011,English Literature,GCSE,D
+1,3,2008031,English Literature,GCSE,D
+1,3,2008040,English Literature,GCSE,D
+1,3,2008070,English Literature,GCSE,D
+1,3,2008081,English Literature,GCSE,D
+1,3,2008083,English Literature,GCSE,D
+1,3,2008084,English Literature,GCSE,D
+1,3,2008092,English Literature,GCSE,D
+1,3,2008095,English Literature,GCSE,D
+1,3,2008106,English Literature,GCSE,D
+1,3,2008109,English Literature,GCSE,D
+1,3,2008117,English Literature,GCSE,D
+1,3,2008130,English Literature,GCSE,D
+1,3,2008131,English Literature,GCSE,D
+1,3,2008138,English Literature,GCSE,D
+1,3,2008143,English Literature,GCSE,D
+1,3,2008153,English Literature,GCSE,D
+1,3,2008165,English Literature,GCSE,D
+1,3,2008170,English Literature,GCSE,D
+1,3,2008174,English Literature,GCSE,D
+1,3,2008191,English Literature,GCSE,D
+1,3,2008192,English Literature,GCSE,D
+1,3,2008197,English Literature,GCSE,D
+1,3,2008206,English Literature,GCSE,D
+1,3,2008207,English Literature,GCSE,D
+1,3,2008219,English Literature,GCSE,D
+1,3,2008224,English Literature,GCSE,D
+1,3,2008225,English Literature,GCSE,D
+1,3,2008228,English Literature,GCSE,D
+1,3,2008002,English Literature,GCSE,E
+1,3,2008052,English Literature,GCSE,E
+1,3,2008057,English Literature,GCSE,E
+1,3,2008077,English Literature,GCSE,E
+1,3,2008134,English Literature,GCSE,E
+1,3,2008198,English Literature,GCSE,E
+1,3,3691,English Literature,GCSE,F
+1,3,2008008,FMA Performing Engineering Operations,AVAF,A*
+1,3,2008009,FMA Performing Engineering Operations,AVAF,A*
+1,3,2008014,FMA Performing Engineering Operations,AVAF,A*
+1,3,2008023,FMA Performing Engineering Operations,AVAF,A*
+1,3,2008026,FMA Performing Engineering Operations,AVAF,A*
+1,3,2008027,FMA Performing Engineering Operations,AVAF,A*
+1,3,2008035,FMA Performing Engineering Operations,AVAF,A*
+1,3,2008037,FMA Performing Engineering Operations,AVAF,A*
+1,3,2008061,FMA Performing Engineering Operations,AVAF,A*
+1,3,2008079,FMA Performing Engineering Operations,AVAF,A*
+1,3,2008102,FMA Performing Engineering Operations,AVAF,A*
+1,3,2008121,FMA Performing Engineering Operations,AVAF,A*
+1,3,2008131,FMA Performing Engineering Operations,AVAF,A*
+1,3,2008161,FMA Performing Engineering Operations,AVAF,A*
+1,3,2008218,FMA Performing Engineering Operations,AVAF,A*
+1,3,2008034,French,GCSE,A
+1,3,2008058,French,GCSE,A
+1,3,2008146,French,GCSE,A
+1,3,2008074,French,GCSE,B
+1,3,2008137,French,GCSE,B
+1,3,2008139,French,GCSE,B
+1,3,2008195,French,GCSE,B
+1,3,2008200,French,GCSE,B
+1,3,2008142,French,GCSE,C
+1,3,2008188,French,GCSE,C
+1,3,2008215,French,GCSE,C
+1,3,2008058,Geography,GCSE,A
+1,3,2008114,Geography,GCSE,A
+1,3,2008136,Geography,GCSE,A
+1,3,2008139,Geography,GCSE,A
+1,3,2008142,Geography,GCSE,A
+1,3,2008200,Geography,GCSE,A
+1,3,2008028,Geography,GCSE,B
+1,3,2008046,Geography,GCSE,B
+1,3,2008048,Geography,GCSE,B
+1,3,2008049,Geography,GCSE,B
+1,3,2008050,Geography,GCSE,B
+1,3,2008061,Geography,GCSE,B
+1,3,2008064,Geography,GCSE,B
+1,3,2008072,Geography,GCSE,B
+1,3,2008108,Geography,GCSE,B
+1,3,2008144,Geography,GCSE,B
+1,3,2008155,Geography,GCSE,B
+1,3,2008201,Geography,GCSE,B
+1,3,2008203,Geography,GCSE,B
+1,3,2008212,Geography,GCSE,B
+1,3,2008215,Geography,GCSE,B
+1,3,2008226,Geography,GCSE,B
+1,3,2008007,Geography,GCSE,C
+1,3,2008043,Geography,GCSE,C
+1,3,2008076,Geography,GCSE,C
+1,3,2008079,Geography,GCSE,C
+1,3,2008083,Geography,GCSE,C
+1,3,2008106,Geography,GCSE,C
+1,3,2008125,Geography,GCSE,C
+1,3,2008145,Geography,GCSE,C
+1,3,2008147,Geography,GCSE,C
+1,3,2008180,Geography,GCSE,C
+1,3,2008209,Geography,GCSE,C
+1,3,2008217,Geography,GCSE,C
+1,3,3642,Geography,GCSE,C
+1,3,2008009,Geography,GCSE,D
+1,3,2008012,Geography,GCSE,D
+1,3,2008022,Geography,GCSE,D
+1,3,2008024,Geography,GCSE,D
+1,3,2008030,Geography,GCSE,D
+1,3,2008031,Geography,GCSE,D
+1,3,2008032,Geography,GCSE,D
+1,3,2008134,Geography,GCSE,D
+1,3,2008148,Geography,GCSE,D
+1,3,2008160,Geography,GCSE,D
+1,3,2008164,Geography,GCSE,D
+1,3,2008004,Geography,GCSE,E
+1,3,2008179,Geography,GCSE,E
+1,3,2008216,Geography,GCSE,E
+1,3,2008124,German,GCSE,A
+1,3,2008178,German,GCSE,A
+1,3,2008212,German,GCSE,A
+1,3,2008046,German,GCSE,B
+1,3,2008101,German,GCSE,B
+1,3,2008105,German,GCSE,B
+1,3,2008114,German,GCSE,B
+1,3,2008140,German,GCSE,B
+1,3,2008168,German,GCSE,B
+1,3,2008017,German,GCSE,C
+1,3,2008020,German,GCSE,C
+1,3,2008162,German,GCSE,C
+1,3,2008167,German,GCSE,C
+1,3,2008211,German,GCSE,D
+1,3,2008029,Health and Social Care,GCSED,A
+1,3,2008094,Health and Social Care,GCSED,A
+1,3,2008097,Health and Social Care,GCSED,A
+1,3,2008146,Health and Social Care,GCSED,A
+1,3,2008227,Health and Social Care,GCSED,A
+1,3,2008001,Health and Social Care,GCSED,B
+1,3,2008060,Health and Social Care,GCSED,B
+1,3,2008067,Health and Social Care,GCSED,B
+1,3,2008113,Health and Social Care,GCSED,B
+1,3,2008115,Health and Social Care,GCSED,B
+1,3,2008127,Health and Social Care,GCSED,B
+1,3,2008177,Health and Social Care,GCSED,B
+1,3,2008188,Health and Social Care,GCSED,B
+1,3,2008195,Health and Social Care,GCSED,B
+1,3,2008223,Health and Social Care,GCSED,B
+1,3,2008080,Health and Social Care,GCSED,C
+1,3,2008123,Health and Social Care,GCSED,C
+1,3,2008149,Health and Social Care,GCSED,C
+1,3,2008156,Health and Social Care,GCSED,C
+1,3,2008162,Health and Social Care,GCSED,C
+1,3,2008183,Health and Social Care,GCSED,C
+1,3,2008213,Health and Social Care,GCSED,C
+1,3,2008229,Health and Social Care,GCSED,C
+1,3,2008081,Health and Social Care,GCSED,D
+1,3,2008086,Health and Social Care,GCSED,D
+1,3,2008117,Health and Social Care,GCSED,D
+1,3,2008150,Health and Social Care,GCSED,D
+1,3,2008173,Health and Social Care,GCSED,D
+1,3,3700,Health and Social Care,GCSED,D
+1,3,2008002,Health and Social Care,GCSED,E
+1,3,2008003,Health and Social Care,GCSED,E
+1,3,2008211,Health and Social Care,GCSED,E
+1,3,2008015,History,GCSE,A
+1,3,2008034,History,GCSE,A
+1,3,2008055,History,GCSE,A
+1,3,2008058,History,GCSE,A
+1,3,2008088,History,GCSE,A
+1,3,2008097,History,GCSE,A
+1,3,2008105,History,GCSE,A
+1,3,2008110,History,GCSE,A
+1,3,2008114,History,GCSE,A
+1,3,2008124,History,GCSE,A
+1,3,2008136,History,GCSE,A
+1,3,2008140,History,GCSE,A
+1,3,2008163,History,GCSE,A
+1,3,2008220,History,GCSE,A
+1,3,2008227,History,GCSE,A
+1,3,2008020,History,GCSE,B
+1,3,2008035,History,GCSE,B
+1,3,2008050,History,GCSE,B
+1,3,2008051,History,GCSE,B
+1,3,2008053,History,GCSE,B
+1,3,2008060,History,GCSE,B
+1,3,2008065,History,GCSE,B
+1,3,2008067,History,GCSE,B
+1,3,2008072,History,GCSE,B
+1,3,2008094,History,GCSE,B
+1,3,2008108,History,GCSE,B
+1,3,2008113,History,GCSE,B
+1,3,2008119,History,GCSE,B
+1,3,2008127,History,GCSE,B
+1,3,2008137,History,GCSE,B
+1,3,2008144,History,GCSE,B
+1,3,2008162,History,GCSE,B
+1,3,2008171,History,GCSE,B
+1,3,2008178,History,GCSE,B
+1,3,2008184,History,GCSE,B
+1,3,2008195,History,GCSE,B
+1,3,2008226,History,GCSE,B
+1,3,3701,History,GCSE,B
+1,3,3709,History,GCSE,B
+1,3,2008001,History,GCSE,C
+1,3,2008004,History,GCSE,C
+1,3,2008007,History,GCSE,C
+1,3,2008012,History,GCSE,C
+1,3,2008014,History,GCSE,C
+1,3,2008019,History,GCSE,C
+1,3,2008022,History,GCSE,C
+1,3,2008023,History,GCSE,C
+1,3,2008030,History,GCSE,C
+1,3,2008047,History,GCSE,C
+1,3,2008059,History,GCSE,C
+1,3,2008064,History,GCSE,C
+1,3,2008090,History,GCSE,C
+1,3,2008101,History,GCSE,C
+1,3,2008104,History,GCSE,C
+1,3,2008106,History,GCSE,C
+1,3,2008145,History,GCSE,C
+1,3,2008161,History,GCSE,C
+1,3,2008166,History,GCSE,C
+1,3,2008185,History,GCSE,C
+1,3,2008187,History,GCSE,C
+1,3,2008188,History,GCSE,C
+1,3,2008203,History,GCSE,C
+1,3,2008212,History,GCSE,C
+1,3,2008006,History,GCSE,D
+1,3,2008026,History,GCSE,D
+1,3,2008054,History,GCSE,D
+1,3,2008080,History,GCSE,D
+1,3,2008083,History,GCSE,D
+1,3,2008129,History,GCSE,D
+1,3,2008130,History,GCSE,D
+1,3,2008133,History,GCSE,D
+1,3,2008134,History,GCSE,D
+1,3,2008148,History,GCSE,D
+1,3,2008167,History,GCSE,D
+1,3,2008170,History,GCSE,D
+1,3,2008173,History,GCSE,D
+1,3,2008183,History,GCSE,D
+1,3,2008211,History,GCSE,D
+1,3,2008214,History,GCSE,D
+1,3,2008223,History,GCSE,D
+1,3,3642,History,GCSE,D
+1,3,3700,History,GCSE,D
+1,3,2008103,History,GCSE,E
+1,3,2008138,History,GCSE,E
+1,3,2008153,History,GCSE,E
+1,3,2008154,History,GCSE,E
+1,3,2008165,History,GCSE,E
+1,3,2008176,History,GCSE,E
+1,3,2008186,History,GCSE,E
+1,3,2008194,History,GCSE,E
+1,3,2008207,History,GCSE,E
+1,3,2008225,History,GCSE,E
+1,3,2008137,Hospitality and Catering,GCSED,A
+1,3,2008177,Hospitality and Catering,GCSED,A
+1,3,2008194,Hospitality and Catering,GCSED,A
+1,3,2008215,Hospitality and Catering,GCSED,A
+1,3,2008123,Hospitality and Catering,GCSED,B
+1,3,2008223,Hospitality and Catering,GCSED,B
+1,3,3642,Hospitality and Catering,GCSED,B
+1,3,3700,Hospitality and Catering,GCSED,B
+1,3,2008007,Hospitality and Catering,GCSED,C
+1,3,2008032,Hospitality and Catering,GCSED,C
+1,3,2008053,Hospitality and Catering,GCSED,C
+1,3,2008060,Hospitality and Catering,GCSED,C
+1,3,2008065,Hospitality and Catering,GCSED,C
+1,3,2008090,Hospitality and Catering,GCSED,C
+1,3,2008099,Hospitality and Catering,GCSED,C
+1,3,2008104,Hospitality and Catering,GCSED,C
+1,3,2008106,Hospitality and Catering,GCSED,C
+1,3,2008125,Hospitality and Catering,GCSED,C
+1,3,2008126,Hospitality and Catering,GCSED,C
+1,3,2008155,Hospitality and Catering,GCSED,C
+1,3,2008158,Hospitality and Catering,GCSED,C
+1,3,2008182,Hospitality and Catering,GCSED,C
+1,3,2008183,Hospitality and Catering,GCSED,C
+1,3,2008188,Hospitality and Catering,GCSED,C
+1,3,2008205,Hospitality and Catering,GCSED,C
+1,3,2008209,Hospitality and Catering,GCSED,C
+1,3,2008220,Hospitality and Catering,GCSED,C
+1,3,2008228,Hospitality and Catering,GCSED,C
+1,3,2008229,Hospitality and Catering,GCSED,C
+1,3,2008040,Hospitality and Catering,GCSED,D
+1,3,2008093,Hospitality and Catering,GCSED,D
+1,3,2008169,Hospitality and Catering,GCSED,D
+1,3,3691,Hospitality and Catering,GCSED,D
+1,3,2008008,Information Communication Technology,GCSE,A
+1,3,2008010,Information Communication Technology,GCSE,A
+1,3,2008015,Information Communication Technology,GCSE,A
+1,3,2008029,Information Communication Technology,GCSE,A
+1,3,2008047,Information Communication Technology,GCSE,A
+1,3,2008048,Information Communication Technology,GCSE,A
+1,3,2008050,Information Communication Technology,GCSE,A
+1,3,2008051,Information Communication Technology,GCSE,A
+1,3,2008055,Information Communication Technology,GCSE,A
+1,3,2008097,Information Communication Technology,GCSE,A
+1,3,2008110,Information Communication Technology,GCSE,A
+1,3,2008113,Information Communication Technology,GCSE,A
+1,3,2008124,Information Communication Technology,GCSE,A
+1,3,2008125,Information Communication Technology,GCSE,A
+1,3,2008127,Information Communication Technology,GCSE,A
+1,3,2008136,Information Communication Technology,GCSE,A
+1,3,2008139,Information Communication Technology,GCSE,A
+1,3,2008142,Information Communication Technology,GCSE,A
+1,3,2008145,Information Communication Technology,GCSE,A
+1,3,2008147,Information Communication Technology,GCSE,A
+1,3,2008163,Information Communication Technology,GCSE,A
+1,3,2008168,Information Communication Technology,GCSE,A
+1,3,2008170,Information Communication Technology,GCSE,A
+1,3,2008195,Information Communication Technology,GCSE,A
+1,3,2008200,Information Communication Technology,GCSE,A
+1,3,2008201,Information Communication Technology,GCSE,A
+1,3,2008212,Information Communication Technology,GCSE,A
+1,3,2008220,Information Communication Technology,GCSE,A
+1,3,3700,Information Communication Technology,GCSE,A
+1,3,2008067,Information Communication Technology,GCSE,A*
+1,3,2008080,Information Communication Technology,GCSE,A*
+1,3,2008133,Information Communication Technology,GCSE,A*
+1,3,2008162,Information Communication Technology,GCSE,A*
+1,3,2008175,Information Communication Technology,GCSE,A*
+1,3,2008004,Information Communication Technology,GCSE,B
+1,3,2008009,Information Communication Technology,GCSE,B
+1,3,2008030,Information Communication Technology,GCSE,B
+1,3,2008039,Information Communication Technology,GCSE,B
+1,3,2008040,Information Communication Technology,GCSE,B
+1,3,2008043,Information Communication Technology,GCSE,B
+1,3,2008053,Information Communication Technology,GCSE,B
+1,3,2008069,Information Communication Technology,GCSE,B
+1,3,2008070,Information Communication Technology,GCSE,B
+1,3,2008072,Information Communication Technology,GCSE,B
+1,3,2008074,Information Communication Technology,GCSE,B
+1,3,2008076,Information Communication Technology,GCSE,B
+1,3,2008078,Information Communication Technology,GCSE,B
+1,3,2008082,Information Communication Technology,GCSE,B
+1,3,2008095,Information Communication Technology,GCSE,B
+1,3,2008103,Information Communication Technology,GCSE,B
+1,3,2008107,Information Communication Technology,GCSE,B
+1,3,2008120,Information Communication Technology,GCSE,B
+1,3,2008129,Information Communication Technology,GCSE,B
+1,3,2008144,Information Communication Technology,GCSE,B
+1,3,2008153,Information Communication Technology,GCSE,B
+1,3,2008159,Information Communication Technology,GCSE,B
+1,3,2008161,Information Communication Technology,GCSE,B
+1,3,2008169,Information Communication Technology,GCSE,B
+1,3,2008171,Information Communication Technology,GCSE,B
+1,3,2008176,Information Communication Technology,GCSE,B
+1,3,2008179,Information Communication Technology,GCSE,B
+1,3,2008180,Information Communication Technology,GCSE,B
+1,3,2008183,Information Communication Technology,GCSE,B
+1,3,2008187,Information Communication Technology,GCSE,B
+1,3,2008191,Information Communication Technology,GCSE,B
+1,3,2008193,Information Communication Technology,GCSE,B
+1,3,2008196,Information Communication Technology,GCSE,B
+1,3,2008207,Information Communication Technology,GCSE,B
+1,3,2008208,Information Communication Technology,GCSE,B
+1,3,2008225,Information Communication Technology,GCSE,B
+1,3,2008229,Information Communication Technology,GCSE,B
+1,3,2008002,Information Communication Technology,GCSE,C
+1,3,2008006,Information Communication Technology,GCSE,C
+1,3,2008011,Information Communication Technology,GCSE,C
+1,3,2008077,Information Communication Technology,GCSE,C
+1,3,2008109,Information Communication Technology,GCSE,C
+1,3,2008164,Information Communication Technology,GCSE,C
+1,3,3701,Information Communication Technology,GCSE,D
+1,3,2008029,Maths,GCSE,A
+1,3,2008034,Maths,GCSE,A
+1,3,2008048,Maths,GCSE,A
+1,3,2008050,Maths,GCSE,A
+1,3,2008058,Maths,GCSE,A
+1,3,2008105,Maths,GCSE,A
+1,3,2008124,Maths,GCSE,A
+1,3,2008146,Maths,GCSE,A
+1,3,2008200,Maths,GCSE,A
+1,3,2008201,Maths,GCSE,A
+1,3,2008008,Maths,GCSE,A*
+1,3,2008014,Maths,GCSE,B
+1,3,2008026,Maths,GCSE,B
+1,3,2008028,Maths,GCSE,B
+1,3,2008035,Maths,GCSE,B
+1,3,2008049,Maths,GCSE,B
+1,3,2008051,Maths,GCSE,B
+1,3,2008055,Maths,GCSE,B
+1,3,2008061,Maths,GCSE,B
+1,3,2008097,Maths,GCSE,B
+1,3,2008101,Maths,GCSE,B
+1,3,2008106,Maths,GCSE,B
+1,3,2008110,Maths,GCSE,B
+1,3,2008113,Maths,GCSE,B
+1,3,2008114,Maths,GCSE,B
+1,3,2008119,Maths,GCSE,B
+1,3,2008127,Maths,GCSE,B
+1,3,2008136,Maths,GCSE,B
+1,3,2008139,Maths,GCSE,B
+1,3,2008140,Maths,GCSE,B
+1,3,2008142,Maths,GCSE,B
+1,3,2008144,Maths,GCSE,B
+1,3,2008155,Maths,GCSE,B
+1,3,2008157,Maths,GCSE,B
+1,3,2008161,Maths,GCSE,B
+1,3,2008163,Maths,GCSE,B
+1,3,2008168,Maths,GCSE,B
+1,3,2008177,Maths,GCSE,B
+1,3,2008189,Maths,GCSE,B
+1,3,2008195,Maths,GCSE,B
+1,3,2008196,Maths,GCSE,B
+1,3,2008218,Maths,GCSE,B
+1,3,2008227,Maths,GCSE,B
+1,3,2008001,Maths,GCSE,C
+1,3,2008004,Maths,GCSE,C
+1,3,2008006,Maths,GCSE,C
+1,3,2008007,Maths,GCSE,C
+1,3,2008010,Maths,GCSE,C
+1,3,2008013,Maths,GCSE,C
+1,3,2008015,Maths,GCSE,C
+1,3,2008016,Maths,GCSE,C
+1,3,2008017,Maths,GCSE,C
+1,3,2008019,Maths,GCSE,C
+1,3,2008020,Maths,GCSE,C
+1,3,2008022,Maths,GCSE,C
+1,3,2008023,Maths,GCSE,C
+1,3,2008027,Maths,GCSE,C
+1,3,2008030,Maths,GCSE,C
+1,3,2008033,Maths,GCSE,C
+1,3,2008041,Maths,GCSE,C
+1,3,2008046,Maths,GCSE,C
+1,3,2008047,Maths,GCSE,C
+1,3,2008053,Maths,GCSE,C
+1,3,2008054,Maths,GCSE,C
+1,3,2008056,Maths,GCSE,C
+1,3,2008059,Maths,GCSE,C
+1,3,2008060,Maths,GCSE,C
+1,3,2008064,Maths,GCSE,C
+1,3,2008065,Maths,GCSE,C
+1,3,2008067,Maths,GCSE,C
+1,3,2008068,Maths,GCSE,C
+1,3,2008069,Maths,GCSE,C
+1,3,2008072,Maths,GCSE,C
+1,3,2008074,Maths,GCSE,C
+1,3,2008076,Maths,GCSE,C
+1,3,2008078,Maths,GCSE,C
+1,3,2008079,Maths,GCSE,C
+1,3,2008083,Maths,GCSE,C
+1,3,2008086,Maths,GCSE,C
+1,3,2008088,Maths,GCSE,C
+1,3,2008090,Maths,GCSE,C
+1,3,2008091,Maths,GCSE,C
+1,3,2008094,Maths,GCSE,C
+1,3,2008095,Maths,GCSE,C
+1,3,2008099,Maths,GCSE,C
+1,3,2008107,Maths,GCSE,C
+1,3,2008108,Maths,GCSE,C
+1,3,2008115,Maths,GCSE,C
+1,3,2008116,Maths,GCSE,C
+1,3,2008120,Maths,GCSE,C
+1,3,2008123,Maths,GCSE,C
+1,3,2008125,Maths,GCSE,C
+1,3,2008126,Maths,GCSE,C
+1,3,2008129,Maths,GCSE,C
+1,3,2008130,Maths,GCSE,C
+1,3,2008131,Maths,GCSE,C
+1,3,2008133,Maths,GCSE,C
+1,3,2008137,Maths,GCSE,C
+1,3,2008145,Maths,GCSE,C
+1,3,2008147,Maths,GCSE,C
+1,3,2008151,Maths,GCSE,C
+1,3,2008158,Maths,GCSE,C
+1,3,2008162,Maths,GCSE,C
+1,3,2008164,Maths,GCSE,C
+1,3,2008166,Maths,GCSE,C
+1,3,2008167,Maths,GCSE,C
+1,3,2008169,Maths,GCSE,C
+1,3,2008171,Maths,GCSE,C
+1,3,2008178,Maths,GCSE,C
+1,3,2008180,Maths,GCSE,C
+1,3,2008184,Maths,GCSE,C
+1,3,2008185,Maths,GCSE,C
+1,3,2008186,Maths,GCSE,C
+1,3,2008191,Maths,GCSE,C
+1,3,2008194,Maths,GCSE,C
+1,3,2008203,Maths,GCSE,C
+1,3,2008205,Maths,GCSE,C
+1,3,2008209,Maths,GCSE,C
+1,3,2008212,Maths,GCSE,C
+1,3,2008214,Maths,GCSE,C
+1,3,2008215,Maths,GCSE,C
+1,3,2008220,Maths,GCSE,C
+1,3,2008223,Maths,GCSE,C
+1,3,2008225,Maths,GCSE,C
+1,3,2008226,Maths,GCSE,C
+1,3,2008229,Maths,GCSE,C
+1,3,3701,Maths,GCSE,C
+1,3,3709,Maths,GCSE,C
+1,3,2008009,Maths,GCSE,D
+1,3,2008012,Maths,GCSE,D
+1,3,2008024,Maths,GCSE,D
+1,3,2008031,Maths,GCSE,D
+1,3,2008032,Maths,GCSE,D
+1,3,2008037,Maths,GCSE,D
+1,3,2008039,Maths,GCSE,D
+1,3,2008040,Maths,GCSE,D
+1,3,2008043,Maths,GCSE,D
+1,3,2008044,Maths,GCSE,D
+1,3,2008062,Maths,GCSE,D
+1,3,2008080,Maths,GCSE,D
+1,3,2008084,Maths,GCSE,D
+1,3,2008092,Maths,GCSE,D
+1,3,2008098,Maths,GCSE,D
+1,3,2008102,Maths,GCSE,D
+1,3,2008104,Maths,GCSE,D
+1,3,2008109,Maths,GCSE,D
+1,3,2008111,Maths,GCSE,D
+1,3,2008121,Maths,GCSE,D
+1,3,2008128,Maths,GCSE,D
+1,3,2008148,Maths,GCSE,D
+1,3,2008149,Maths,GCSE,D
+1,3,2008152,Maths,GCSE,D
+1,3,2008153,Maths,GCSE,D
+1,3,2008156,Maths,GCSE,D
+1,3,2008160,Maths,GCSE,D
+1,3,2008170,Maths,GCSE,D
+1,3,2008174,Maths,GCSE,D
+1,3,2008175,Maths,GCSE,D
+1,3,2008176,Maths,GCSE,D
+1,3,2008182,Maths,GCSE,D
+1,3,2008183,Maths,GCSE,D
+1,3,2008187,Maths,GCSE,D
+1,3,2008188,Maths,GCSE,D
+1,3,2008192,Maths,GCSE,D
+1,3,2008193,Maths,GCSE,D
+1,3,2008197,Maths,GCSE,D
+1,3,2008199,Maths,GCSE,D
+1,3,2008204,Maths,GCSE,D
+1,3,2008207,Maths,GCSE,D
+1,3,2008216,Maths,GCSE,D
+1,3,2008217,Maths,GCSE,D
+1,3,2008219,Maths,GCSE,D
+1,3,2008221,Maths,GCSE,D
+1,3,2008222,Maths,GCSE,D
+1,3,2008228,Maths,GCSE,D
+1,3,2008231,Maths,GCSE,D
+1,3,3642,Maths,GCSE,D
+1,3,3700,Maths,GCSE,D
+1,3,3707,Maths,GCSE,D
+1,3,3714,Maths,GCSE,D
+1,3,2008052,Maths,GCSE,E
+1,3,2008057,Maths,GCSE,E
+1,3,2008070,Maths,GCSE,E
+1,3,2008082,Maths,GCSE,E
+1,3,2008103,Maths,GCSE,E
+1,3,2008117,Maths,GCSE,E
+1,3,2008143,Maths,GCSE,E
+1,3,2008154,Maths,GCSE,E
+1,3,2008159,Maths,GCSE,E
+1,3,2008173,Maths,GCSE,E
+1,3,2008179,Maths,GCSE,E
+1,3,2008198,Maths,GCSE,E
+1,3,2008206,Maths,GCSE,E
+1,3,2008208,Maths,GCSE,E
+1,3,2008211,Maths,GCSE,E
+1,3,2008003,Maths,GCSE,F
+1,3,2008011,Maths,GCSE,F
+1,3,2008077,Maths,GCSE,F
+1,3,2008081,Maths,GCSE,F
+1,3,2008134,Maths,GCSE,F
+1,3,2008138,Maths,GCSE,F
+1,3,2008150,Maths,GCSE,F
+1,3,2008165,Maths,GCSE,F
+1,3,2008224,Maths,GCSE,F
+1,3,3691,Maths,GCSE,F
+1,3,3710,Maths,GCSE,F
+1,3,2008002,Maths,GCSE,G
+1,3,2008093,Maths,GCSE,G
+1,3,2008118,Maths,GCSE,G
+1,3,2008049,Media Studies,BTEC,A
+1,3,2008088,Media Studies,BTEC,A
+1,3,2008097,Media Studies,BTEC,A
+1,3,2008105,Media Studies,BTEC,A
+1,3,2008123,Media Studies,BTEC,A
+1,3,2008151,Media Studies,BTEC,A
+1,3,2008163,Media Studies,BTEC,A
+1,3,2008168,Media Studies,BTEC,A
+1,3,2008177,Media Studies,BTEC,A
+1,3,2008014,Media Studies,BTEC,B
+1,3,2008022,Media Studies,BTEC,B
+1,3,2008028,Media Studies,BTEC,B
+1,3,2008044,Media Studies,BTEC,B
+1,3,2008051,Media Studies,BTEC,B
+1,3,2008053,Media Studies,BTEC,B
+1,3,2008054,Media Studies,BTEC,B
+1,3,2008078,Media Studies,BTEC,B
+1,3,2008099,Media Studies,BTEC,B
+1,3,2008103,Media Studies,BTEC,B
+1,3,2008111,Media Studies,BTEC,B
+1,3,2008115,Media Studies,BTEC,B
+1,3,2008170,Media Studies,BTEC,B
+1,3,2008205,Media Studies,BTEC,B
+1,3,2008209,Media Studies,BTEC,B
+1,3,3714,Media Studies,BTEC,B
+1,3,2008004,Media Studies,BTEC,C
+1,3,2008006,Media Studies,BTEC,C
+1,3,2008013,Media Studies,BTEC,C
+1,3,2008031,Media Studies,BTEC,C
+1,3,2008039,Media Studies,BTEC,C
+1,3,2008040,Media Studies,BTEC,C
+1,3,2008052,Media Studies,BTEC,C
+1,3,2008059,Media Studies,BTEC,C
+1,3,2008074,Media Studies,BTEC,C
+1,3,2008077,Media Studies,BTEC,C
+1,3,2008091,Media Studies,BTEC,C
+1,3,2008092,Media Studies,BTEC,C
+1,3,2008095,Media Studies,BTEC,C
+1,3,2008098,Media Studies,BTEC,C
+1,3,2008102,Media Studies,BTEC,C
+1,3,2008116,Media Studies,BTEC,C
+1,3,2008125,Media Studies,BTEC,C
+1,3,2008128,Media Studies,BTEC,C
+1,3,2008129,Media Studies,BTEC,C
+1,3,2008131,Media Studies,BTEC,C
+1,3,2008133,Media Studies,BTEC,C
+1,3,2008134,Media Studies,BTEC,C
+1,3,2008143,Media Studies,BTEC,C
+1,3,2008149,Media Studies,BTEC,C
+1,3,2008152,Media Studies,BTEC,C
+1,3,2008153,Media Studies,BTEC,C
+1,3,2008154,Media Studies,BTEC,C
+1,3,2008155,Media Studies,BTEC,C
+1,3,2008159,Media Studies,BTEC,C
+1,3,2008164,Media Studies,BTEC,C
+1,3,2008182,Media Studies,BTEC,C
+1,3,2008191,Media Studies,BTEC,C
+1,3,2008196,Media Studies,BTEC,C
+1,3,2008197,Media Studies,BTEC,C
+1,3,2008204,Media Studies,BTEC,C
+1,3,2008208,Media Studies,BTEC,C
+1,3,2008217,Media Studies,BTEC,C
+1,3,2008228,Media Studies,BTEC,C
+1,3,3691,Media Studies,BTEC,C
+1,3,2008008,Physics,GCSE,A
+1,3,2008055,Physics,GCSE,A
+1,3,2008097,Physics,GCSE,A
+1,3,2008108,Physics,GCSE,A
+1,3,2008124,Physics,GCSE,A
+1,3,2008136,Physics,GCSE,A
+1,3,2008140,Physics,GCSE,A
+1,3,2008146,Physics,GCSE,A
+1,3,2008200,Physics,GCSE,A
+1,3,2008205,Physics,GCSE,A
+1,3,2008227,Physics,GCSE,A
+1,3,2008058,Physics,GCSE,A*
+1,3,2008015,Physics,GCSE,B
+1,3,2008020,Physics,GCSE,B
+1,3,2008026,Physics,GCSE,B
+1,3,2008029,Physics,GCSE,B
+1,3,2008034,Physics,GCSE,B
+1,3,2008035,Physics,GCSE,B
+1,3,2008048,Physics,GCSE,B
+1,3,2008050,Physics,GCSE,B
+1,3,2008059,Physics,GCSE,B
+1,3,2008061,Physics,GCSE,B
+1,3,2008072,Physics,GCSE,B
+1,3,2008101,Physics,GCSE,B
+1,3,2008110,Physics,GCSE,B
+1,3,2008114,Physics,GCSE,B
+1,3,2008125,Physics,GCSE,B
+1,3,2008127,Physics,GCSE,B
+1,3,2008137,Physics,GCSE,B
+1,3,2008139,Physics,GCSE,B
+1,3,2008142,Physics,GCSE,B
+1,3,2008144,Physics,GCSE,B
+1,3,2008155,Physics,GCSE,B
+1,3,2008161,Physics,GCSE,B
+1,3,2008163,Physics,GCSE,B
+1,3,2008168,Physics,GCSE,B
+1,3,2008171,Physics,GCSE,B
+1,3,2008194,Physics,GCSE,B
+1,3,2008195,Physics,GCSE,B
+1,3,2008201,Physics,GCSE,B
+1,3,2008220,Physics,GCSE,B
+1,3,2008226,Physics,GCSE,B
+1,3,2008006,Physics,GCSE,C
+1,3,2008007,Physics,GCSE,C
+1,3,2008010,Physics,GCSE,C
+1,3,2008012,Physics,GCSE,C
+1,3,2008014,Physics,GCSE,C
+1,3,2008017,Physics,GCSE,C
+1,3,2008019,Physics,GCSE,C
+1,3,2008028,Physics,GCSE,C
+1,3,2008037,Physics,GCSE,C
+1,3,2008046,Physics,GCSE,C
+1,3,2008047,Physics,GCSE,C
+1,3,2008049,Physics,GCSE,C
+1,3,2008051,Physics,GCSE,C
+1,3,2008054,Physics,GCSE,C
+1,3,2008064,Physics,GCSE,C
+1,3,2008065,Physics,GCSE,C
+1,3,2008067,Physics,GCSE,C
+1,3,2008074,Physics,GCSE,C
+1,3,2008076,Physics,GCSE,C
+1,3,2008078,Physics,GCSE,C
+1,3,2008079,Physics,GCSE,C
+1,3,2008083,Physics,GCSE,C
+1,3,2008088,Physics,GCSE,C
+1,3,2008091,Physics,GCSE,C
+1,3,2008094,Physics,GCSE,C
+1,3,2008105,Physics,GCSE,C
+1,3,2008106,Physics,GCSE,C
+1,3,2008115,Physics,GCSE,C
+1,3,2008116,Physics,GCSE,C
+1,3,2008119,Physics,GCSE,C
+1,3,2008133,Physics,GCSE,C
+1,3,2008145,Physics,GCSE,C
+1,3,2008147,Physics,GCSE,C
+1,3,2008151,Physics,GCSE,C
+1,3,2008156,Physics,GCSE,C
+1,3,2008157,Physics,GCSE,C
+1,3,2008158,Physics,GCSE,C
+1,3,2008162,Physics,GCSE,C
+1,3,2008166,Physics,GCSE,C
+1,3,2008177,Physics,GCSE,C
+1,3,2008178,Physics,GCSE,C
+1,3,2008180,Physics,GCSE,C
+1,3,2008184,Physics,GCSE,C
+1,3,2008185,Physics,GCSE,C
+1,3,2008187,Physics,GCSE,C
+1,3,2008189,Physics,GCSE,C
+1,3,2008196,Physics,GCSE,C
+1,3,2008203,Physics,GCSE,C
+1,3,2008212,Physics,GCSE,C
+1,3,2008214,Physics,GCSE,C
+1,3,2008215,Physics,GCSE,C
+1,3,2008218,Physics,GCSE,C
+1,3,2008221,Physics,GCSE,C
+1,3,2008228,Physics,GCSE,C
+1,3,3701,Physics,GCSE,C
+1,3,3709,Physics,GCSE,C
+1,3,2008004,Physics,GCSE,D
+1,3,2008023,Physics,GCSE,D
+1,3,2008027,Physics,GCSE,D
+1,3,2008043,Physics,GCSE,D
+1,3,2008053,Physics,GCSE,D
+1,3,2008068,Physics,GCSE,D
+1,3,2008090,Physics,GCSE,D
+1,3,2008121,Physics,GCSE,D
+1,3,2008129,Physics,GCSE,D
+1,3,2008099,Physics,GCSE,E
+1,3,2008010,Religious Studies,GCSE,A
+1,3,2008015,Religious Studies,GCSE,A
+1,3,2008029,Religious Studies,GCSE,A
+1,3,2008048,Religious Studies,GCSE,A
+1,3,2008055,Religious Studies,GCSE,A
+1,3,2008058,Religious Studies,GCSE,A
+1,3,2008067,Religious Studies,GCSE,A
+1,3,2008088,Religious Studies,GCSE,A
+1,3,2008097,Religious Studies,GCSE,A
+1,3,2008101,Religious Studies,GCSE,A
+1,3,2008114,Religious Studies,GCSE,A
+1,3,2008124,Religious Studies,GCSE,A
+1,3,2008136,Religious Studies,GCSE,A
+1,3,2008146,Religious Studies,GCSE,A
+1,3,2008163,Religious Studies,GCSE,A
+1,3,2008194,Religious Studies,GCSE,A
+1,3,2008205,Religious Studies,GCSE,A
+1,3,2008220,Religious Studies,GCSE,A
+1,3,2008227,Religious Studies,GCSE,A
+1,3,2008200,Religious Studies,GCSE,A*
+1,3,2008001,Religious Studies,GCSE,B
+1,3,2008004,Religious Studies,GCSE,B
+1,3,2008008,Religious Studies,GCSE,B
+1,3,2008014,Religious Studies,GCSE,B
+1,3,2008020,Religious Studies,GCSE,B
+1,3,2008026,Religious Studies,GCSE,B
+1,3,2008028,Religious Studies,GCSE,B
+1,3,2008034,Religious Studies,GCSE,B
+1,3,2008035,Religious Studies,GCSE,B
+1,3,2008046,Religious Studies,GCSE,B
+1,3,2008049,Religious Studies,GCSE,B
+1,3,2008051,Religious Studies,GCSE,B
+1,3,2008053,Religious Studies,GCSE,B
+1,3,2008054,Religious Studies,GCSE,B
+1,3,2008060,Religious Studies,GCSE,B
+1,3,2008061,Religious Studies,GCSE,B
+1,3,2008065,Religious Studies,GCSE,B
+1,3,2008094,Religious Studies,GCSE,B
+1,3,2008105,Religious Studies,GCSE,B
+1,3,2008108,Religious Studies,GCSE,B
+1,3,2008111,Religious Studies,GCSE,B
+1,3,2008113,Religious Studies,GCSE,B
+1,3,2008127,Religious Studies,GCSE,B
+1,3,2008129,Religious Studies,GCSE,B
+1,3,2008137,Religious Studies,GCSE,B
+1,3,2008140,Religious Studies,GCSE,B
+1,3,2008142,Religious Studies,GCSE,B
+1,3,2008144,Religious Studies,GCSE,B
+1,3,2008151,Religious Studies,GCSE,B
+1,3,2008155,Religious Studies,GCSE,B
+1,3,2008157,Religious Studies,GCSE,B
+1,3,2008167,Religious Studies,GCSE,B
+1,3,2008168,Religious Studies,GCSE,B
+1,3,2008171,Religious Studies,GCSE,B
+1,3,2008177,Religious Studies,GCSE,B
+1,3,2008178,Religious Studies,GCSE,B
+1,3,2008180,Religious Studies,GCSE,B
+1,3,2008184,Religious Studies,GCSE,B
+1,3,2008189,Religious Studies,GCSE,B
+1,3,2008195,Religious Studies,GCSE,B
+1,3,2008211,Religious Studies,GCSE,B
+1,3,2008213,Religious Studies,GCSE,B
+1,3,2008215,Religious Studies,GCSE,B
+1,3,2008222,Religious Studies,GCSE,B
+1,3,2008223,Religious Studies,GCSE,B
+1,3,2008226,Religious Studies,GCSE,B
+1,3,2008006,Religious Studies,GCSE,C
+1,3,2008007,Religious Studies,GCSE,C
+1,3,2008011,Religious Studies,GCSE,C
+1,3,2008012,Religious Studies,GCSE,C
+1,3,2008013,Religious Studies,GCSE,C
+1,3,2008017,Religious Studies,GCSE,C
+1,3,2008022,Religious Studies,GCSE,C
+1,3,2008023,Religious Studies,GCSE,C
+1,3,2008027,Religious Studies,GCSE,C
+1,3,2008033,Religious Studies,GCSE,C
+1,3,2008037,Religious Studies,GCSE,C
+1,3,2008043,Religious Studies,GCSE,C
+1,3,2008044,Religious Studies,GCSE,C
+1,3,2008047,Religious Studies,GCSE,C
+1,3,2008050,Religious Studies,GCSE,C
+1,3,2008059,Religious Studies,GCSE,C
+1,3,2008064,Religious Studies,GCSE,C
+1,3,2008069,Religious Studies,GCSE,C
+1,3,2008072,Religious Studies,GCSE,C
+1,3,2008074,Religious Studies,GCSE,C
+1,3,2008078,Religious Studies,GCSE,C
+1,3,2008090,Religious Studies,GCSE,C
+1,3,2008099,Religious Studies,GCSE,C
+1,3,2008103,Religious Studies,GCSE,C
+1,3,2008104,Religious Studies,GCSE,C
+1,3,2008107,Religious Studies,GCSE,C
+1,3,2008110,Religious Studies,GCSE,C
+1,3,2008119,Religious Studies,GCSE,C
+1,3,2008120,Religious Studies,GCSE,C
+1,3,2008121,Religious Studies,GCSE,C
+1,3,2008125,Religious Studies,GCSE,C
+1,3,2008126,Religious Studies,GCSE,C
+1,3,2008128,Religious Studies,GCSE,C
+1,3,2008139,Religious Studies,GCSE,C
+1,3,2008145,Religious Studies,GCSE,C
+1,3,2008147,Religious Studies,GCSE,C
+1,3,2008148,Religious Studies,GCSE,C
+1,3,2008149,Religious Studies,GCSE,C
+1,3,2008152,Religious Studies,GCSE,C
+1,3,2008153,Religious Studies,GCSE,C
+1,3,2008158,Religious Studies,GCSE,C
+1,3,2008159,Religious Studies,GCSE,C
+1,3,2008161,Religious Studies,GCSE,C
+1,3,2008162,Religious Studies,GCSE,C
+1,3,2008165,Religious Studies,GCSE,C
+1,3,2008185,Religious Studies,GCSE,C
+1,3,2008187,Religious Studies,GCSE,C
+1,3,2008188,Religious Studies,GCSE,C
+1,3,2008193,Religious Studies,GCSE,C
+1,3,2008196,Religious Studies,GCSE,C
+1,3,2008199,Religious Studies,GCSE,C
+1,3,2008201,Religious Studies,GCSE,C
+1,3,2008203,Religious Studies,GCSE,C
+1,3,2008204,Religious Studies,GCSE,C
+1,3,2008207,Religious Studies,GCSE,C
+1,3,2008209,Religious Studies,GCSE,C
+1,3,2008212,Religious Studies,GCSE,C
+1,3,2008214,Religious Studies,GCSE,C
+1,3,2008218,Religious Studies,GCSE,C
+1,3,2008221,Religious Studies,GCSE,C
+1,3,2008231,Religious Studies,GCSE,C
+1,3,3642,Religious Studies,GCSE,C
+1,3,3700,Religious Studies,GCSE,C
+1,3,3701,Religious Studies,GCSE,C
+1,3,3709,Religious Studies,GCSE,C
+1,3,2008009,Religious Studies,GCSE,D
+1,3,2008016,Religious Studies,GCSE,D
+1,3,2008019,Religious Studies,GCSE,D
+1,3,2008024,Religious Studies,GCSE,D
+1,3,2008030,Religious Studies,GCSE,D
+1,3,2008031,Religious Studies,GCSE,D
+1,3,2008032,Religious Studies,GCSE,D
+1,3,2008040,Religious Studies,GCSE,D
+1,3,2008041,Religious Studies,GCSE,D
+1,3,2008062,Religious Studies,GCSE,D
+1,3,2008068,Religious Studies,GCSE,D
+1,3,2008076,Religious Studies,GCSE,D
+1,3,2008079,Religious Studies,GCSE,D
+1,3,2008080,Religious Studies,GCSE,D
+1,3,2008081,Religious Studies,GCSE,D
+1,3,2008082,Religious Studies,GCSE,D
+1,3,2008083,Religious Studies,GCSE,D
+1,3,2008084,Religious Studies,GCSE,D
+1,3,2008086,Religious Studies,GCSE,D
+1,3,2008091,Religious Studies,GCSE,D
+1,3,2008098,Religious Studies,GCSE,D
+1,3,2008106,Religious Studies,GCSE,D
+1,3,2008115,Religious Studies,GCSE,D
+1,3,2008116,Religious Studies,GCSE,D
+1,3,2008123,Religious Studies,GCSE,D
+1,3,2008131,Religious Studies,GCSE,D
+1,3,2008133,Religious Studies,GCSE,D
+1,3,2008143,Religious Studies,GCSE,D
+1,3,2008154,Religious Studies,GCSE,D
+1,3,2008160,Religious Studies,GCSE,D
+1,3,2008164,Religious Studies,GCSE,D
+1,3,2008166,Religious Studies,GCSE,D
+1,3,2008170,Religious Studies,GCSE,D
+1,3,2008174,Religious Studies,GCSE,D
+1,3,2008176,Religious Studies,GCSE,D
+1,3,2008179,Religious Studies,GCSE,D
+1,3,2008182,Religious Studies,GCSE,D
+1,3,2008183,Religious Studies,GCSE,D
+1,3,2008186,Religious Studies,GCSE,D
+1,3,2008191,Religious Studies,GCSE,D
+1,3,2008197,Religious Studies,GCSE,D
+1,3,2008198,Religious Studies,GCSE,D
+1,3,2008208,Religious Studies,GCSE,D
+1,3,2008216,Religious Studies,GCSE,D
+1,3,2008217,Religious Studies,GCSE,D
+1,3,2008225,Religious Studies,GCSE,D
+1,3,2008229,Religious Studies,GCSE,D
+1,3,2008039,Religious Studies,GCSE,E
+1,3,2008052,Religious Studies,GCSE,E
+1,3,2008077,Religious Studies,GCSE,E
+1,3,2008092,Religious Studies,GCSE,E
+1,3,2008095,Religious Studies,GCSE,E
+1,3,2008117,Religious Studies,GCSE,E
+1,3,2008130,Religious Studies,GCSE,E
+1,3,2008138,Religious Studies,GCSE,E
+1,3,2008150,Religious Studies,GCSE,E
+1,3,2008169,Religious Studies,GCSE,E
+1,3,2008173,Religious Studies,GCSE,E
+1,3,2008175,Religious Studies,GCSE,E
+1,3,2008192,Religious Studies,GCSE,E
+1,3,2008206,Religious Studies,GCSE,E
+1,3,2008219,Religious Studies,GCSE,E
+1,3,2008228,Religious Studies,GCSE,E
+1,3,3707,Religious Studies,GCSE,E
+1,3,3710,Religious Studies,GCSE,E
+1,3,3714,Religious Studies,GCSE,E
+1,3,2008002,Religious Studies,GCSE,F
+1,3,2008003,Religious Studies,GCSE,F
+1,3,2008057,Religious Studies,GCSE,F
+1,3,2008070,Religious Studies,GCSE,F
+1,3,2008102,Religious Studies,GCSE,F
+1,3,2008109,Religious Studies,GCSE,F
+1,3,2008134,Religious Studies,GCSE,F
+1,3,2008224,Religious Studies,GCSE,F
+1,3,3691,Religious Studies,GCSE,G
+1,3,2008032,Salon Services,AVAS,E
+1,3,2008044,Salon Services,AVAS,E
+1,3,2008060,Salon Services,AVAS,E
+1,3,2008104,Salon Services,AVAS,E
+1,3,2008107,Salon Services,AVAS,E
+1,3,2008113,Salon Services,AVAS,E
+1,3,2008126,Salon Services,AVAS,E
+1,3,2008128,Salon Services,AVAS,E
+1,3,2008149,Salon Services,AVAS,E
+1,3,2008173,Salon Services,AVAS,E
+1,3,2008199,Salon Services,AVAS,E
+1,3,2008224,Salon Services,AVAS,E
+1,3,3710,Salon Services,AVAS,E
+1,3,3714,Salon Services,AVAS,E
+1,3,2008008,Sports Studies,GCSE,A
+1,3,2008046,Sports Studies,GCSE,A
+1,3,2008048,Sports Studies,GCSE,A
+1,3,2008139,Sports Studies,GCSE,A
+1,3,2008184,Sports Studies,GCSE,A
+1,3,2008029,Sports Studies,GCSE,B
+1,3,2008033,Sports Studies,GCSE,B
+1,3,2008035,Sports Studies,GCSE,B
+1,3,2008050,Sports Studies,GCSE,B
+1,3,2008069,Sports Studies,GCSE,B
+1,3,2008072,Sports Studies,GCSE,B
+1,3,2008094,Sports Studies,GCSE,B
+1,3,2008106,Sports Studies,GCSE,B
+1,3,2008119,Sports Studies,GCSE,B
+1,3,2008144,Sports Studies,GCSE,B
+1,3,2008148,Sports Studies,GCSE,B
+1,3,2008155,Sports Studies,GCSE,B
+1,3,2008157,Sports Studies,GCSE,B
+1,3,2008194,Sports Studies,GCSE,B
+1,3,2008203,Sports Studies,GCSE,B
+1,3,2008222,Sports Studies,GCSE,B
+1,3,2008007,Sports Studies,GCSE,C
+1,3,2008012,Sports Studies,GCSE,C
+1,3,2008023,Sports Studies,GCSE,C
+1,3,2008037,Sports Studies,GCSE,C
+1,3,2008047,Sports Studies,GCSE,C
+1,3,2008059,Sports Studies,GCSE,C
+1,3,2008065,Sports Studies,GCSE,C
+1,3,2008111,Sports Studies,GCSE,C
+1,3,2008130,Sports Studies,GCSE,C
+1,3,2008142,Sports Studies,GCSE,C
+1,3,2008147,Sports Studies,GCSE,C
+1,3,2008158,Sports Studies,GCSE,C
+1,3,2008166,Sports Studies,GCSE,C
+1,3,2008177,Sports Studies,GCSE,C
+1,3,2008179,Sports Studies,GCSE,C
+1,3,2008180,Sports Studies,GCSE,C
+1,3,2008182,Sports Studies,GCSE,C
+1,3,2008189,Sports Studies,GCSE,C
+1,3,2008193,Sports Studies,GCSE,C
+1,3,2008196,Sports Studies,GCSE,C
+1,3,2008214,Sports Studies,GCSE,C
+1,3,2008226,Sports Studies,GCSE,C
+1,3,2008228,Sports Studies,GCSE,C
+1,3,3642,Sports Studies,GCSE,C
+1,3,2008010,Sports Studies,GCSE,D
+1,3,2008016,Sports Studies,GCSE,D
+1,3,2008024,Sports Studies,GCSE,D
+1,3,2008027,Sports Studies,GCSE,D
+1,3,2008040,Sports Studies,GCSE,D
+1,3,2008041,Sports Studies,GCSE,D
+1,3,2008057,Sports Studies,GCSE,D
+1,3,2008068,Sports Studies,GCSE,D
+1,3,2008083,Sports Studies,GCSE,D
+1,3,2008084,Sports Studies,GCSE,D
+1,3,2008086,Sports Studies,GCSE,D
+1,3,2008098,Sports Studies,GCSE,D
+1,3,2008160,Sports Studies,GCSE,D
+1,3,2008174,Sports Studies,GCSE,D
+1,3,2008175,Sports Studies,GCSE,D
+1,3,2008218,Sports Studies,GCSE,D
+1,3,2008225,Sports Studies,GCSE,D
+1,3,2008231,Sports Studies,GCSE,D
+1,3,2008003,Sports Studies,GCSE,E
+1,3,2008011,Sports Studies,GCSE,E
+1,3,2008052,Sports Studies,GCSE,E
+1,3,2008109,Sports Studies,GCSE,E
+1,3,2008192,Sports Studies,GCSE,E
+1,3,2008204,Sports Studies,GCSE,E
+1,3,2008206,Sports Studies,GCSE,E
+1,3,2008208,Sports Studies,GCSE,E
+1,3,3707,Sports Studies,GCSE,E
+1,3,2008219,Sports Studies,GCSE,F
+1,3,2008070,Sports Studies,GCSE,G
+1,3,2008198,Sports Studies,GCSE,G
+1,3,2008058,Technology Food,GCSE,A
+1,3,2008094,Technology Food,GCSE,A
+1,3,2008146,Technology Food,GCSE,A
+1,3,2008201,Technology Food,GCSE,A
+1,3,2008227,Technology Food,GCSE,A
+1,3,2008001,Technology Food,GCSE,B
+1,3,2008107,Technology Food,GCSE,B
+1,3,2008147,Technology Food,GCSE,B
+1,3,2008163,Technology Food,GCSE,B
+1,3,2008166,Technology Food,GCSE,B
+1,3,2008171,Technology Food,GCSE,B
+1,3,2008119,Technology Food,GCSE,C
+1,3,2008156,Technology Food,GCSE,C
+1,3,2008176,Technology Food,GCSE,C
+1,3,2008185,Technology Food,GCSE,C
+1,3,2008199,Technology Food,GCSE,C
+1,3,3710,Technology Food,GCSE,C
+1,3,2008083,Technology Food,GCSE,D
+1,3,2008092,Technology Food,GCSE,D
+1,3,2008152,Technology Food,GCSE,D
+1,3,2008192,Technology Food,GCSE,D
+1,3,2008150,Technology Food,GCSE,E
+1,3,2008020,Technology Product Design,GCSE,A
+1,3,2008034,Technology Product Design,GCSE,A
+1,3,2008046,Technology Product Design,GCSE,A
+1,3,2008048,Technology Product Design,GCSE,A
+1,3,2008101,Technology Product Design,GCSE,A
+1,3,2008111,Technology Product Design,GCSE,A
+1,3,2008017,Technology Product Design,GCSE,B
+1,3,2008054,Technology Product Design,GCSE,B
+1,3,2008068,Technology Product Design,GCSE,B
+1,3,2008088,Technology Product Design,GCSE,B
+1,3,2008124,Technology Product Design,GCSE,B
+1,3,2008167,Technology Product Design,GCSE,B
+1,3,2008178,Technology Product Design,GCSE,B
+1,3,2008180,Technology Product Design,GCSE,B
+1,3,2008184,Technology Product Design,GCSE,B
+1,3,2008189,Technology Product Design,GCSE,B
+1,3,2008221,Technology Product Design,GCSE,B
+1,3,2008222,Technology Product Design,GCSE,B
+1,3,2008012,Technology Product Design,GCSE,C
+1,3,2008024,Technology Product Design,GCSE,C
+1,3,2008033,Technology Product Design,GCSE,C
+1,3,2008041,Technology Product Design,GCSE,C
+1,3,2008043,Technology Product Design,GCSE,C
+1,3,2008057,Technology Product Design,GCSE,C
+1,3,2008059,Technology Product Design,GCSE,C
+1,3,2008062,Technology Product Design,GCSE,C
+1,3,2008064,Technology Product Design,GCSE,C
+1,3,2008078,Technology Product Design,GCSE,C
+1,3,2008084,Technology Product Design,GCSE,C
+1,3,2008116,Technology Product Design,GCSE,C
+1,3,2008120,Technology Product Design,GCSE,C
+1,3,2008154,Technology Product Design,GCSE,C
+1,3,2008160,Technology Product Design,GCSE,C
+1,3,2008164,Technology Product Design,GCSE,C
+1,3,2008170,Technology Product Design,GCSE,C
+1,3,2008174,Technology Product Design,GCSE,C
+1,3,2008203,Technology Product Design,GCSE,C
+1,3,2008226,Technology Product Design,GCSE,C
+1,3,3707,Technology Product Design,GCSE,C
+1,3,2008013,Technology Product Design,GCSE,D
+1,3,2008016,Technology Product Design,GCSE,D
+1,3,2008031,Technology Product Design,GCSE,D
+1,3,2008039,Technology Product Design,GCSE,D
+1,3,2008052,Technology Product Design,GCSE,D
+1,3,2008076,Technology Product Design,GCSE,D
+1,3,2008077,Technology Product Design,GCSE,D
+1,3,2008091,Technology Product Design,GCSE,D
+1,3,2008095,Technology Product Design,GCSE,D
+1,3,2008098,Technology Product Design,GCSE,D
+1,3,2008103,Technology Product Design,GCSE,D
+1,3,2008129,Technology Product Design,GCSE,D
+1,3,2008130,Technology Product Design,GCSE,D
+1,3,2008134,Technology Product Design,GCSE,D
+1,3,2008148,Technology Product Design,GCSE,D
+1,3,2008197,Technology Product Design,GCSE,D
+1,3,2008204,Technology Product Design,GCSE,D
+1,3,2008208,Technology Product Design,GCSE,D
+1,3,2008216,Technology Product Design,GCSE,D
+1,3,2008217,Technology Product Design,GCSE,D
+1,3,2008219,Technology Product Design,GCSE,D
+1,3,2008225,Technology Product Design,GCSE,D
+1,3,2008015,Technology Textiles,GCSE,A
+1,3,2008028,Technology Textiles,GCSE,A
+1,3,2008049,Technology Textiles,GCSE,A
+1,3,2008055,Technology Textiles,GCSE,A
+1,3,2008140,Technology Textiles,GCSE,A
+1,3,2008151,Technology Textiles,GCSE,A
+1,3,2008157,Technology Textiles,GCSE,A
+1,3,2008010,Technology Textiles,GCSE,B
+1,3,2008105,Technology Textiles,GCSE,B
+1,3,2008108,Technology Textiles,GCSE,B
+1,3,2008110,Technology Textiles,GCSE,B
+1,3,2008214,Technology Textiles,GCSE,B
+1,3,3709,Technology Textiles,GCSE,B
+1,3,2008019,Technology Textiles,GCSE,C
+1,3,2008044,Technology Textiles,GCSE,C
+1,3,2008082,Technology Textiles,GCSE,C
+1,3,2008086,Technology Textiles,GCSE,C
+1,3,2008114,Technology Textiles,GCSE,C
+1,3,2008115,Technology Textiles,GCSE,C
+1,3,2008149,Technology Textiles,GCSE,C
+1,3,2008173,Technology Textiles,GCSE,C
+1,3,2008186,Technology Textiles,GCSE,C
+1,3,2008003,Technology Textiles,GCSE,D
+1,3,2008022,Technology Textiles,GCSE,D
+1,3,2008081,Technology Textiles,GCSE,D
+1,3,2008128,Technology Textiles,GCSE,D
+1,3,2008143,Technology Textiles,GCSE,D
+1,3,2008165,Technology Textiles,GCSE,D
+1,3,2008211,Technology Textiles,GCSE,D
+1,3,2008231,Technology Textiles,GCSE,D
+1,3,3714,Technology Textiles,GCSE,D
+1,3,2008002,Technology Textiles,GCSE,E
+1,3,2008138,Technology Textiles,GCSE,E
+1,3,2008224,Technology Textiles,GCSE,E
+1,3,2008196,Travel and Tourism,BTEC,A
+1,3,2008201,Travel and Tourism,BTEC,A
+1,3,2008032,Travel and Tourism,BTEC,B
+1,3,2008041,Travel and Tourism,BTEC,B
+1,3,2008043,Travel and Tourism,BTEC,B
+1,3,2008116,Travel and Tourism,BTEC,B
+1,3,2008126,Travel and Tourism,BTEC,B
+1,3,2008143,Travel and Tourism,BTEC,B
+1,3,2008145,Travel and Tourism,BTEC,B
+1,3,2008199,Travel and Tourism,BTEC,B
+1,3,2008204,Travel and Tourism,BTEC,B
+1,3,2008228,Travel and Tourism,BTEC,B
+1,3,2008039,Travel and Tourism,BTEC,C
+1,3,2008092,Travel and Tourism,BTEC,C
+1,3,2008153,Travel and Tourism,BTEC,C
+1,3,2008156,Travel and Tourism,BTEC,C
+1,3,2008175,Travel and Tourism,BTEC,C
+1,3,2008216,Travel and Tourism,BTEC,C
+1,3,3710,Travel and Tourism,BTEC,C
+1,3,2008011,Vehicle Maintenance and Repair,AVAV,E
+1,3,2008013,Vehicle Maintenance and Repair,AVAV,E
+1,3,2008062,Vehicle Maintenance and Repair,AVAV,E
+1,3,2008070,Vehicle Maintenance and Repair,AVAV,E
+1,3,2008084,Vehicle Maintenance and Repair,AVAV,E
+1,3,2008109,Vehicle Maintenance and Repair,AVAV,E
+1,3,2008158,Vehicle Maintenance and Repair,AVAV,E
+1,3,2008174,Vehicle Maintenance and Repair,AVAV,E
+1,3,2008187,Vehicle Maintenance and Repair,AVAV,E
+1,3,2008191,Vehicle Maintenance and Repair,AVAV,E
+1,3,2008192,Vehicle Maintenance and Repair,AVAV,E
+1,3,2008193,Vehicle Maintenance and Repair,AVAV,E
+1,3,2008197,Vehicle Maintenance and Repair,AVAV,E
+1,3,2008207,Vehicle Maintenance and Repair,AVAV,E
+1,3,2008219,Vehicle Maintenance and Repair,AVAV,E
+1,3,3691,Vehicle Maintenance and Repair,AVAV,E

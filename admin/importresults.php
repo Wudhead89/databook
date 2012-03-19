@@ -3,9 +3,7 @@
     Created on : 05-May-2011
     Author     : Richard Williamson
 -->
-
 <!DOCTYPE html>
-
 <html lang="en">
     
     <head>
@@ -44,7 +42,7 @@
             $insertstr = "INSERT INTO results (yearid, datasetid, studentid, subjectid, gradeid) VALUES ('$yearid', '$datasetid', '$studentid', '$subjectid', '$gradeid');";
             echo $insertstr . "<br />";            
             
-            mysql_query($insertstr);
+            //mysql_query($insertstr);
 
             $count++;
         }        
