@@ -10,10 +10,27 @@ if (!isset($_SESSION['username'])) {
     header("Location: ../index.php");
     exit;
 }
+include('../config.php');
+include('buildsqlstring.php');
+include('functions.php');
+
+if (isset($_POST['sen'])) {
+    $sen = $_POST['sen'];
+} else {
+    $sen = array();
+}
+
+if (isset($_POST['dataset'])) {
+    $datasetid = $_POST['dataset'];
+} else if (isset($_GET['datasetid'])) {
+    $datasetid = $_GET['datasetid'];
+}
+
+$subjectid = $_GET['subjectid'];
 ?>  
 <!DOCTYPE html>
 <html lang="en">
-    
+
     <head>
         <meta charset="utf-8">
         <script src="../ajax/stusearch.js"></script>
@@ -37,24 +54,6 @@ if (!isset($_SESSION['username'])) {
             <div id="content-container">           
 
                 <?php
-                include('../config.php');
-                include('buildsqlstring.php');
-                include('functions.php');
-
-                if (isset($_POST['sen'])) {
-                    $sen = $_POST['sen'];
-                } else {
-                    $sen = array();
-                }
-
-                if (isset($_POST['dataset'])) {
-                    $datasetid = $_POST['dataset'];
-                } else if (isset($_GET['datasetid'])) {
-                    $datasetid = $_GET['datasetid'];
-                }
-
-                $subjectid = $_GET['subjectid'];
-
                 if (isset($datasetid) && isset($subjectid)) {
 
                     $subjectname = getSubjectName($subjectid);

@@ -10,10 +10,17 @@ if (!isset($_SESSION['username'])) {
     header("Location: ../index.php");
     exit;
 }
+include('../config.php');
+
+if (isset($_POST['dataset'])) {
+    $datasetid = $_POST['dataset'];
+} else if (isset($_GET['datasetid'])) {
+    $datasetid = $_GET['datasetid'];
+}
 ?>  
 <!DOCTYPE html>
 <html lang="en">
-    
+
     <head>
         <meta charset="utf-8">
         <script src="../ajax/stusearch.js"></script>
@@ -37,21 +44,10 @@ if (!isset($_SESSION['username'])) {
 
             <div id="content-container"> 
 
-
-                <?php
-                include('../config.php');
-
-                if (isset($_POST['dataset'])) {
-                    $datasetid = $_POST['dataset'];
-                } else if (isset($_GET['datasetid'])) {
-                    $datasetid = $_GET['datasetid'];
-                }
-                ?>
-
                 <div id="filter">
                     <form name="filter" action="stubroadsheet.php" method="post">
                         <h3>Filter</h3>
-                        
+
                         <table class="filtertable">
                             <tr>
                                 <td>Dataset</td>

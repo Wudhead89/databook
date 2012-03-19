@@ -1,19 +1,34 @@
 <?php
 /*
-    Document   : tchGroupBroadsheet.php
-    Created on : 22-May-2011
-    Author     : Richard Williamson
-*/
+  Document   : tchGroupBroadsheet.php
+  Created on : 22-May-2011
+  Author     : Richard Williamson
+ */
 
 session_start();
 if (!isset($_SESSION['username'])) {
     header("Location: ../index.php");
     exit;
 }
+include('../config.php');
+include('buildsqlstring.php');
+
+if (isset($_POST['sen'])) {
+    $sen = $_POST['sen'];
+} else {
+    $sen = array();
+}
+
+if (isset($_POST['dataset'])) {
+    $datasetid = $_POST['dataset'];
+} else if (isset($_GET['datasetid'])) {
+    $datasetid = $_GET['datasetid'];
+}
+$subjectid = $_GET['subjectid'];
 ?> 
 <!DOCTYPE html>
 <html lang="en">
-    
+
     <head>
         <meta charset="utf-8">
         <script src="../ajax/stusearch.js"></script>
@@ -28,7 +43,7 @@ if (!isset($_SESSION['username'])) {
         <link rel="stylesheet" href="../css/div.css" />
         <title>Data Book - Teaching Group Broadsheet</title>        
     </head>
-    
+
     <body onload="init()" onResize="movepopup()" onClick="clearTable()">
         <div id="container">
 
@@ -37,22 +52,6 @@ if (!isset($_SESSION['username'])) {
             <div id="content-container">       
 
                 <?php
-                include('../config.php');
-                include('buildsqlstring.php');
-
-                if (isset($_POST['sen'])) {
-                    $sen = $_POST['sen'];
-                } else {
-                    $sen = array();
-                }
-
-                if (isset($_POST['dataset'])) {
-                    $datasetid = $_POST['dataset'];
-                } else if (isset($_GET['datasetid'])) {
-                    $datasetid = $_GET['datasetid'];
-                }
-                $subjectid = $_GET['subjectid'];
-                
                 echo "<div id=\"filter\">";
                 echo "<form name=\"filter\" action=\"tchgroupbroadsheet.php?datasetid=$datasetid&amp;subjectid=$subjectid\" method=\"post\">";
                 include('filter.php');
@@ -61,7 +60,7 @@ if (!isset($_SESSION['username'])) {
 
                 echo "<div id=\"content\">";
                 echo "<h2>Teaching Group Broadsheet</h2>";
-                
+
                 if (isset($datasetid)) {
                     //$datasetid = $_POST['dataset'];
 
@@ -135,6 +134,6 @@ if (!isset($_SESSION['username'])) {
 
         <?php include('../footer.php'); ?>
 
-        </div> <!-- end of container -->
-    </body>
+    </div> <!-- end of container -->
+</body>
 </html>

@@ -12,10 +12,18 @@ if (!isset($_SESSION['username'])) {
     header("Location: index.php");
     exit;
 }
+include('config.php');
+include('reports/buildsqlstring.php');
+
+if (isset($_POST['sen'])) {
+    $sen = $_POST['sen'];
+} else {
+    $sen = array();
+}
 ?>       
 <!DOCTYPE html>
 <html lang="en">
-    
+
     <head>
         <meta charset="utf-8">
         <script src="ajax/stusearch.js" language="javascript" type="text/javascript"></script>
@@ -39,15 +47,6 @@ if (!isset($_SESSION['username'])) {
             <div id="content-container">
 
                 <?php
-                include('config.php');
-                include('reports/buildsqlstring.php');
-
-                if (isset($_POST['sen'])) {
-                    $sen = $_POST['sen'];
-                } else {
-                    $sen = array();
-                }
-
                 echo "<div id=\"filter\">";
                 echo "<form name=\"filter\" action=\"students.php\" method=\"post\">";
                 include('reports/filter.php');
@@ -56,7 +55,6 @@ if (!isset($_SESSION['username'])) {
 
                 $sqlstring = "SELECT * FROM students";
                 $sqlstring .= buildSQLStringNoDataSet();
-
                 $students = mysql_query($sqlstring);
 
                 echo "<div id=\"content\">";
@@ -94,6 +92,6 @@ if (!isset($_SESSION['username'])) {
 
         <?php include('footer.php'); ?>
 
-        </div> <!-- end of container -->
-    </body>
+    </div> <!-- end of container -->
+</body>
 </html>
