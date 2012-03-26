@@ -11,23 +11,27 @@ body {
     color: #333333;
 }
 
-footer {
-    width: 1018px;
+header {
     float: left;
-    background: #3b5998;
-    border-bottom: 1px solid #3b5998;
-    border-right: 1px solid #3b5998;
-    border-left: 1px solid #3b5998;
-    text-align: right;
-    padding: 10px;
-    color: #f9f9f9;
+    width: 1040px;
+    
+    background: #3a4f63; /* #3b5998; */
+    background-image: -moz-linear-gradient(top, #3A4F63, #3B5998); /* Firefox 3.6 */
+    background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #3B5998),color-stop(1, #3A4F63)); /* Safari & Chrome */
+    filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#3A4F63', endColorstr='#3B5998'); /* IE6 & IE7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#3A4F63', endColorstr='#3B5998')"; /* IE8 */
+    
+    border-top: 1px solid #3a4f63;
+    border-right: 1px solid #3a4f63;
+    border-left: 1px solid #3a4f63;
+    padding-top: 10px;
 }
 
 header h1 { 
     float: left;
-    margin: 0; 
-    height: 36px;
-    width: 464px;
+    margin: 0;
+    padding-left: 14px;
+    padding-bottom: 14px;
     color: #f7f7f7;
     font-size: 22px;
 }
@@ -42,11 +46,10 @@ header a
 
 nav {
     float: left;
-    width: 1026px;
-    background: #3a4f63;
-    border-right: 1px solid #496007;
-    border-left: 1px solid #496007;    
-    padding: 6px;
+    width: 1032px;
+    /*background: #3a4f63; /* #3b5998; */
+    padding: 4px;
+
 }
 
 nav ul {
@@ -62,7 +65,7 @@ nav ul li {
 nav li a {
     display: block;
     float: left;
-    padding: 6px 12px;
+    padding: 5px 10px;
     margin: 0px 2px;
     color: #bfcbd6;
     text-decoration: none;
@@ -71,7 +74,19 @@ nav li a {
 
 nav li a:hover { 
     background: #bfcbd6; 
-    color: #3a4f63;
+    color: #3b5998;
+}
+
+footer {
+    width: 1020px;
+    float: left;
+    background: #3b5998;
+    border-bottom: 1px solid #3a4f63;
+    border-right: 1px solid #3a4f63;
+    border-left: 1px solid #3a4f63;
+    text-align: right;
+    padding: 10px;
+    color: #f9f9f9;
 }
 
 table {
@@ -113,11 +128,12 @@ select {
 
 #logintable {
     border-collapse: collapse;
-    margin-left: auto;
+    margin-top: 30px;
+    margin-left: 40px;
 }
 #logintable td {
     border: 0px;
-    padding: 1px; 
+    padding: 6px; 
     text-align: left;
 }
 

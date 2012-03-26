@@ -3,63 +3,56 @@
   Document   : header.php
   Created on : 05-May-2011
   Author     : Richard Williamson
-*/
+ */
+if (!isset($_SESSION)) {
+    session_start();
+}
 ?>
 <header>
     <h1>Swanwick <span class="red">Hall</span> School Data Book</h1>
 
-    <div id="login">
+    <div id="logindetails">
         <?php
-        if (!isset($_SESSION)) {
-            session_start();
-        }
-
         if (isset($_SESSION['name'])) {
             echo $_SESSION['name'] . " <a href=\"/databook/logout.php\">[logout]</a>";
-        } else {
-            echo "<table id=\"logintable\">";
-            echo "<tr>";
-            echo "<td>username</td><td>password</td><td></td>";
-            echo "</tr>";
-            echo "<tr>";
-            echo "<td><input type=\"text\" id=\"username\" class=\"textinput\" autocomplete=\"off\" /></td>";
-            echo "<td><input type=\"password\" id=\"password\" class=\"textinput\" autocomplete=\"off\" /></td>";
-            echo "<td><img src=\"images/icons/user_go.png\" width=\"16\" heighh=\"16\"/ id=\"loginImg\" /></td>";
-            echo "</tr>";
-            echo "</table>";
         }
         ?>
     </div>
-    <div id="login_response"></div>
-</header>
 
-<nav>
-    <ul>
-        <li><a href="/databook/index.php">Home</a></li>
-        <li><a href="/databook/reports/headlines.php">Headlines</a></li>
-        <li><a href="/databook/reports/ebacc.php">EBacc</a></li>
-        <li><a href="/databook/reports/subbroadsheet.php">Subjects</a></li>
-        <li><a href="/databook/reports/stubroadsheet.php">Broadsheet</a></li>
-        <li><a href="/databook/reports/formprofile.php">Form Profile</a></li>
-        <li><a href="/databook/reports/groupdata.php">Group Data</a></li>
-        <li><a href="/databook/docs/docs.php">Documents</a></li>
+    <nav>
+        <ul>
+            <li><a href="/databook/index.php">Home</a></li>
+            <li><a href="/databook/reports/headlines.php">Headlines</a></li>
+            <li><a href="/databook/reports/ebacc.php">EBacc</a></li>
+            <li><a href="/databook/reports/subbroadsheet.php">Subjects</a></li>
+            <li><a href="/databook/reports/stubroadsheet.php">Broadsheet</a></li>
+            <li><a href="/databook/reports/formprofile.php">Form Profile</a></li>
+            <li><a href="/databook/reports/groupdata.php">Group Data</a></li>
+            <li><a href="/databook/docs/docs.php">Documents</a></li>
+            
+            <?php
+            if (isset($_SESSION['type']) && $_SESSION['type'] == 'admin') {
+                echo "<li><a href=\"/databook/admin/admin.php\">Admin</a></li>";
+            }
+            ?>
+            
+        </ul>
+
         <?php
-        if (isset($_SESSION['type']) && $_SESSION['type'] == 'admin'){
-            echo "<li><a href=\"/databook/admin/admin.php\">Admin</a></li>";
+        if (isset($_SESSION['name'])) {
+            echo "<form name=\"autofillform\" action=\"/databook/ajax/stusearch.php\">";
+            echo "<div id=\"search\">";
+            echo "<table>";
+            echo "<tr>";
+            echo "<td>Student Search</td>";
+            echo "<td><input type=\"text\" onkeyup=\"doCompletion();\" autocomplete=\"off\" /></td>";
+            echo "<td id=\"auto-row\"></td>";
+            echo "</tr>";
+            echo "</table>";
+            echo "</div>";
+            echo "</form>";
         }
         ?>
-    </ul>
-    
-    <form name="autofillform" action="/databook/ajax/stusearch.php">
-        <div id="search">
-        <table>
-            <tr>
-                <td>Student Search</td>
-                <td><input type="text" id="complete-field" onkeyup="doCompletion();" autocomplete="off" /></td>
-                <td id="auto-row"></td>
-            </tr>
-        </table>
-        </div>   
-    </form> 
-    
-</nav>
+    </nav>
+
+</header>

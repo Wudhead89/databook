@@ -1,7 +1,7 @@
 $(document).ready(function() {
     
     $('#loginImg').click(function() {
-        $('#login_response').html('Validating...');
+        $('#login_response').html('<img src="images/ajax/ajax-smlcircle.gif" width="16" height="16" alt="validating..."/>');
         var username = $('#username').val();
         var password = $('#password').val();
         
@@ -9,7 +9,7 @@ $(document).ready(function() {
             if(response == 0){
                 $('#username').val(''); 
                 $('#password').val(''); 
-                $('#login_response').html('Login failed! Please try again');
+                $('#login_response').html('<span class="red">Login failed! Please try again</span>');
             }else {
                 window.location = "/databook/index.php";
             }

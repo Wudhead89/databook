@@ -11,45 +11,40 @@
     background: #ffffff;
 }
 
-header {
-    float: left;
-    width: 998px;
-    background: #3b5998;
-    border-top: 1px solid #3b5998;
-    border-right: 1px solid #3b5998;
-    border-left: 1px solid #3b5998;
-    padding: 10px 20px;
+#logindetails {
+    float: right;
+    color: #f7f7f7;
+    border: 0px;
+    padding-right: 10px;
+    text-align: right;
 }
 
 #login {
-    float: right;
-    color: #f7f7f7;
-    height: 36px;
-    width: 430px;
-    border: 0px;
-    text-align: right;
+    margin: auto;
+    color: #333333;
+    
 }
-
+#login input {
+    padding: 6px;
+    width: 200px;
+}
 #login_response {
-    float: right;
-    height: 20px;
-    width: 430px;
+    color: #333333;
     padding-top: 4px;
-    text-align: right;
-    color: #f7f7f7;
+    height: 30px;
 }
 
 #search {
     float: right;
-    color: #bfcbd6;
+    color: #f7f7f7;
 }
 
 #content-container {
     float: left;
-    width: 1026px;
+    width: 1028px;
     background: #ffffff;
     padding: 6px;
-    border: 1px solid #3b5998;
+    border: 1px solid #3a4f63;
 }
 
 #content {	
