@@ -45,7 +45,7 @@ if (!isset($_SESSION)) {
             echo "<table>";
             echo "<tr>";
             echo "<td>Student Search</td>";
-            echo "<td><input type=\"text\" onkeyup=\"doCompletion();\" autocomplete=\"off\" /></td>";
+            echo "<td><input type=\"text\" id=\"complete-field\" onkeyup=\"doCompletion();\" autocomplete=\"off\" /></td>";
             echo "<td id=\"auto-row\"></td>";
             echo "</tr>";
             echo "</table>";
