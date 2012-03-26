@@ -31,7 +31,7 @@ header h1 {
     float: left;
     margin: 0;
     padding-left: 14px;
-    padding-bottom: 14px;
+    padding-bottom: 30px;
     color: #f7f7f7;
     font-size: 22px;
 }
@@ -47,7 +47,6 @@ header a
 nav {
     float: left;
     width: 1032px;
-    /*background: #3a4f63; /* #3b5998; */
     padding: 4px;
 
 }
@@ -120,11 +119,19 @@ a:hover.button {
     border: 1px solid #3b5998;
 }
 
+a img {
+    border: none; 
+}
+
+span img {
+    position: relative; 
+    top: 3px;
+}
+
 select {
     padding: 4px;
     border: 1px solid #d4dae8;   
 }
-
 
 #logintable {
     border-collapse: collapse;
@@ -169,6 +176,14 @@ select {
     text-align: center;
     width: 20px;
 }
+.contenttable .tchgrouplink {
+    background: url(/databook/images/icons/bullet_black.png) no-repeat 4px 6px;
+    text-indent: 14px;
+    color: #333333;
+    padding: 8px 10px;
+    margin-right: 0px;
+    margin-top: 0px; 
+}
 
 
 .filtertable {
@@ -181,13 +196,6 @@ select {
     height: 30px;
 }
 
-
-.textinput {
-    border: 1px solid #666666;
-    padding: 3px;
-    background: #f9f9f9;
-    font-size: 11px;
-}
 
 .buttoninput {
     border: 1px solid #666666;
@@ -224,11 +232,6 @@ select {
 .editstudentline {
     line-height: 28px;
     color: #dd3c10;
-}
-
-span img {
-    position: relative; 
-    top: 3px;
 }
 
 .red {
