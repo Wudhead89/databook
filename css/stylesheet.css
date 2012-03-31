@@ -25,6 +25,10 @@ header {
     border-right: 1px solid #3a4f63;
     border-left: 1px solid #3a4f63;
     padding-top: 10px;
+    
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;    
 }
 
 header h1 { 
@@ -69,6 +73,9 @@ nav li a {
     color: #bfcbd6;
     text-decoration: none;
     border: 1px solid #bfcbd6;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;      
 }
 
 nav li a:hover { 
@@ -86,6 +93,9 @@ footer {
     text-align: right;
     padding: 10px;
     color: #f9f9f9;
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    border-radius:  0 0 4px 4px;   
 }
 
 table {
@@ -101,7 +111,6 @@ a {
     text-decoration: none;  
     font-size: 11px;    
 }  
-
 
 a.button {
     display: block;
@@ -126,6 +135,10 @@ a img {
 span img {
     position: relative; 
     top: 3px;
+}
+
+span.red {
+    color: #dd3c10;
 }
 
 select {
@@ -231,9 +244,5 @@ select {
 
 .editstudentline {
     line-height: 28px;
-    color: #dd3c10;
-}
-
-.red {
     color: #dd3c10;
 }

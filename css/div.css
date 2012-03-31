@@ -22,16 +22,11 @@
 #login {
     margin: auto;
     color: #333333;
-    
+
 }
 #login input {
     padding: 6px;
     width: 200px;
-}
-#login_response {
-    color: #333333;
-    padding-top: 4px;
-    height: 30px;
 }
 
 #search {
@@ -50,7 +45,7 @@
 #content {	
     float: right;
     width: 818px;
-    
+
 }
 
 #content h2 { 
@@ -64,6 +59,9 @@
     margin-top: 0px;
     font-size: 13px;  
     font-weight: bold;  
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;    
 }
 
 #content h3 { 
@@ -75,6 +73,9 @@
     margin-top: 0px;
     font-size: 11px;  
     font-weight: bold;  
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;    
 }
 
 #graph {
@@ -131,4 +132,3 @@
     width: 500px;
     float: right;
 }
-
