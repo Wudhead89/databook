@@ -12,11 +12,8 @@ if (!isset($_SESSION)) {
     <h1>Swanwick <span class="red">Hall</span> School Data Book</h1>
 
     <div id="logindetails">
-        <?php
-        if (isset($_SESSION['name'])) {
-            echo $_SESSION['name'] . " <a href=\"/databook/logout.php\">[logout]</a>";
-        }
-        ?>
+        <?php echo $_SESSION['name']; ?> 
+        <a href="/databook/logout.php">[logout]</a>
     </div>
 
     <nav>
@@ -29,30 +26,27 @@ if (!isset($_SESSION)) {
             <li><a href="/databook/reports/formprofile.php">Form Profile</a></li>
             <li><a href="/databook/reports/groupdata.php">Group Data</a></li>
             <li><a href="/databook/docs/docs.php">Documents</a></li>
-            
+
             <?php
             if (isset($_SESSION['type']) && $_SESSION['type'] == 'admin') {
                 echo "<li><a href=\"/databook/admin/admin.php\">Admin</a></li>";
             }
             ?>
-            
+
         </ul>
 
-        <?php
-        if (isset($_SESSION['name'])) {
-            echo "<form name=\"autofillform\" action=\"/databook/ajax/stusearch.php\">";
-            echo "<div id=\"search\">";
-            echo "<table>";
-            echo "<tr>";
-            echo "<td>Student Search</td>";
-            echo "<td><input type=\"text\" id=\"complete-field\" onkeyup=\"doCompletion();\" autocomplete=\"off\" /></td>";
-            echo "<td id=\"auto-row\"></td>";
-            echo "</tr>";
-            echo "</table>";
-            echo "</div>";
-            echo "</form>";
-        }
-        ?>
+        <form name="autofillform" action="/databook/ajax/stusearch.php">
+            <div id="search">
+                <table>
+                    <tr>
+                        <td>Student Search</td>
+                        <td><input type="text" id="complete-field" onkeyup="doCompletion();" autocomplete="off" /></td>
+                        <td id="auto-row"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+        
     </nav>
 
 </header>

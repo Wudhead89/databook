@@ -8,7 +8,7 @@
 #container {
     margin: 0 auto;
     width: 1040px;
-    background: #ffffff;
+    background: #ffffff;        
 }
 
 #logindetails {
@@ -40,6 +40,9 @@
     background: #ffffff;
     padding: 6px;
     border: 1px solid #3a4f63;
+    -webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7);
+    -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7);
+    box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7);    
 }
 
 #content {	
@@ -73,9 +76,6 @@
     margin-top: 0px;
     font-size: 11px;  
     font-weight: bold;  
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;    
 }
 
 #graph {
@@ -90,6 +90,9 @@
     padding: 4px;
     background: #eceff6;
     border: 1px solid #d4dae8;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;    
 }
 
 #filter h3 { 

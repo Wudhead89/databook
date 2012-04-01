@@ -1,33 +1,33 @@
 body{
     font-family: "lucida grande", tahoma, verdana, arial, sans-serif; 
     font-size: 14px;
-    color: #1d3c41;
+    color: #3A4F63;
 }
 
 /* font used for the icons */ 
 @font-face {
-    font-family: 'FontomasCustomRegular';
-    src: url('fonts/fontomas-webfont.eot');
-    src: url('fonts/fontomas-webfont.eot?#iefix') format('embedded-opentype'),
-        url('fonts/fontomas-webfont.woff') format('woff'),
-        url('fonts/fontomas-webfont.ttf') format('truetype'),
-        url('fonts/fontomas-webfont.svg#FontomasCustomRegular') format('svg');
+    font-family: 'HeydingsCommonIconsRegular';
+    src: url('fonts/heydings_icons-webfont.eot');
+    src: url('fonts/heydings_icons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/heydings_icons-webfont.woff') format('woff'),
+         url('fonts/heydings_icons-webfont.ttf') format('truetype'),
+         url('fonts/heydings_icons-webfont.svg#HeydingsCommonIconsRegular') format('svg');
     font-weight: normal;
     font-style: normal;
+
 }
 
 /* The wrapper that will contain the form */
 #wrapper{
     margin: auto;	
     margin-top: 50px;
-    width: 500px;
+    width: 480px;
     position: relative;	
 }
 
 /* general text styling */
 #wrapper h1{
     font-size: 28px;
-    color: rgb(6, 106, 117);
     text-align: center;
     padding-bottom: 20px;
 }
@@ -52,7 +52,6 @@ body{
     margin: 0px;
 }
 #wrapper label{
-    color: rgb(64, 92, 96);
     position: relative;
 }
 
@@ -114,12 +113,12 @@ input {
 /* the magic icon trick */
 [data-icon]:after {
     content: attr(data-icon);
-    font-family: 'FontomasCustomRegular';
-    color: rgb(106, 159, 171);
+    font-family: 'HeydingsCommonIconsRegular';
+    font-size: 18px;
     position: absolute;
-    left: 10px;
-    top: 35px;
-    width: 30px;
+    left: 8px;
+    top: 30px;
+
 }
 
 /* styling both submit buttons */
@@ -134,19 +133,6 @@ input {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;	
-    -webkit-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
-        0px 0px 0px 3px rgb(254, 254, 254),
-        0px 5px 3px 3px rgb(210, 210, 210);
-    -moz-box-shadow:0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
-        0px 0px 0px 3px rgb(254, 254, 254),
-        0px 5px 3px 3px rgb(210, 210, 210);
-    box-shadow:0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
-        0px 0px 0px 3px rgb(254, 254, 254),
-        0px 5px 3px 3px rgb(210, 210, 210);
-    -webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    transition: all 0.2s linear;
 }
 #wrapper p.button input:hover{
     background: rgb(74, 179, 198);
@@ -157,15 +143,11 @@ input {
     position: relative;
     top: 1px;
     border: 1px solid rgb(12, 76, 87);	
-    -webkit-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
-    -moz-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
-    box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
 }
 
 /* Styling the form */
 #login{
     position: absolute;
-    top: 0px;
     width: 88%;	
     padding: 30px;
     background: rgb(247, 247, 247);

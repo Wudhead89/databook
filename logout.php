@@ -10,6 +10,6 @@ session_start();
 session_destroy();
 
 // redirect to the index page
-header("location:index.php");
+header("location:userlogin.php");
 
 ?>

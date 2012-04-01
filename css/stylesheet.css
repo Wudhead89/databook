@@ -14,21 +14,24 @@ body {
 header {
     float: left;
     width: 1040px;
+    border-top: 1px solid #3a4f63;
+    border-right: 1px solid #3a4f63;
+    border-left: 1px solid #3a4f63;
+    padding-top: 10px;    
+    background: #3a4f63;
     
-    background: #3a4f63; /* #3b5998; */
     background-image: -moz-linear-gradient(top, #3A4F63, #3B5998); /* Firefox 3.6 */
     background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #3B5998),color-stop(1, #3A4F63)); /* Safari & Chrome */
     filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#3A4F63', endColorstr='#3B5998'); /* IE6 & IE7 */
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#3A4F63', endColorstr='#3B5998')"; /* IE8 */
     
-    border-top: 1px solid #3a4f63;
-    border-right: 1px solid #3a4f63;
-    border-left: 1px solid #3a4f63;
-    padding-top: 10px;
-    
     -webkit-border-radius: 4px 4px 0 0;
     -moz-border-radius: 4px 4px 0 0;
     border-radius: 4px 4px 0 0;    
+    
+    -webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7);
+    -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7);
+    box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7);    
 }
 
 header h1 { 
@@ -45,14 +48,12 @@ header a
     color: #f7f7f7;  
     outline-style: none;  
     text-decoration: none;  
-    font-size: 11px;    
 } 
 
 nav {
     float: left;
     width: 1032px;
     padding: 4px;
-
 }
 
 nav ul {
@@ -72,10 +73,7 @@ nav li a {
     margin: 0px 2px;
     color: #bfcbd6;
     text-decoration: none;
-    border: 1px solid #bfcbd6;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;      
+    border: 1px solid #bfcbd6;     
 }
 
 nav li a:hover { 
@@ -92,10 +90,14 @@ footer {
     border-left: 1px solid #3a4f63;
     text-align: right;
     padding: 10px;
+    margin-bottom: 20px;
     color: #f9f9f9;
     -webkit-border-radius: 0 0 4px 4px;
     -moz-border-radius: 0 0 4px 4px;
     border-radius:  0 0 4px 4px;   
+    -webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7);
+    -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7);
+    box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7);    
 }
 
 table {
@@ -188,14 +190,6 @@ select {
 .contenttable .gradecell{
     text-align: center;
     width: 20px;
-}
-.contenttable .tchgrouplink {
-    background: url(/databook/images/icons/bullet_black.png) no-repeat 4px 6px;
-    text-indent: 14px;
-    color: #333333;
-    padding: 8px 10px;
-    margin-right: 0px;
-    margin-top: 0px; 
 }
 
 

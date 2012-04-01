@@ -12,6 +12,13 @@
         <meta charset="utf-8">
         <script src="js/jquery.min.js"></script>    
         <script src="ajax/login.js"></script>
+        
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="js/selectivizr-min.js"></script> 
+        <![endif]-->       
+        <!-- <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script> -->
+        
         <link rel="stylesheet" href="css/login.css" />
         <title>Data Book - Login</title>
     </head>
@@ -24,11 +31,11 @@
 
                 <h1>Swanwick <span class="red">Hall</span> School Databook</h1> 
                 <p> 
-                    <label for="username" data-icon="u" > Username </label>
+                    <label for="username" data-icon="A" > Username </label>
                     <input id="username" required="required" type="text" placeholder="enter your username" />
                 </p>
                 <p> 
-                    <label for="password" data-icon="p"> Password </label>
+                    <label for="password" data-icon="L"> Password </label>
                     <input id="password" required="required" type="password" placeholder="enter your password" /> 
                 </p>
                 <p class="button"> 

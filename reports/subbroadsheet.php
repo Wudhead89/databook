@@ -183,7 +183,7 @@ if (isset($_POST['compset']) && $_POST['compset'] != "") {
                         $ag = $row['A*'] + $row['A'] + $row['B'] + $row['C'] + $row['D'] + $row['E'] + $row['F'] + $row['G'];
 
                         echo "<tr>";
-                        echo "<td class=\"tchgrouplink\"><a href=\"tchgroupbroadsheet.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "\">" . $row['subjectname'] . "</a></td>";
+                        echo "<td><a href=\"tchgroupbroadsheet.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "\">" . $row['subjectname'] . "</a></td>";
                         echo "<td class=\"gradecell\"><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['sgradeid'] . "\">" . $row['A*'] . "</a></td>";
                         echo "<td class=\"gradecell\"><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['agradeid'] . "\">" . $row['A'] . "</a></td>";
                         echo "<td class=\"gradecell\"><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['bgradeid'] . "\">" . $row['B'] . "</a></td>";
