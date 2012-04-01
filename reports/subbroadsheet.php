@@ -156,24 +156,22 @@ if (isset($_POST['compset']) && $_POST['compset'] != "") {
                     $result = mysql_query($sqlstring);
 
                     echo "<table class=\"contenttable\">
-                          <thead>
                             <tr>
-                            <th>Subject Name</th>
-                            <th>A*</th>
-                            <th>A</th>
-                            <th>B</th>
-                            <th>C</th>
-                            <th>D</th>	
-                            <th>E</th>
-                            <th>F</th>
-                            <th>G</th>
-                            <th>U</th>
-                            <th>Total</th>
-                            <th>%AA</th>
-                            <th>%AC</th>
-                            <th>%AG</th>
-                            </tr>
-                          </thead>";
+                            <td>Subject Name</td>
+                            <td>A*</td>
+                            <td>A</td>
+                            <td>B</td>
+                            <td>C</td>
+                            <td>D</td>	
+                            <td>E</td>
+                            <td>F</td>
+                            <td>G</td>
+                            <td>U</td>
+                            <td>Total</td>
+                            <td>%AA</td>
+                            <td>%AC</td>
+                            <td>%AG</td>
+                            </tr>";
                           
 
                     while ($row = mysql_fetch_assoc($result)) {
@@ -184,15 +182,15 @@ if (isset($_POST['compset']) && $_POST['compset'] != "") {
 
                         echo "<tr>";
                         echo "<td><a href=\"tchgroupbroadsheet.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "\">" . $row['subjectname'] . "</a></td>";
-                        echo "<td class=\"gradecell\"><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['sgradeid'] . "\">" . $row['A*'] . "</a></td>";
-                        echo "<td class=\"gradecell\"><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['agradeid'] . "\">" . $row['A'] . "</a></td>";
-                        echo "<td class=\"gradecell\"><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['bgradeid'] . "\">" . $row['B'] . "</a></td>";
-                        echo "<td class=\"gradecell\"><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['cgradeid'] . "\">" . $row['C'] . "</a></td>";
-                        echo "<td class=\"gradecell\"><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['dgradeid'] . "\">" . $row['D'] . "</a></td>";
-                        echo "<td class=\"gradecell\"><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['egradeid'] . "\">" . $row['E'] . "</a></td>";
-                        echo "<td class=\"gradecell\"><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['fgradeid'] . "\">" . $row['F'] . "</a></td>";
-                        echo "<td class=\"gradecell\"><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['ggradeid'] . "\">" . $row['G'] . "</a></td>";
-                        echo "<td class=\"gradecell\"><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['ugradeid'] . "\">" . $row['U'] . "</a></td>";
+                        echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['sgradeid'] . "\">" . $row['A*'] . "</a></td>";
+                        echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['agradeid'] . "\">" . $row['A'] . "</a></td>";
+                        echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['bgradeid'] . "\">" . $row['B'] . "</a></td>";
+                        echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['cgradeid'] . "\">" . $row['C'] . "</a></td>";
+                        echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['dgradeid'] . "\">" . $row['D'] . "</a></td>";
+                        echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['egradeid'] . "\">" . $row['E'] . "</a></td>";
+                        echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['fgradeid'] . "\">" . $row['F'] . "</a></td>";
+                        echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['ggradeid'] . "\">" . $row['G'] . "</a></td>";
+                        echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['ugradeid'] . "\">" . $row['U'] . "</a></td>";
 
                         echo "<td>" . $total . "</td>";
                         
@@ -208,7 +206,7 @@ if (isset($_POST['compset']) && $_POST['compset'] != "") {
                                         echo "<td class=\"abovetargetcell\">";
                                     }
                                     else{
-                                        echo "<td class=\"ontargetcell\">";
+                                        echo "<td>";
                                     }
                                     echo  sprintf("%01.1f", (($aa / $total) * 100)) . " (" . sprintf("%01.1f", (($v['aa'] / $v['total']) * 100)) . ")</td>";
                                     
@@ -220,7 +218,7 @@ if (isset($_POST['compset']) && $_POST['compset'] != "") {
                                         echo "<td class=\"abovetargetcell\">";
                                     }
                                     else{
-                                        echo "<td class=\"ontargetcell\">";
+                                        echo "<td>";
                                     }
                                     echo  sprintf("%01.1f", (($ac / $total) * 100)) . " (" . sprintf("%01.1f", (($v['ac'] / $v['total']) * 100)) . ")</td>";
                                     
@@ -232,7 +230,7 @@ if (isset($_POST['compset']) && $_POST['compset'] != "") {
                                         echo "<td class=\"abovetargetcell\">";
                                     }
                                     else{
-                                        echo "<td class=\"ontargetcell\">";
+                                        echo "<td>";
                                     }
                                     echo  sprintf("%01.1f", (($ag / $total) * 100)) . " (" . sprintf("%01.1f", (($v['ag'] / $v['total']) * 100)) . ")</td>";
                                     

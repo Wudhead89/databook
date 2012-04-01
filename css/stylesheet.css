@@ -19,16 +19,16 @@ header {
     border-left: 1px solid #3a4f63;
     padding-top: 10px;    
     background: #3a4f63;
-    
+
     background-image: -moz-linear-gradient(top, #3A4F63, #3B5998); /* Firefox 3.6 */
     background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #3B5998),color-stop(1, #3A4F63)); /* Safari & Chrome */
     filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#3A4F63', endColorstr='#3B5998'); /* IE6 & IE7 */
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#3A4F63', endColorstr='#3B5998')"; /* IE8 */
-    
+
     -webkit-border-radius: 4px 4px 0 0;
     -moz-border-radius: 4px 4px 0 0;
     border-radius: 4px 4px 0 0;    
-    
+
     -webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7);
     -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7);
     box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7);    
@@ -40,7 +40,7 @@ header h1 {
     padding-left: 14px;
     padding-bottom: 30px;
     color: #f7f7f7;
-    font-size: 22px;
+    font-size: 26px;
 }
 
 header a  
@@ -165,31 +165,26 @@ select {
 }
 .contenttable td {
     border: 1px solid #666666;
-    padding: 4px;     
+    padding: 4px;  
+    text-align: center;
+    min-width: 20px;
 }
-.contenttable thead {
-    border: 1px solid #666666;
-    background-color: #cccccc;    
+.contenttable tr:nth-child(odd) { 
+    background-color: #f7f7f7; 
 }
-.contenttable thead tr th {
-    border: 1px solid #666666;
-    padding: 4px;     
+.contenttable tr:first-child {
+    background-color: #cccccc;
+    font-weight: bold;
+}
+.contenttable tr td:first-child {
+    text-align: left;
 }
 
-.contenttable .belowtargetcell{
+.contenttable .belowtargetcell {
     background-color: #ffebe8;
-    text-align: center;
 }
-.contenttable .abovetargetcell{
+.contenttable .abovetargetcell {
     background-color: #D0F5A9;
-    text-align: center;
-}
-.contenttable .ontargetcell{
-    text-align: center;
-}
-.contenttable .gradecell{
-    text-align: center;
-    width: 20px;
 }
 
 

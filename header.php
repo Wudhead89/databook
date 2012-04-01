@@ -9,7 +9,7 @@ if (!isset($_SESSION)) {
 }
 ?>
 <header>
-    <h1>Swanwick <span class="red">Hall</span> School Data Book</h1>
+    <h1>Swanwick <span class="red">Hall</span> School Databook</h1>
 
     <div id="logindetails">
         <?php echo $_SESSION['name']; ?> 
