@@ -76,7 +76,8 @@ $gradeid = $_GET['gradeid'];
                     $results = mysql_query($sqlstring);
 
                     echo "<div id=\"content\">";
-                    echo "<h2>Subject Grades Report: $subjectname ($gradeid)</h2>";
+                    echo "<h2>Teaching Group Grades: $tchgroupcode</h2>";
+                    echo "<h3>Subject: $subjectname</h3>";
 
                     echo "<table class=\"contenttable\">";
                     echo "<tr>";

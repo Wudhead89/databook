@@ -75,7 +75,8 @@ $tchgroupcode = $_GET['tchgroupcode'];
 
                     echo "<div id=\"content\">";
                     echo "<h2>Teaching Group Report: $tchgroupcode</h2>";
-
+                    echo "<h3>Subject: $subjectname</h3>";
+                    
                     echo "<table class=\"contenttable\">";
                     echo "<tr>";
                     echo "<td>Student Name</td>";

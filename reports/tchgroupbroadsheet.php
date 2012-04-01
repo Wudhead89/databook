@@ -11,6 +11,7 @@ if (!isset($_SESSION['username'])) {
     exit;
 }
 include('../config.php');
+include('functions.php');
 include('buildsqlstring.php');
 
 if (isset($_POST['sen'])) {
@@ -59,10 +60,9 @@ $subjectid = $_GET['subjectid'];
                 echo "</div>  <!-- end filter -->";
 
                 echo "<div id=\"content\">";
-                echo "<h2>Teaching Group Broadsheet</h2>";
 
                 if (isset($datasetid)) {
-                    //$datasetid = $_POST['dataset'];
+                    $subjectname = getSubjectName($subjectid);
 
                     $sqlstring = "SELECT tchgroups.tchgroupcode,
                         SUM(IF(grades.grade='A*',1,0)) as 'A*',
@@ -84,6 +84,8 @@ $subjectid = $_GET['subjectid'];
 
                     $result = mysql_query($sqlstring);
 
+                    echo "<h2>Teaching Group Broadsheet: $subjectname</h2>";
+                    
                     echo "<table class=\"contenttable\">
                     <tr>
                     <td>Teaching Group</td>
