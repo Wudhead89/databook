@@ -60,7 +60,7 @@ $tchgroupcode = $_GET['tchgroupcode'];
                     $subjectname = getSubjectName($subjectid);
 
                     echo "<div id=\"filter\">";
-                    echo "<form name=\"filter\" action=\"subject.php?datasetid=$datasetid&subjectid=$subjectid\" method=\"post\">";
+                    echo "<form name=\"filter\" action=\"tchgroup.php?datasetid=$datasetid&subjectid=$subjectid&tchgroupcode=$tchgroupcode\" method=\"post\">";
                     include('filter.php');
                     echo "</form>";
                     echo "</div>  <!-- end filter -->";
@@ -69,7 +69,7 @@ $tchgroupcode = $_GET['tchgroupcode'];
                     INNER JOIN students ON results_view.studentid = students.studentid
                     INNER JOIN tchgroups ON results_view.studentid = tchgroups.studentid AND results_view.subjectid = tchgroups.subjectid";
                     $sqlstring .= buildSQLStringIncDataSet($datasetid);
-                    $sqlstring .= " AND tchgroupcode = '$tchgroupcode' ORDER BY results_view.surname";
+                    $sqlstring .= " AND tchgroupcode = '$tchgroupcode' AND results_view.subjectid = '$subjectid' ORDER BY results_view.surname";
 
                     $results = mysql_query($sqlstring);
 

@@ -18,7 +18,7 @@ if (!isset($_SESSION)) {
 
     <nav>
         <ul>
-            <li><a href="/databook/index.php">Home</a></li>
+            <li><a href="/databook/home.php">Home</a></li>
             <li><a href="/databook/reports/headlines.php">Headlines</a></li>
             <li><a href="/databook/reports/ebacc.php">EBacc</a></li>
             <li><a href="/databook/reports/subbroadsheet.php">Subjects</a></li>

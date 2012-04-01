@@ -40,8 +40,6 @@
     background: #ffffff;
     padding: 6px;
     border: 1px solid #3a4f63;
-    -webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7);
-    -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7);
     box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7);    
 }
 
@@ -62,8 +60,6 @@
     margin-top: 0px;
     font-size: 13px;  
     font-weight: bold;  
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
     border-radius: 3px;    
 }
 
