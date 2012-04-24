@@ -1,8 +1,10 @@
 <?php
 /*
-  Document   : index.php
-  Created on : 05-May-2011
-  Author     : Richard Williamson
+ * Document     : index.php
+ * Created on   : 05-May-2011
+ * Author       : Richard Williamson
+ * 
+ * Description  : Main home page once user has successfully logged in
  */
 if (!isset($_SESSION)) {
     session_start();

@@ -1,8 +1,10 @@
 <?php
 /*
-  Document   : userlogin.php
-  Created on : 31-Mar-2021
-  Author     : Richard Williamson
+ * Document     : userlogin.php
+ * Created on   : 31-Mar-2012
+ * Author       : Richard Williamson
+ * 
+ * Description  : userlogin page. content only in this php file, login code is hadnled via jQuery/AJAX in login.js
  */
 ?>
 <!DOCTYPE html>
