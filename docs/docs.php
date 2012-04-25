@@ -1,13 +1,13 @@
 <?php
 /*
-  Document   : docs.php
-  Created on : 26-Jan-2012
-  Author     : Richard Williamson
+ * Document     : docs.php
+ * Created on   : 26-Jan-2012
+ * Author       : Richard Williamson
+ * 
+ * Description  : temp holding page for the document storage page
  */
 ?>
-
 <!DOCTYPE html>
-
 <html lang="en">
     
     <head>

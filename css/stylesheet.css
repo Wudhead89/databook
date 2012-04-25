@@ -154,22 +154,36 @@ select {
 .contenttable {
     border-collapse: collapse;    
 }
-.contenttable td {
+.contenttable td  {
     border: 1px solid #666666;
     padding: 4px;  
     text-align: center;
     min-width: 20px;
 }
-.contenttable tr:nth-child(odd) { 
-    background-color: #f7f7f7; 
-}
-.contenttable tr:first-child {
+
+.contenttable thead tr {
     background-color: #cccccc;
-    font-weight: bold;
 }
-.contenttable tr td:first-child {
+.contenttable thead th {
+    border: 1px solid #666666;
+    padding: 4px;  
+    min-width: 20px;    
+}
+.contenttable thead th:first-child { 
     text-align: left;
 }
+
+.contenttable tbody th {
+    border: 1px solid #666666;
+    padding: 4px; 
+    text-align: left;
+}
+
+.contenttable tbody tr:nth-child(odd) { 
+    background-color: #f7f7f7; 
+}
+
+
 
 .contenttable .belowtargetcell {
     background-color: #ffebe8;

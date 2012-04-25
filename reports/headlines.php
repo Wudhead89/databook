@@ -134,7 +134,7 @@ if (isset($_POST['dataset'])) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
-    
+
     <head>
         <meta charset="utf-8">
         <script src="../ajax/stusearch.js"></script>
@@ -150,76 +150,73 @@ if (isset($_POST['dataset'])) {
         <link rel="stylesheet" href="../css/stylesheet.css" />
         <link rel="stylesheet" href="../css/div.css" />
 
-        <?php
-        if (isset($_POST['dataset'])) {
-            echo "            
-            <script type=\"text/javascript\">
+        <script type="text/javascript">
 
-                var chart;
-                $(document).ready(function() {
-                    chart = new Highcharts.Chart({
-                        chart: {
-                            renderTo: 'graph',
-                            defaultSeriesType: 'column',
-                            marginRight: 140,
-                        },
-                        title: {
-                            text: 'GCSE Headline Figures'
-                        },
-                        xAxis: {
-                            categories: [
-                                '5AA', 
-                                '5AC', 
-                                '5EM', 
-                                '5AG',
-                                '1AC',
-                                '1AG'
-                            ]
-                        },
-                        yAxis: {
-                            min: 0,
-                            max: 100,
-                            title: {
-                                text: 'Percentage'
-                            }
-                        },
-                        legend: {
-                            layout: 'vertical',
-                            align: 'right',
-                            verticalAlign: 'top',
-                            x: -20,
-                            y: 100,
-                            borderWidth: 0
-                        },
-                        tooltip: {
-                            formatter: function() {
-                                return this.y +'%';
-                            }
-                        },
-                        plotOptions: {
-                            column: {
-                                pointPadding: 0.06,
-                                borderWidth: 0
-                            }
-                        },
-                        series: [{
-                                name: '$datasetname',
-                                data: [" . $stats['5AA'] . "," . $stats['5AC'] . "," . $stats['5EM'] . "," . $stats['5AG'] . "," . $stats['1AC'] . "," . $stats['1AG'] . "]
-                            }";
-            if (isset($_POST['compset']) && $_POST['compset'] != "") {
-                echo ",{ name: '$compsetname',
-                                data: [" . $compStats['5AA'] . "," . $compStats['5AC'] . "," . $compStats['5EM'] . "," . $compStats['5AG'] . "," . $compStats['1AC'] . "," . $compStats['1AG'] . "]}";
-            }
-            echo "]
+            $(document).ready(function() {
+                /**
+                 * Visualize an HTML table using Highcharts. The top (horizontal) header
+                 * is used for series names, and the left (vertical) header is used
+                 * for category names. This function is based on jQuery.
+                 * @param {Object} table The reference to the HTML table to visualize
+                 * @param {Object} options Highcharts options
+                 */
+                Highcharts.visualize = function(table, options) {
+                    // the categories
+                    options.xAxis.categories = [];
+                    $('tbody th', table).each( function(i) {
+                        options.xAxis.categories.push(this.innerHTML);
                     });
 
+                    // the data series
+                    options.series = [];
+                    $('tr', table).each( function(i) {
+                        var tr = this;
+                        $('th, td', tr).each( function(j) {
+                            if (j > 0) { // skip first column
+                                if (i == 0) { // get the name and init the series
+                                    options.series[j - 1] = {
+                                        name: this.innerHTML,
+                                        data: []
+                                    };
+                                } else { // add values
+                                    options.series[j - 1].data.push(parseFloat(this.innerHTML));
+                                }
+                            }
+                        });
+                    });
 
-                });
+                    var chart = new Highcharts.Chart(options);
+                }
 
-            </script>           
-            ";
-        }
-        ?>
+                var table = $('.contenttable');
+                var options = {
+                    chart: {
+                        renderTo: 'graph',
+                        type: 'column'
+                    },
+                    title: {
+                        text: 'Headling Figures'
+                    },
+                    xAxis: {
+                    },
+                    yAxis: {
+                        min: 0,
+                        max: 100,
+                        title: {
+                            text: 'Percent'
+                        }
+                    },
+                    tooltip: {
+                        formatter: function() {
+                            return this.series.name + ' '+ this.y;
+                        }
+                    }
+                };
+
+                Highcharts.visualize(table, options);
+            });
+                      
+        </script>        
 
         <title>Data Book - Headline Figures</title>        
     </head>
@@ -231,95 +228,125 @@ if (isset($_POST['dataset'])) {
 
             <div id="content-container">        
 
-                <?php
-                echo "<div id=\"filter\">";
-                echo "<form name=\"filter\" action=\"headlines.php\" method=\"post\">";
-                include('filter.php');
-                echo "</form>";
-                echo "</div>  <!-- end filter -->";
 
-                echo "<div id=\"content\">";
-                echo "<h2>Headline Figures</h2>";
+                <div id="filter">
+                    <form name="filter" action="headlines.php" method="post">
+                        <?php include('filter.php'); ?>
+                    </form>
+                </div>  <!-- end filter -->
 
-                if (isset($_POST['dataset'])) {
-                    echo "<table class=\"contenttable\">";
+                <div id="content">
+                    <h2>Headline Figures</h2>
 
-                    echo "<tr>";
-                    echo "<td>Indicator</td>";
-                    echo "<td>$datasetname</td>";
-                    if (isset($_POST['compset']) && $_POST['compset'] != "") {
-                        echo "<td>" . $compsetname . "</td>";
-                    }
-                    echo "</tr>";
+                    <?php
+                    if (isset($_POST['dataset']) && (isset($_POST['compset']) && $_POST['compset'] != "")) {
 
-                    echo "<tr>";
-                    echo "<td>Number of Students (year)</td>";
-                    echo "<td>$numstudentsyear</td>";
-                    if (isset($_POST['compset']) && $_POST['compset'] != "") {
-                        echo "<td>" . $numstudentsyear . "</td>";
-                    }
-                    echo "</tr>";
-                    
-                    echo "<tr>";
-                    echo "<td>Number of Students (dataset)</td>";
-                    echo "<td>$numstudents</td>";
-                    if (isset($_POST['compset']) && $_POST['compset'] != "") {
-                        echo "<td>" . $compnumstudents . "</td>";
-                    }
-                    echo "</tr>";
-                    
-                    echo "<tr>";
-                    echo "<td>5AA</td>";
-                    echo "<td>" . $stats['5AA'] . "</td>";
-                    if (isset($_POST['compset']) && $_POST['compset'] != "") {
+                        echo "<p>";
+                        echo "Number of Students in the year group = $numstudentsyear</br>";
+                        echo "Number of Students in the dataset ($datasetname) = $numstudents</br>";
+                        echo "Number of Students in the dataset ($compsetname) = $compnumstudents</br>";
+                        echo "</p>";
+
+                        echo "<table class=\"contenttable\">";
+
+                        echo "<thead>";
+                        echo "<tr>";
+                        echo "<th>Indicator</th>";
+                        echo "<th>$datasetname</th>";
+                        echo "<th>$compsetname</th>";
+                        echo "</tr>";
+                        echo "</thead>";
+                        
+                        echo "<tbody>";
+                        echo "<tr>";
+                        echo "<th>5AA</th>";
+                        echo "<td>" . $stats['5AA'] . "</td>";
                         echo "<td>" . $compStats['5AA'] . "</td>";
-                    }
-                    echo "</tr>";
-                    
-                    echo "<tr>";
-                    echo "<td>5AC</td>";
-                    echo "<td>" . $stats['5AC'] . "</td>";
-                    if (isset($_POST['compset']) && $_POST['compset'] != "") {
+                        echo "</tr>";
+
+                        echo "<tr>";
+                        echo "<th>5AC</th>";
+                        echo "<td>" . $stats['5AC'] . "</td>";
                         echo "<td>" . $compStats['5AC'] . "</td>";
-                    }
-                    echo "</tr>";
-                    
-                    echo "<tr>";
-                    echo "<td>5EM</td>";
-                    echo "<td>" . $stats['5EM'] . "</td>\n";
-                    if (isset($_POST['compset']) && $_POST['compset'] != "") {
+                        echo "</tr>";
+
+                        echo "<tr>";
+                        echo "<th>5EM</th>";
+                        echo "<td>" . $stats['5EM'] . "</td>\n";
                         echo "<td>" . $compStats['5EM'] . "</td>";
-                    }
-                    echo "</tr>";
-                    
-                    echo "<tr>";
-                    echo "<td>1AC</td>";
-                    echo "<td>" . $stats['1AC'] . "</td>\n";
-                    if (isset($_POST['compset']) && $_POST['compset'] != "") {
+                        echo "</tr>";
+
+                        echo "<tr>";
+                        echo "<th>1AC</th>";
+                        echo "<td>" . $stats['1AC'] . "</td>\n";
                         echo "<td>" . $compStats['1AC'] . "</td>";
-                    }
-                    echo "</tr>";
+                        echo "</tr>";
 
-                    echo "<tr>";
-                    echo "<td>1AG</td>";
-                    echo "<td>" . $stats['1AG'] . "</td>\n";
-                    if (isset($_POST['compset']) && $_POST['compset'] != "") {
+                        echo "<tr>";
+                        echo "<th>1AG</th>";
+                        echo "<td>" . $stats['1AG'] . "</td>\n";
                         echo "<td>" . $compStats['1AG'] . "</td>";
+                        echo "</tr>";
+                        echo "</tbody>";
+
+                        echo "</table>";
+                        
+                    } else if (isset($_POST['dataset'])) {
+                        
+                        echo "<p>";
+                        echo "Number of Students in the year group = $numstudentsyear</br>";
+                        echo "Number of Students in the dataset ($datasetname) = $numstudents</br>";
+                        echo "</p>";
+
+                        echo "<table class=\"contenttable\">";
+
+                        echo "<thead>";
+                        echo "<tr>";
+                        echo "<th>Indicator</th>";
+                        echo "<th>$datasetname</th>";
+                        echo "</tr>";
+                        echo "</thead>";
+                        
+                        echo "<tbody>";
+                        echo "<tr>";
+                        echo "<th>5AA</th>";
+                        echo "<td>" . $stats['5AA'] . "</td>";
+                        echo "</tr>";
+
+                        echo "<tr>";
+                        echo "<th>5AC</th>";
+                        echo "<td>" . $stats['5AC'] . "</td>";
+                        echo "</tr>";
+
+                        echo "<tr>";
+                        echo "<th>5EM</th>";
+                        echo "<td>" . $stats['5EM'] . "</td>\n";
+                        echo "</tr>";
+
+                        echo "<tr>";
+                        echo "<th>1AC</th>";
+                        echo "<td>" . $stats['1AC'] . "</td>\n";
+                        echo "</tr>";
+
+                        echo "<tr>";
+                        echo "<th>1AG</th>";
+                        echo "<td>" . $stats['1AG'] . "</td>\n";
+                        echo "</tr>";
+                        echo "</tbody>";
+
+                        echo "</table>";
+                                                
                     }
-                    echo "</tr>";
-                    
-                    echo "</table>";
-                }
-                ?>
+                    ?>
 
-                <div id="graph"></div>
-            </div> <!-- end content -->
+                    <div id="graph"></div>
+                </div> <!-- end content -->
 
-        </div> <!-- end content-container -->
+            </div> <!-- end content-container -->
 
-<?php include('../footer.php'); ?>
+            <?php include('../footer.php'); ?>
 
-    </div> <!-- end of container -->
+        </div> <!-- end of container -->
 
-</body>
+    </body>
 </html>
