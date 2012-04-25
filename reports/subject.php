@@ -53,50 +53,51 @@ $subjectid = $_GET['subjectid'];
 
             <div id="content-container">           
 
-                <?php
-                if (isset($datasetid) && isset($subjectid)) {
+                <div id="filter">
+                    <form name="filter" action="subject.php?datasetid=$datasetid&amp;subjectid=$subjectid" method="post">
+                        <?php include('filter.php'); ?>
+                    </form>
+                </div>  <!-- end filter -->
 
-                    $subjectname = getSubjectName($subjectid);
+                <div id="content">
 
-                    echo "<div id=\"filter\">";
-                    echo "<form name=\"filter\" action=\"subject.php?datasetid=$datasetid&amp;subjectid=$subjectid\" method=\"post\">";
-                    include('filter.php');
-                    echo "</form>";
-                    echo "</div>  <!-- end filter -->";
+                    <?php
+                    if (isset($datasetid) && isset($subjectid)) {
 
+                        $subjectname = getSubjectName($subjectid);
 
-                    $sqlstring = "SELECT * FROM results_view  
+                        $sqlstring = "SELECT * FROM results_view  
                     INNER JOIN students ON results_view.studentid = students.studentid";
-                    $sqlstring .= buildSQLStringIncDataSet($datasetid);
-                    $sqlstring .= " AND subjectid = '$subjectid' ORDER BY results_view.studentname";
+                        $sqlstring .= buildSQLStringIncDataSet($datasetid);
+                        $sqlstring .= " AND subjectid = '$subjectid' ORDER BY results_view.studentname";
 
-                    $results = mysql_query($sqlstring);
+                        $results = mysql_query($sqlstring);
 
-                    echo "<div id=\"content\">";
-                    echo "<h2>Subject Report: $subjectname</h2>";
 
-                    echo "<table class=\"contentable\">";
-                    echo "<tr>";
-                    echo "<td>Student Name</td>";
-                    echo "<td>Grade</td>";
-                    echo "</tr>";
+                        echo "<h2>Subject Report: $subjectname</h2>";
 
-                    while ($row = mysql_fetch_assoc($results)) {
+                        echo "<table class=\"contentable\">";
                         echo "<tr>";
-                        echo "<td><a href=\"student.php?datasetid=$datasetid&amp;studentid=" . $row['studentid'] . "\">" . $row['studentname'] . "</a></td>";
-                        echo "<td>" . $row['grade'] . "</td>";
+                        echo "<td>Student Name</td>";
+                        echo "<td>Grade</td>";
                         echo "</tr>";
+
+                        while ($row = mysql_fetch_assoc($results)) {
+                            echo "<tr>";
+                            echo "<td><a href=\"student.php?datasetid=$datasetid&amp;studentid=" . $row['studentid'] . "\">" . $row['studentname'] . "</a></td>";
+                            echo "<td>" . $row['grade'] . "</td>";
+                            echo "</tr>";
+                        }
+
+                        echo "</table>";
                     }
+                    ?>
+                </div> <!-- end content -->
 
-                    echo "</table>";
-                }
-                ?>
-            </div> <!-- end content -->
+            </div> <!-- end content-container -->
 
-        </div> <!-- end content-container -->
+            <?php include('../footer.php'); ?>
 
-        <?php include('../footer.php'); ?>
-
-    </div> <!-- end of container -->
-</body>
+        </div> <!-- end of container -->
+    </body>
 </html>

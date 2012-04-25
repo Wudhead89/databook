@@ -55,52 +55,51 @@ $gradeid = $_GET['gradeid'];
 
             <div id="content-container">           
 
-                <?php
-                if (isset($datasetid) && isset($subjectid) && isset($tchgroupcode) && isset($gradeid)) {
+                <div id="filter">
+                    <form name="filter" action="tchgroupgrades.php?datasetid=$datasetid&amp;subjectid=$subjectid&amp;gradeid=$gradeid&amp;tchgroupcode=$tchgroupcode" method="post">
+                        <?php include('filter.php'); ?>
+                    </form>
+                </div>  <!-- end filter -->
+                <div id="content">
 
-                    $subjectname = getSubjectName($subjectid);
+                    <?php
+                    if (isset($datasetid) && isset($subjectid) && isset($tchgroupcode) && isset($gradeid)) {
 
-                    echo "<div id=\"filter\">";
-                    echo "<form name=\"filter\" action=\"tchgroupgrades.php?datasetid=$datasetid&subjectid=$subjectid&gradeid=$gradeid&tchgroupcode=$tchgroupcode\" method=\"post\">";
-                    include('filter.php');
-                    echo "</form>";
-                    echo "</div>  <!-- end filter -->";
+                        $subjectname = getSubjectName($subjectid);
 
-
-                    $sqlstring = "SELECT * FROM results_view  
+                        $sqlstring = "SELECT * FROM results_view  
                     INNER JOIN students ON results_view.studentid = students.studentid
                     INNER JOIN tchgroups ON results_view.studentid = tchgroups.studentid AND results_view.subjectid = tchgroups.subjectid";
-                    $sqlstring .= buildSQLStringIncDataSet($datasetid);
-                    $sqlstring .= " AND results_view.subjectid = '$subjectid' AND tchgroupcode = '$tchgroupcode' AND gradeid='$gradeid' ORDER BY results_view.surname";
+                        $sqlstring .= buildSQLStringIncDataSet($datasetid);
+                        $sqlstring .= " AND results_view.subjectid = '$subjectid' AND tchgroupcode = '$tchgroupcode' AND gradeid='$gradeid' ORDER BY results_view.surname";
 
-                    $results = mysql_query($sqlstring);
+                        $results = mysql_query($sqlstring);
 
-                    echo "<div id=\"content\">";
-                    echo "<h2>Teaching Group Grades: $tchgroupcode</h2>";
-                    echo "<h3>Subject: $subjectname</h3>";
+                        echo "<h2>Teaching Group Grades: $tchgroupcode</h2>";
+                        echo "<h3>Subject: $subjectname</h3>";
 
-                    echo "<table class=\"contenttable\">";
-                    echo "<tr>";
-                    echo "<td>Student Name</td>";
-                    echo "<td>Grade</td>";
-                    echo "</tr>";
-
-                    while ($row = mysql_fetch_assoc($results)) {
+                        echo "<table class=\"contenttable\">";
                         echo "<tr>";
-                        echo "<td><a href=\"student.php?datasetid=$datasetid&amp;studentid=" . $row['studentid'] . "\">" . $row['surname'] . ', ' . $row['forename'] . "</a></td>";
-                        echo "<td>" . $row['grade'] . "</td>";
+                        echo "<td>Student Name</td>";
+                        echo "<td>Grade</td>";
                         echo "</tr>";
+
+                        while ($row = mysql_fetch_assoc($results)) {
+                            echo "<tr>";
+                            echo "<td><a href=\"student.php?datasetid=$datasetid&amp;studentid=" . $row['studentid'] . "\">" . $row['surname'] . ', ' . $row['forename'] . "</a></td>";
+                            echo "<td>" . $row['grade'] . "</td>";
+                            echo "</tr>";
+                        }
+
+                        echo "</table>";
                     }
+                    ?>
+                </div> <!-- end content -->
 
-                    echo "</table>";
-                }
-                ?>
-            </div> <!-- end content -->
+            </div> <!-- end content-container -->
 
-        </div> <!-- end content-container -->
+            <?php include('../footer.php'); ?>
 
-        <?php include('../footer.php'); ?>
-
-    </div> <!-- end of container -->
-</body>
+        </div> <!-- end of container -->
+    </body>
 </html>

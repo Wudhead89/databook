@@ -51,15 +51,14 @@ $subjectid = $_GET['subjectid'];
             <?php include('../header.php'); ?>
 
             <div id="content-container">       
-
+                <div id="filter">
+                <form name="filter" action="tchgroupbroadsheet.php?datasetid=$datasetid&amp;subjectid=$subjectid" method="post">
+                <?php include('filter.php'); ?>
+                </form>
+                </div>  <!-- end filter -->
+                <div id="content">
+                    
                 <?php
-                echo "<div id=\"filter\">";
-                echo "<form name=\"filter\" action=\"tchgroupbroadsheet.php?datasetid=$datasetid&amp;subjectid=$subjectid\" method=\"post\">";
-                include('filter.php');
-                echo "</form>";
-                echo "</div>  <!-- end filter -->";
-
-                echo "<div id=\"content\">";
 
                 if (isset($datasetid)) {
                     $subjectname = getSubjectName($subjectid);
