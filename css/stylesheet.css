@@ -134,6 +134,12 @@ span.red {
     color: #dd3c10;
 }
 
+span.vertical-text {
+    transform: rotate(-90deg);	
+    -webkit-transform: rotate(-90deg); 
+    -moz-transform: rotate(-90deg);	
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
 select {
     padding: 4px;
     border: 1px solid #d4dae8;   

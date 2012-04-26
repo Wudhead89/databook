@@ -78,18 +78,22 @@ $tchgroupcode = $_GET['tchgroupcode'];
                         echo "<h3>Subject: $subjectname</h3>";
 
                         echo "<table class=\"contenttable\">";
+                        echo "<thead>";
                         echo "<tr>";
-                        echo "<td>Student Name</td>";
-                        echo "<td>Grade</td>";
+                        echo "<th>Student Name</th>";
+                        echo "<th>Grade</th>";
                         echo "</tr>";
+                        echo "</thead>";
 
+                        echo "<tbody>";
                         while ($row = mysql_fetch_assoc($results)) {
                             echo "<tr>";
-                            echo "<td><a href=\"student.php?datasetid=$datasetid&amp;studentid=" . $row['studentid'] . "\">" . $row['surname'] . ', ' . $row['forename'] . "</a></td>";
+                            echo "<th><a href=\"student.php?datasetid=$datasetid&amp;studentid=" . $row['studentid'] . "\">" . $row['surname'] . ', ' . $row['forename'] . "</a></th>";
                             echo "<td>" . $row['grade'] . "</td>";
                             echo "</tr>";
                         }
 
+                        echo "</tbody>";
                         echo "</table>";
                     }
                     ?>

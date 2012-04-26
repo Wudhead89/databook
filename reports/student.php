@@ -93,18 +93,21 @@ $studentid = $_GET['studentid'];
 
                     echo "<h4>Student Grades</h4>";
                     echo "<table class=\"contenttable\">";
+                    echo "<thead>";
                     echo "<tr>";
-                    echo "<td>Subject Name</td>";
-                    echo "<td>Grade</td>";
+                    echo "<th>Subject Name</th>";
+                    echo "<th>Grade</th>";
                     echo "</tr>";
+                    echo "</thead>";
 
+                    echo "<tbody>";
                     while ($row = mysql_fetch_assoc($results)) {
                         echo "<tr>";
-                        echo "<td>" . $row['subjectname'] . "</td>";
+                        echo "<th>" . $row['subjectname'] . "</th>";
                         echo "<td>" . $row['grade'] . "</td>";
                         echo "</tr>";
                     }
-
+                    echo "</tbody>";
                     echo "</table>";
                 }
                 ?>

@@ -86,23 +86,26 @@ $subjectid = $_GET['subjectid'];
                     echo "<h2>Teaching Group Broadsheet: $subjectname</h2>";
                     
                     echo "<table class=\"contenttable\">
-                    <tr>
-                    <td>Teaching Group</td>
-                    <td>A*</td>
-                    <td>A</td>
-                    <td>B</td>
-                    <td>C</td>
-                    <td>D</td>	
-                    <td>E</td>
-                    <td>F</td>
-                    <td>G</td>
-                    <td>U</td>
-                    <td>Total</td>
-                    <td>%AA</td>
-                    <td>%AC</td>
-                    <td>%AG</td>
-                    </tr>";
+                        <thead>
+                        <tr>
+                        <th>Teaching Group</th>
+                        <th>A*</th>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>C</th>
+                        <th>D</th>	
+                        <th>E</th>
+                        <th>F</th>
+                        <th>G</th>
+                        <th>U</th>
+                        <th>Total</th>
+                        <th>%AA</th>
+                        <th>%AC</th>
+                        <th>%AG</th>
+                        </tr>
+                        </thead>";
 
+                    echo "</tbody>";
                     while ($row = mysql_fetch_assoc($result)) {
                         $total = $row['A*'] + $row['A'] + $row['B'] + $row['C'] + $row['D'] + $row['E'] + $row['F'] + $row['G'] + $row['U'];
                         $aa = $row['A*'] + $row['A'];
@@ -110,7 +113,7 @@ $subjectid = $_GET['subjectid'];
                         $ag = $row['A*'] + $row['A'] + $row['B'] + $row['C'] + $row['D'] + $row['E'] + $row['F'] + $row['G'];
 
                         echo "<tr>\n";
-                        echo "<td><a href=\"tchgroup.php?datasetid=$datasetid&amp;subjectid=$subjectid&amp;tchgroupcode=" . $row['tchgroupcode'] . "\">" . $row['tchgroupcode'] . "</a></td>";
+                        echo "<th><a href=\"tchgroup.php?datasetid=$datasetid&amp;subjectid=$subjectid&amp;tchgroupcode=" . $row['tchgroupcode'] . "\">" . $row['tchgroupcode'] . "</a></th>";
                         echo "<td><a href=\"tchgroupgrades.php?datasetid=$datasetid&amp;subjectid=$subjectid&amp;gradeid=1&amp;tchgroupcode=" . $row['tchgroupcode'] . "\">" . $row['A*'] . "</a></td>";
                         echo "<td><a href=\"tchgroupgrades.php?datasetid=$datasetid&amp;subjectid=$subjectid&amp;gradeid=2&amp;tchgroupcode=" . $row['tchgroupcode'] . "\">" . $row['A'] . "</a></td>";
                         echo "<td><a href=\"tchgroupgrades.php?datasetid=$datasetid&amp;subjectid=$subjectid&amp;gradeid=3&amp;tchgroupcode=" . $row['tchgroupcode'] . "\">" . $row['B'] . "</a></td>";
@@ -126,6 +129,7 @@ $subjectid = $_GET['subjectid'];
                         echo "<td>" . sprintf("%01.2f", (($ag / $total) * 100)) . "</td>";
                         echo "</tr>";
                     }
+                    echo "</tbody>";
                     echo "</table>";
                 }
                 ?>

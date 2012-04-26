@@ -36,6 +36,7 @@ if (isset($_POST['dataset'])) {
         <title>Data Book - Student Broadsheet</title>
     </head>
 
+
     <body onload="init()" onResize="movepopup()" onClick="clearTable()">
 
         <div id="container">
@@ -47,7 +48,7 @@ if (isset($_POST['dataset'])) {
                 <div id="filter">
                     <form name="filter" action="stubroadsheet.php" method="post">
                         <h3>Filter</h3>
-
+                        <p>click me </p>
                         <table class="filtertable">
                             <tr>
                                 <td>Dataset</td>
@@ -92,24 +93,27 @@ if (isset($_POST['dataset'])) {
                         $subjects = mysql_query("SELECT DISTINCT shortname FROM results_view where datasetid = '$datasetid' ORDER BY shortname");
 
                         echo "<table class=\"contenttable\">";
+                        echo "<thead>";
                         echo "<tr>";
-                        echo "<td>Student Name</td>";
+                        echo "<th>Student Name</th>";
 
                         while ($subject = mysql_fetch_assoc($subjects)) {
-                            echo "<td>" . $subject['shortname'] . "</td>";
+                            echo "<th><span class=\"vertical-text\">" . $subject['shortname'] . "</span></th>";
                         }
                         echo "</tr>";
+                        echo "</thead>";
 
+                        echo "<tbody>";
                         while ($row = mysql_fetch_assoc($result)) {
                             echo "<tr>";
-                            echo "<td>" . $row['studentname'] . "</td>";
+                            echo "<th>" . $row['studentname'] . "</th>";
                             mysql_data_seek($subjects, 0);
                             while ($subject = mysql_fetch_assoc($subjects)) {
                                 echo "<td>" . $row[$subject['shortname']] . "</td>";
                             }
                             echo "</tr>";
                         }
-
+                        echo "</tbody>";
                         echo "</table>";
                     }
                     ?>

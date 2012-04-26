@@ -157,24 +157,27 @@ if (isset($_POST['compset']) && $_POST['compset'] != "") {
                         $result = mysql_query($sqlstring);
 
                         echo "<table class=\"contenttable\">
+                            <thead>
                             <tr>
                             <td>Subject Name</td>
-                            <td>A*</td>
-                            <td>A</td>
-                            <td>B</td>
-                            <td>C</td>
-                            <td>D</td>	
-                            <td>E</td>
-                            <td>F</td>
-                            <td>G</td>
-                            <td>U</td>
-                            <td>Total</td>
-                            <td>%AA</td>
-                            <td>%AC</td>
-                            <td>%AG</td>
-                            </tr>";
+                            <th>A*</th>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>C</th>
+                            <th>D</th>	
+                            <th>E</th>
+                            <th>F</th>
+                            <th>G</th>
+                            <th>U</th>
+                            <th>Total</th>
+                            <th>%AA</th>
+                            <th>%AC</th>
+                            <th>%AG</th>
+                            </tr>
+                            </thead>";
 
-
+                        echo "<tbody>";
+                        
                         while ($row = mysql_fetch_assoc($result)) {
                             $total = $row['A*'] + $row['A'] + $row['B'] + $row['C'] + $row['D'] + $row['E'] + $row['F'] + $row['G'] + $row['U'];
                             $aa = $row['A*'] + $row['A'];
@@ -182,7 +185,7 @@ if (isset($_POST['compset']) && $_POST['compset'] != "") {
                             $ag = $row['A*'] + $row['A'] + $row['B'] + $row['C'] + $row['D'] + $row['E'] + $row['F'] + $row['G'];
 
                             echo "<tr>";
-                            echo "<td><a href=\"tchgroupbroadsheet.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "\">" . $row['subjectname'] . "</a></td>";
+                            echo "<th><a href=\"tchgroupbroadsheet.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "\">" . $row['subjectname'] . "</a></th>";
                             echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['sgradeid'] . "\">" . $row['A*'] . "</a></td>";
                             echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['agradeid'] . "\">" . $row['A'] . "</a></td>";
                             echo "<td><a href=\"subjectgrades.php?datasetid=$datasetid&amp;subjectid=" . $row['subjectid'] . "&amp;gradeid=" . $row['bgradeid'] . "\">" . $row['B'] . "</a></td>";
@@ -238,6 +241,7 @@ if (isset($_POST['compset']) && $_POST['compset'] != "") {
 
                             echo "</tr>";
                         }
+                        echo "</tbody>";
                         echo "</table>";
                     }
                     ?>
