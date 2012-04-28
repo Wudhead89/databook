@@ -17,8 +17,9 @@ include('../config.php');
 
     <head>
         <meta charset="utf-8">
-        <script src="../ajax/stusearch.js"></script>
         <script src="../js/jquery.min.js"></script>
+        <script src="../ajax/stusearch.js"></script>
+        <script src="js/corefunctions.js"></script>
         <script type="text/javascript">
             $(document).ready(function(){
                 $('.button').click(function(){
@@ -30,6 +31,7 @@ include('../config.php');
                     });
                 });
             });
+            
         </script>
         <!--[if lt IE 9]>
         <script>
@@ -44,7 +46,7 @@ include('../config.php');
     </head>
 
 
-    <body onload="init()" onResize="movepopup()" onClick="clearTable()">
+    <body>
 
         <div id="container">
 

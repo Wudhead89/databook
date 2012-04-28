@@ -123,9 +123,10 @@ if (isset($_POST['dataset'])) {
 
     <head>
         <meta charset="utf-8">
-        <script src="../ajax/stusearch.js"></script>
         <script src="../js/jquery.min.js"></script>
-        <script src="../js/highcharts.js"></script>    
+        <script src="../js/highcharts.js"></script>  
+        <script src="../ajax/stusearch.js"></script>
+        <script src="js/corefunctions.js"></script>
         <!--[if lt IE 9]>
         <script>
         document.createElement("nav");
@@ -207,7 +208,7 @@ if (isset($_POST['dataset'])) {
         <title>Data Book - English Baccalaureate</title>        
     </head>
 
-    <body onload="init()" onresize="movepopup()">
+    <body>
         <div id="container">
 
             <?php include('../header.php'); ?>

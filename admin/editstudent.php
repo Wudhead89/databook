@@ -17,7 +17,8 @@ if (!isset($_SESSION['username'])) {
     <head>
         <meta charset="utf-8">
         <script src="../js/jquery.min.js"></script>
-        <script src="../ajax/stusearch.js"></script>       
+        <script src="../ajax/stusearch.js"></script>
+        <script src="../reports/js/corefunctions.js"></script>     
         <script src="ajax/editstudents.js"></script>
         <!--[if lt IE 9]>
         <script>
@@ -31,7 +32,7 @@ if (!isset($_SESSION['username'])) {
         <title>Data Book - Edit Student</title>
     </head>
 
-    <body onload="init()" onResize="movepopup()" onClick="clearTable()">
+    <body>
 
         <div id="container">
 
