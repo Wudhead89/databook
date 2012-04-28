@@ -10,7 +10,6 @@ if (!isset($_SESSION['username'])) {
     header("Location: ../index.php");
     exit;
 }
-include('../config.php');
 ?>  
 <!DOCTYPE html>
 <html lang="en">
@@ -19,11 +18,11 @@ include('../config.php');
         <meta charset="utf-8">
         <script src="../js/jquery.min.js"></script>
         <script src="../ajax/stusearch.js"></script>
-        <script src="js/corefunctions.js"></script>
+        <script src="../js/corefunctions.js"></script>
         <script type="text/javascript">
             $(document).ready(function(){
                 $('.button').click(function(){
-                    var ds = $(".selectdataset").val();
+                    var ds = $("#selectdataset").val();
                     $.post("ajax/getdsbroadsheet.php?dataset="+ds, function(data){
                         var win = window.open();
                         win.document.write(data);
@@ -60,18 +59,7 @@ include('../config.php');
                         <tr>
                             <td>Dataset</td>
                             <td>    
-                                <select name="dataset" class="selectdataset">
-                                    <?php
-                                    $datasets = mysql_query("SELECT * FROM datasets");
-                                    while ($ds = mysql_fetch_assoc($datasets)) {
-                                        echo "<option value=\"" . $ds['datasetid'] . "\"";
-                                        if (isset($datasetid) && $datasetid == $ds['datasetid']) {
-                                            echo " selected ";
-                                        }
-                                        echo ">" . $ds['datasetname'] . "</option>";
-                                    }
-                                    ?>
-                                </select>
+                                <select id="selectdataset"></select>
                             </td>
                         </tr>
                     </table>

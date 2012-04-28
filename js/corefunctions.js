@@ -4,6 +4,10 @@
  */
 $(document).ready(function(){
     init();
+    
+    if ($("#selectdataset").length > 0){
+        $('#selectdataset').load("ajax/getdsselect.php")
+    }
 });
 $(document).resize(function(){
     movepopup()
