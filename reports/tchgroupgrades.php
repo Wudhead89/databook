@@ -37,7 +37,7 @@ $gradeid = $_GET['gradeid'];
         <meta charset="utf-8">
         <script src="../js/jquery.min.js"></script>
         <script src="../ajax/stusearch.js"></script>
-        <script src="js/corefunctions.js"></script>
+        <script src="../js/corefunctions.js"></script>
         <!--[if lt IE 9]>
         <script>
         document.createElement("nav");

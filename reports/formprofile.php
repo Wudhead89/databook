@@ -19,7 +19,7 @@ if (!isset($_SESSION['username'])) {
         <script src="../js/jquery.min.js"></script>
         <script src="../ajax/getforms.js"></script>
         <script src="../ajax/stusearch.js"></script>
-        <script src="js/corefunctions.js"></script>
+        <script src="../js/corefunctions.js"></script>
         <!--[if lt IE 9]>
         <script>
         document.createElement("nav");

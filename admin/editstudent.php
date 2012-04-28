@@ -18,7 +18,7 @@ if (!isset($_SESSION['username'])) {
         <meta charset="utf-8">
         <script src="../js/jquery.min.js"></script>
         <script src="../ajax/stusearch.js"></script>
-        <script src="../reports/js/corefunctions.js"></script>     
+        <script src="../js/corefunctions.js"></script>     
         <script src="ajax/editstudents.js"></script>
         <!--[if lt IE 9]>
         <script>

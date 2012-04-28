@@ -12,13 +12,15 @@
     
     <head>
         <meta charset="utf-8">
-        <script src="../ajax/stusearch.js"></script>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../ajax/stusearch.js"></script>   
+        <script src="../js/corefunctions.js"></script>  
         <link rel="stylesheet" href="../css/stylesheet.css" />
         <link rel="stylesheet" href="../css/div.css" />
         <title>Data Book - Docs</title>
     </head>
     
-    <body onload="init()" onResize="movepopup()" onClick="clearTable()">
+    <body>
 
         <div id="container">
 
@@ -29,10 +31,7 @@
                 <div id="content">
 
                     <h2>Dcouments</h2>
-                   
-                    <p>
-                        Coming soon ...
-                    </p>
+                    <p>Coming soon ... </p>
 
                 </div> <!-- end content -->
 
