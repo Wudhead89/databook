@@ -26,7 +26,6 @@ if (!isset($_SESSION)) {
         <![endif]-->   
         <link rel="stylesheet" href="css/stylesheet.css" />
         <link rel="stylesheet" href="css/div.css" />
-        <link rel="stylesheet" href="css/style.css" />
         <title>Data Book - Home</title>
     </head>
 
