@@ -13,12 +13,6 @@ if (!isset($_SESSION['username'])) {
 include('../config.php');
 include('functions.php');
 
-if (isset($_POST['dataset'])) {
-    $datasetid = $_POST['dataset'];
-} else if (isset($_GET['datasetid'])) {
-    $datasetid = $_GET['datasetid'];
-}
-
 $studentid = $_GET['studentid'];
 ?>  
 <!DOCTYPE html>
@@ -29,6 +23,15 @@ $studentid = $_GET['studentid'];
         <script src="../js/jquery.min.js"></script>
         <script src="../ajax/stusearch.js"></script>
         <script src="../js/corefunctions.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.button').click(function(){
+                    var ds = $("#selectdataset").val();
+                    var studentid = $("#studenth2").attr('data-studentid');
+                    $('#studentgrades').load("ajax/getstudentgrades.php?studentid="+studentid+"&datasetid="+ds);        
+                });
+            });            
+        </script>
         <!--[if lt IE 9]>
         <script>
         document.createElement("nav");
@@ -47,79 +50,49 @@ $studentid = $_GET['studentid'];
             <?php include('../header.php'); ?>
 
             <div id="content-container">  
+                
+                <div id="filter">
+                    <h3>Filter</h3>
+                    <table class="filtertable">
+                        <tr>
+                            <td>Dataset</td>
+                            <td><select id="selectdataset"></select></td>
+                        </tr>
+                    </table>
+                    <a href="#" class="button">
+                        <span class="filter">Apply Filter</span>
+                    </a>
+                </div>  <!-- end filter -->
+                
+                <div id="content">
 
-                <?php
-                echo "<div id=\"filter\">";
-                echo "Dataset:";
-                echo "<form name=\"filter\" action=\"student.php?studentid=$studentid\" method=\"post\">";
-                echo "<select name=\"dataset\">";
+                    <?php
+                    echo "<h2 id=\"studenth2\" data-studentid=\"$studentid\">Student Report: " . getStudentName($studentid) . "</h2>";
 
-                $datasets = mysql_query("SELECT * FROM datasets");
-                while ($ds = mysql_fetch_assoc($datasets)) {
-                    echo "<option value=\"" . $ds['datasetid'] . "\"";
-
-                    if (isset($datasetid) && $datasetid == $ds['datasetid']) {
-                        echo " selected ";
+                    echo "Form: " . getStudentTutorGroup($studentid) . "<br>";
+                    echo "FSM: " . getStudentFSM($studentid) . "<br>";
+                    echo "LAC: " . getStudentLAC($studentid) . "<br>";
+                    echo "SEN: " . getStudentSEN($studentid);
+                    if (getStudentSEN($studentid) != "N") {
+                        echo " <a href=\"stusenreport.php?studentid=" . $studentid . "\">[SEN Report]</a>";
                     }
 
-                    echo ">" . $ds['datasetname'] . "</option>";
-                }
+                    echo "<h4>CATs</h4> ";
+                    $stucats = getStudentCAT($studentid);
+                    echo "V = " . $stucats['V'] . "<br>";
+                    echo "N = " . $stucats['N'] . "<br>";
+                    echo "Q = " . $stucats['Q'] . "<br>";
+                    echo "M = " . $stucats['M'] . "<br>";
+                    ?>
+                    
+                    <div id="studentgrades"></div>
+                    
+                </div> <!-- end content -->
 
-                echo "</select>";
-                echo "<input type=\"submit\" value=\"submit\" /><br>";
-                echo "</form>";
-                echo "</div>  <!-- end filter -->";
+            </div> <!-- end content-container -->
 
-                echo "<div id=\"content\">";
-                echo "<h2>Student Report: " . getStudentName($studentid) . "</h2>";
+<?php include('../footer.php'); ?>
 
-                echo "Form: " . getStudentTutorGroup($studentid) . "<br>";
-                echo "FSM: " . getStudentFSM($studentid) . "<br>";
-                echo "LAC: " . getStudentLAC($studentid) . "<br>";
-                echo "SEN: " . getStudentSEN($studentid);
-                if (getStudentSEN($studentid) != "N") {
-                    echo " <a href=\"stusenreport.php?studentid=" . $studentid . "\">[SEN Report]</a>";
-                }
-
-                echo "<h4>CATs</h4> ";
-                $stucats = getStudentCAT($studentid);
-                echo "V = " . $stucats['V'] . "<br>";
-                echo "N = " . $stucats['N'] . "<br>";
-                echo "Q = " . $stucats['Q'] . "<br>";
-                echo "M = " . $stucats['M'] . "<br>";
-
-
-                if (isset($datasetid)) {
-                    $sqlstring = "SELECT * FROM results_view WHERE datasetid = '$datasetid' AND studentid = '$studentid' ORDER BY subjectname";
-                    $results = mysql_query($sqlstring);
-
-                    echo "<h4>Student Grades</h4>";
-                    echo "<table class=\"contenttable\">";
-                    echo "<thead>";
-                    echo "<tr>";
-                    echo "<th>Subject Name</th>";
-                    echo "<th>Grade</th>";
-                    echo "</tr>";
-                    echo "</thead>";
-
-                    echo "<tbody>";
-                    while ($row = mysql_fetch_assoc($results)) {
-                        echo "<tr>";
-                        echo "<th>" . $row['subjectname'] . "</th>";
-                        echo "<td>" . $row['grade'] . "</td>";
-                        echo "</tr>";
-                    }
-                    echo "</tbody>";
-                    echo "</table>";
-                }
-                ?>
-
-            </div> <!-- end content -->
-
-        </div> <!-- end content-container -->
-
-        <?php include('../footer.php'); ?>
-
-    </div> <!-- end of container -->
-</body>
+        </div> <!-- end of container -->
+    </body>
 </html>
