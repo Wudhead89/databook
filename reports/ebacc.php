@@ -217,7 +217,7 @@ if (isset($_POST['dataset'])) {
 
                 
                 <div id="filter">
-                <form name="filter" action="ebacc2.php" method="post">
+                <form name="filter" action="ebacc.php" method="post">
                 <?php include('filter.php'); ?>
                 </form>
                 </div>  <!-- end filter -->
