@@ -5,6 +5,7 @@
     Author     : Richard Williamson
 */
 
+include('../config.php');
 
 // return the name of a dataset
 function getDataSetName($datasetid) {
