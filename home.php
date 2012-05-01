@@ -1,13 +1,15 @@
 <?php
 /*
- * Document     : index.php
+ * Document     : home.php
  * Created on   : 05-May-2011
  * Author       : Richard Williamson
  * 
  * Description  : Main home page once user has successfully logged in
  */
-if (!isset($_SESSION)) {
-    session_start();
+session_start();
+if (!isset($_SESSION['username'])) {
+    header("Location: index.php");
+    exit;
 }
 ?>
 <!DOCTYPE html>
@@ -40,15 +42,15 @@ if (!isset($_SESSION)) {
 
                 <div id="content">
 
-                    <h2>Welcome</h2>
-                    <p>Welcome to Swanwick <span class="red">Hall</span> School Databook</p>
+                    <h2>Welcome to Swanwick <span class="red">Hall</span> School Databook</h2>
                     <p>Here you can find a wealth of information on students, assessments and subjects all in one place. Various sets of reports are available from the top
                     menu relating to assessment data entered into ePortal.</p>
-                    <p>You will be able to see the overall "headline" figures for 5A*-C's and 5A*-C inc English & Maths. Also from the
+                    <p>You will be able to see the overall "headline" figures for 5A*-C's and 5A*-C including English & Maths. Also from the
                     "Subjects" menu you will be able to see information for a particular dataset by subject. With this report you can drill down into the data by clicking
                     on subjects to see the teaching within and also by clicking on grades to see the students behind the numbers.</p>
                     <p>On all of the screens you will see a filter on the left hand side of the pages which will allow you to select a dataset and filter the data
                         by gender, fsm, sen and so forth.</p>
+                    <p>If you have any questions please feel free to contact Richard Williamson on ext 142 or email to rwi.</p>
 
                 </div> <!-- end content -->
 
