@@ -8,7 +8,6 @@
  * the user on the page.
 */
 
-
 function buildSQLString($datasetid, $filter) {
     
     // filter on dataset

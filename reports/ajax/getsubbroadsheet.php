@@ -4,7 +4,13 @@
  * Created on   : 05-May-2011
  * Author       : Richard Williamson
  * 
- * Description  : for a dataset
+ * Description  : called from subbroadsheet.php report. generates a html tables 
+ * containing subjects down the side, grades across the top and numbers of those
+ * grades in each cell along with some total columns. a comparison dataset is
+ * optional. 
+ * 
+ * Params       : _POST['filter'] is an array containing the information selected 
+ * in the filter by the user
  */
 
 include('../../config.php');
@@ -12,6 +18,9 @@ include('buildsqlstring.php');
 
 $filter = $_POST["filter"];
 $datasetid = $filter['ds'];
+
+// main sql string prefix, stored as a variable as it is used twice if there is a 
+// comparison dataset
 $sqlstringprefix = "SELECT subjects.subjectname, results.subjectid, 
     SUM(IF(grades.grade='A*',1,0)) as 'A*',
     MAX(IF(grades.grade='A*',results.gradeid,0)) as sgradeid,

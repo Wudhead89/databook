@@ -1,10 +1,12 @@
 <?php
 /*
- * Document     : subBroadsheet.php
+ * Document     : subbroadsheet.php
  * Created on   : 05-May-2011
  * Author       : Richard Williamson
  * 
- * Description  :
+ * Description  : main "subject" report accessible via the main <nav> menu. Displays
+ * a list of subjects down the side and grades across the top. cells contain number
+ * of those grades. total columns include stats such as %A*-A and %A*-C's
  * 
  */
 
@@ -23,9 +25,11 @@ if (!isset($_SESSION['username'])) {
         <script src="../ajax/stusearch.js"></script>
         <script src="../js/corefunctions.js"></script>
         <script type="text/javascript">
-            // jQuery click function for the filter button. loads the selections on the filter into
-            // an array which is passed via ajax to the backend php file which talks to the database
-            // and produces a html table which is loaded into a <div> on the page
+            /* 
+             * jQuery click function for the filter button. loads the selections on the filter into
+             * an array which is passed via ajax to the backend php file which talks to the database
+             * and produces a html table which is loaded into a <div> on the page
+             */
             $(document).ready(function() {
                 $('.button').click(function(){    
                     var data = {
@@ -68,7 +72,6 @@ if (!isset($_SESSION['username'])) {
             <?php include('../header.php'); ?>
 
             <div id="content-container">       
-
                
                 <?php include('ajax/filter.php'); ?>                    
 

@@ -1,8 +1,10 @@
 <?php
 /*
-  Document   : filter.php
-  Created on : 05-May-2011
-  Author     : Richard Williamson
+ * Document     : filter.php
+ * Created on   : 05-May-2011
+ * Author       : Richard Williamson
+ * 
+ * Description  : output a html div that contains the fitler displayed on most report pages.
  */
 ?>
 
