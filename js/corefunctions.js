@@ -8,8 +8,11 @@
 $(document).ready(function(){
     init();
     
-    if ($("#selectdataset").length > 0){
+    if ($('#selectdataset').length > 0){
         $('#selectdataset').load("ajax/getdsselect.php")
+    }
+    if ($('#selectcompset').length > 0){
+        $('#selectcompset').load("ajax/getcsselect.php")
     }
 
 });
